@@ -1,29 +1,109 @@
 @import "_globals.scss";
 
 header {
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    place-items: center;
+    min-height: 10vh;
+
     >a {
         text-decoration: none;
 
         .logo {
             display: grid;
             place-items: center;
-            background: $neutralColorTwo;
+            background: $neutralColorOne;
             border-radius: 100%;
         }
-
+    
         #logoOuterCircle {
-            width: 30px;
-            height: 30px;
+            width: 38px;
+            height: 38px;
         }
     
         #logoInnerCircle {
-            width: 22px;
-            height: 22px;
-            color: $neutralColorOne;
+            width: 28px;
+            height: 28px;
+            color: $neutralColorTwo;
             font-weight: bold;
-            border: 1.5px solid $neutralColorOne;
-            font-family: "Lora", serif;
-            font-size: 0.7em;
+            border: 1.5px solid $neutralColorTwo;
+            font-family: $titleFont;
+            font-size: 0.85em;
         }
     }
+
+    .mobileHamburgerMenu {
+
+        #mobileNavCheckbox {
+            width: 28px;
+            height: 28px;
+            position: absolute;
+            opacity: 0;
+            z-index: 2;
+        }
+
+        #mobileNavCheckbox:checked ~ .navPages {
+            top: 10vh;
+            opacity: 1;
+            transition: all 0.5s ease-in-out;
+        }
+
+        #mobileNavCheckbox:checked ~ .mobileHamburgerContainer #mobileBarOne {
+            transform-origin: top right;
+            transform: rotate(-41deg);
+            transition: all 0.4s ease-in-out;
+        }
+
+        #mobileNavCheckbox:checked ~ .mobileHamburgerContainer #mobileBarTwo {
+            background: transparent;
+        }
+
+        #mobileNavCheckbox:checked ~ .mobileHamburgerContainer #mobileBarThree {
+            transform-origin: bottom right;
+            transform: rotate(41deg);
+            transition: all 0.4s ease-in-out;
+        }
+
+        .mobileHamburgerContainer {
+            display: grid;
+            place-items: center;
+            width: 28px;
+            height: 28px;
+            position: relative;
+            z-index: 1;
+
+            .navBars {
+                width: 30px;
+                height: 3px;
+                background: $neutralColorOne;
+                border-radius: 10px;
+                transform: rotate(0deg);
+                transition: all 0.4s ease-in-out;
+            }
+        }
+
+        .navPages {
+            transition: all 0.5s ease-in-out;
+            position: absolute;
+            top: -30vh;
+            left: 0;
+            opacity: 0;
+            width: 100%;
+            background: $primaryColor;
+            display: grid;
+            place-items: center;
+            min-height: 20vh;
+            z-index: -1;
+
+            a {
+                text-decoration: none;
+                font-weight: bold;
+                color: $neutralColorOne;
+                width: 100%;
+                padding: 5% 0%;
+                text-align: center;
+            }
+        }
+    }
+        
 }

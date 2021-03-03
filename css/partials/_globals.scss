@@ -1,15 +1,24 @@
 // FONTS
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap');
 
-// ALIGNMENT
-* {
-    margin: 0;
-    padding: 0;
-}
-
 // VARIABLES
 $primaryColor: #202C39;
 $secondaryColor: #283845;
 $accentColor: #f2d492;
 $neutralColorOne: white;
 $neutralColorTwo: black;
+
+$titleFont: "Lora", serif;
+$bodyFont: "Montserrat", sans-serif;
+
+// ALIGNMENT
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $primaryColor;
+    font-family: $bodyFont;
+    max-width: 100vw;
+}
