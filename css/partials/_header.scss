@@ -1,0 +1,29 @@
+@import "_globals.scss";
+
+header {
+    >a {
+        text-decoration: none;
+
+        .logo {
+            display: grid;
+            place-items: center;
+            background: $neutralColorTwo;
+            border-radius: 100%;
+        }
+
+        #logoOuterCircle {
+            width: 30px;
+            height: 30px;
+        }
+    
+        #logoInnerCircle {
+            width: 22px;
+            height: 22px;
+            color: $neutralColorOne;
+            font-weight: bold;
+            border: 1.5px solid $neutralColorOne;
+            font-family: "Lora", serif;
+            font-size: 0.7em;
+        }
+    }
+}

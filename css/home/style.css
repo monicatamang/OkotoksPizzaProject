@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header > a {
+  text-decoration: none;
+}
+
+header > a .logo {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: black;
+  border-radius: 100%;
+}
+
+header > a #logoOuterCircle {
+  width: 30px;
+  height: 30px;
+}
+
+header > a #logoInnerCircle {
+  width: 22px;
+  height: 22px;
+  color: white;
+  font-weight: bold;
+  border: 1.5px solid white;
+  font-family: "Lora", serif;
+  font-size: 0.7em;
+}
+/*# sourceMappingURL=style.css.map */
