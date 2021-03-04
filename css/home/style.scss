@@ -38,12 +38,13 @@
 main {
     @include gridCenter();
     row-gap: 2%;
-    position: relative;
-    top: 28vh;
+    // position: relative;
+    // top: 28vh;
+    margin-top: 30vh;
     min-height: 80vh;
     padding: 0% 5%;
     text-align: center;
-    z-index: -1;
+    // z-index: -1;
 
     h1 {
         color: $neutralColorOne;
@@ -64,5 +65,10 @@ main {
         padding: 4% 7%;
         background: $accentColor;
         border-radius: 20px;
+    }
+
+    img {
+        height: 300px;
+        margin-bottom: 30px;
     }
 }

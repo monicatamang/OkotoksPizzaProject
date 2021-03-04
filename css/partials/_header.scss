@@ -10,6 +10,7 @@ header {
     @include gridCenter();
     grid-template-columns: 2fr 4fr 2fr;
     position: fixed;
+    top: 0;
     width: 100%;
     min-height: 10vh;
     padding: 2% 0%;
@@ -51,7 +52,7 @@ header {
         }
 
         #mobileNavCheckbox:checked ~ .navPages {
-            top: 100%;
+            top: 95%;
             opacity: 1;
             transition: all 0.5s ease-in-out;
         }

@@ -1,0 +1,23 @@
+@import "../partials/globals";
+@import "../partials/header";
+
+.aboutSection {
+    @include gridCenter();
+    row-gap: 6%;
+    padding: 0% 8%;
+    color: $neutralColorOne;
+
+    article {
+        display: grid;
+        grid-template-rows: auto auto;
+        row-gap: 3%;
+
+        h1 {
+            font-family: $titleFont;
+        }
+    
+        p {
+            font-size: 0.8em;
+        }
+    }
+}

@@ -1,1 +1,168 @@
-/* No CSS *//*# sourceMappingURL=about.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #202C39;
+  font-family: "Montserrat", sans-serif;
+  max-width: 100vw;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -ms-grid-columns: 2fr 4fr 2fr;
+      grid-template-columns: 2fr 4fr 2fr;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 10vh;
+  padding: 2% 0%;
+  background: #202C39;
+}
+
+header > a {
+  text-decoration: none;
+}
+
+header > a .logo {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: white;
+  border-radius: 100%;
+}
+
+header > a #logoOuterCircle {
+  width: 38px;
+  height: 38px;
+}
+
+header > a #logoInnerCircle {
+  width: 28px;
+  height: 28px;
+  border: 1.5px solid #202C39;
+  color: #202C39;
+  font-family: "Lora", serif;
+  font-weight: bold;
+  font-size: 0.85em;
+}
+
+header .mobileHamburgerMenu #mobileNavCheckbox {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  opacity: 0;
+  z-index: 5;
+}
+
+header .mobileHamburgerMenu #mobileNavCheckbox:checked ~ .navPages {
+  top: 95%;
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+header .mobileHamburgerMenu #mobileNavCheckbox:checked ~ .mobileHamburgerContainer #mobileBarOne {
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+  -webkit-transform: rotate(-41deg);
+          transform: rotate(-41deg);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+header .mobileHamburgerMenu #mobileNavCheckbox:checked ~ .mobileHamburgerContainer #mobileBarTwo {
+  background: transparent;
+}
+
+header .mobileHamburgerMenu #mobileNavCheckbox:checked ~ .mobileHamburgerContainer #mobileBarThree {
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transform: rotate(41deg);
+          transform: rotate(41deg);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+header .mobileHamburgerMenu .mobileHamburgerContainer {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: relative;
+  width: 28px;
+  height: 28px;
+  z-index: 4;
+}
+
+header .mobileHamburgerMenu .mobileHamburgerContainer .navBars {
+  width: 30px;
+  height: 3px;
+  background: white;
+  border-radius: 10px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+header .mobileHamburgerMenu .navPages {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: -60vh;
+  left: 0;
+  width: 100%;
+  min-height: 60vh;
+  background: #202C39;
+  opacity: 0;
+  z-index: 10;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+header .mobileHamburgerMenu .navPages a {
+  width: 100%;
+  padding: 5% 0%;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.aboutSection {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  row-gap: 6%;
+  padding: 0% 8%;
+  color: white;
+}
+
+.aboutSection article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  row-gap: 3%;
+}
+
+.aboutSection article h1 {
+  font-family: "Lora", serif;
+}
+
+.aboutSection article p {
+  font-size: 0.8em;
+}
+/*# sourceMappingURL=about.css.map */

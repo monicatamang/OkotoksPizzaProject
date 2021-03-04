@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +19,7 @@ header {
   -ms-grid-columns: 2fr 4fr 2fr;
       grid-template-columns: 2fr 4fr 2fr;
   position: fixed;
+  top: 0;
   width: 100%;
   min-height: 10vh;
   padding: 2% 0%;
@@ -58,7 +62,7 @@ header .mobileHamburgerMenu #mobileNavCheckbox {
 }
 
 header .mobileHamburgerMenu #mobileNavCheckbox:checked ~ .navPages {
-  top: 100%;
+  top: 95%;
   opacity: 1;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -282,12 +286,10 @@ main {
   display: grid;
   place-items: center;
   row-gap: 2%;
-  position: relative;
-  top: 28vh;
+  margin-top: 30vh;
   min-height: 80vh;
   padding: 0% 5%;
   text-align: center;
-  z-index: -1;
 }
 
 main h1 {
@@ -309,5 +311,10 @@ main .buttons {
   padding: 4% 7%;
   background: #f2d492;
   border-radius: 20px;
+}
+
+main img {
+  height: 300px;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=style.css.map */
