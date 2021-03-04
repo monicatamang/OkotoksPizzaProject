@@ -8,7 +8,6 @@
     width: 100%;
     min-height: 5vh;
     text-align: center;
-    z-index: -1;
 }
 
 #infoBanner {
@@ -44,11 +43,10 @@ main {
     min-height: 80vh;
     padding: 0% 5%;
     text-align: center;
-    z-index: -5;
+    z-index: -1;
 
     h1 {
         color: $neutralColorOne;
-        font-family: $titleFont;
         font-size: 1.1em;
     }
 

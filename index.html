@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Okotoks Pizza</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/home/style.css">
     <script src="https://kit.fontawesome.com/79c5ac932a.js" crossorigin="anonymous"></script>
 </head>
@@ -15,7 +17,7 @@
                 <div id="logoInnerCircle" class="logo">OP</div>
             </div>
         </a>
-        <div class="mobileNavSpacer"></div>
+        <div id="mobileNavSpacer"></div>
         <div class="mobileHamburgerMenu">
             <input type="checkbox" name="mobileNavCheckbox" id="mobileNavCheckbox">
             <div class="mobileHamburgerContainer">
@@ -32,16 +34,16 @@
                 <a href="pages/contact.html">Contact</a>
             </nav>
         </div>
+        <article id="infoBanner" class="banner">
+            <p>Pickup & Dine-in Only</p>
+            <p>555 Pizza Palace SW</p>
+        </article>
+        <article id="openTimes" class="banner">
+            <p>Sun - Thu from 12PM - 11PM</p>
+            <p>|</p>
+            <p>Fri & Sat from 12PM - 1AM</p>
+        </article>
     </header>
-    <article id="infoBanner" class="banner">
-        <p>Pickup & Dine-in Only</p>
-        <p>555 Pizza Palace SW</p>
-    </article>
-    <article id="openTimes" class="banner">
-        <p>Sun - Thu from 12PM - 11PM</p>
-        <p>|</p>
-        <p>Fri & Sat from 12PM - 1AM</p>
-    </article>
     <main>
         <h1>Tired of eating the same lunch?</h1>
         <p>Change up your meal plan and order our fresh and delicious Italian pizzas, pastas, and much more! </p>
@@ -63,8 +65,23 @@
             <p id="subscribeButton">Subscribe</p>
         </article>
         <article id="socialLinksAndCopyright">
+            <div id="socialMedia">
+                <a href="https://linkedin.com">
+                    <img src="images/linkedinLogo.svg" alt="A LinkedIn Logo where the letters 'i' and 'n' are a white colour and is inside of a black circle">
+                </a>
+                <a href="https://facebook.com">
+                    <img src="images/facebookLogo.svg" alt="A Facebook Logo where the letter 'f' is a white colour and is inside of a black circle">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagramLogo.svg" alt="A Instagram Logo where logo symbol is a white colour and is inside of a black circle">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitterLogo.svg" alt="A Twitter Logo where the 'bird' is a white colour and is inside of a black circle">
+                </a>
+            </div>
             <p id="copyright">&copy; 2021 Okotoks Pizza. All Rights Reserved.</p>
         </article>
+        <div id="mobileFooterSpacer"></div>
     </footer>
 </body>
 </html>

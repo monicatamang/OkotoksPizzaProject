@@ -95,6 +95,7 @@ header {
             min-height: 60vh;
             background: $primaryColor;
             opacity: 0;
+            z-index: 10;
             transition: all 0.5s ease-in-out;
 
             a {
@@ -105,9 +106,7 @@ header {
                 color: $neutralColorOne;
                 font-size: 0.9em;
                 font-weight: bold;
-                overflow: hidden;
             }
         }
     }
-        
 }
