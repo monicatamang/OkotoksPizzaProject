@@ -1,17 +1,19 @@
 @import "_globals.scss";
 
 header {
-    display: grid;
+    @include gridCenter();
     grid-template-columns: 2fr 4fr 2fr;
-    place-items: center;
+    position: fixed;
+    width: 100%;
     min-height: 10vh;
+    padding: 3% 0%;
+    background: $primaryColor;
 
     >a {
         text-decoration: none;
 
         .logo {
-            display: grid;
-            place-items: center;
+            @include gridCenter();
             background: $neutralColorOne;
             border-radius: 100%;
         }
@@ -24,10 +26,10 @@ header {
         #logoInnerCircle {
             width: 28px;
             height: 28px;
-            color: $neutralColorTwo;
-            font-weight: bold;
-            border: 1.5px solid $neutralColorTwo;
+            border: 1.5px solid $primaryColor;
+            color: $primaryColor;
             font-family: $titleFont;
+            font-weight: bold;
             font-size: 0.85em;
         }
     }
@@ -35,11 +37,11 @@ header {
     .mobileHamburgerMenu {
 
         #mobileNavCheckbox {
+            position: absolute;
             width: 28px;
             height: 28px;
-            position: absolute;
             opacity: 0;
-            z-index: 2;
+            z-index: 5;
         }
 
         #mobileNavCheckbox:checked ~ .navPages {
@@ -50,8 +52,7 @@ header {
 
         #mobileNavCheckbox:checked ~ .mobileHamburgerContainer #mobileBarOne {
             transform-origin: top right;
-            transform: rotate(-41deg);
-            transition: all 0.4s ease-in-out;
+            @include animatedNavBars (-41deg);
         }
 
         #mobileNavCheckbox:checked ~ .mobileHamburgerContainer #mobileBarTwo {
@@ -60,48 +61,44 @@ header {
 
         #mobileNavCheckbox:checked ~ .mobileHamburgerContainer #mobileBarThree {
             transform-origin: bottom right;
-            transform: rotate(41deg);
-            transition: all 0.4s ease-in-out;
+            @include animatedNavBars (41deg);
         }
 
         .mobileHamburgerContainer {
-            display: grid;
-            place-items: center;
+            @include gridCenter();
+            position: relative;
             width: 28px;
             height: 28px;
-            position: relative;
-            z-index: 1;
+            z-index: 4;
 
             .navBars {
                 width: 30px;
                 height: 3px;
                 background: $neutralColorOne;
                 border-radius: 10px;
-                transform: rotate(0deg);
-                transition: all 0.4s ease-in-out;
+                @include animatedNavBars (0deg);
             }
         }
 
         .navPages {
-            transition: all 0.5s ease-in-out;
+            @include gridCenter();
             position: absolute;
             top: -30vh;
             left: 0;
-            opacity: 0;
             width: 100%;
-            background: $primaryColor;
-            display: grid;
-            place-items: center;
             min-height: 20vh;
-            z-index: -1;
+            background: $primaryColor;
+            opacity: 0;
+            z-index: 2;
+            transition: all 0.5s ease-in-out;
 
             a {
-                text-decoration: none;
-                font-weight: bold;
-                color: $neutralColorOne;
                 width: 100%;
                 padding: 5% 0%;
+                text-decoration: none;
                 text-align: center;
+                color: $neutralColorOne;
+                font-weight: bold;
             }
         }
     }

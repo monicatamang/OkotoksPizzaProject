@@ -13,10 +13,14 @@ body {
 header {
   display: -ms-grid;
   display: grid;
+  place-items: center;
   -ms-grid-columns: 2fr 4fr 2fr;
       grid-template-columns: 2fr 4fr 2fr;
-  place-items: center;
+  position: fixed;
+  width: 100%;
   min-height: 10vh;
+  padding: 3% 0%;
+  background: #202C39;
 }
 
 header > a {
@@ -39,19 +43,19 @@ header > a #logoOuterCircle {
 header > a #logoInnerCircle {
   width: 28px;
   height: 28px;
-  color: black;
-  font-weight: bold;
-  border: 1.5px solid black;
+  border: 1.5px solid #202C39;
+  color: #202C39;
   font-family: "Lora", serif;
+  font-weight: bold;
   font-size: 0.85em;
 }
 
 header .mobileHamburgerMenu #mobileNavCheckbox {
+  position: absolute;
   width: 28px;
   height: 28px;
-  position: absolute;
   opacity: 0;
-  z-index: 2;
+  z-index: 5;
 }
 
 header .mobileHamburgerMenu #mobileNavCheckbox:checked ~ .navPages {
@@ -87,10 +91,10 @@ header .mobileHamburgerMenu .mobileHamburgerContainer {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  position: relative;
   width: 28px;
   height: 28px;
-  position: relative;
-  z-index: 1;
+  z-index: 4;
 }
 
 header .mobileHamburgerMenu .mobileHamburgerContainer .navBars {
@@ -105,27 +109,97 @@ header .mobileHamburgerMenu .mobileHamburgerContainer .navBars {
 }
 
 header .mobileHamburgerMenu .navPages {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  position: absolute;
-  top: -30vh;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  background: #202C39;
   display: -ms-grid;
   display: grid;
   place-items: center;
+  position: absolute;
+  top: -30vh;
+  left: 0;
+  width: 100%;
   min-height: 20vh;
-  z-index: -1;
+  background: #202C39;
+  opacity: 0;
+  z-index: 2;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 header .mobileHamburgerMenu .navPages a {
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
   width: 100%;
   padding: 5% 0%;
+  text-decoration: none;
   text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.banner {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  width: 100%;
+  min-height: 5vh;
+  text-align: center;
+  z-index: 1;
+}
+
+#infoBanner {
+  top: 13vh;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  background: #283845;
+}
+
+#infoBanner p {
+  margin: 8%;
+  color: white;
+  font-size: 0.7em;
+}
+
+#openTimes {
+  top: 20vh;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  background: white;
+}
+
+#openTimes p {
+  margin: 5%;
+  color: #202C39;
+  font-weight: bold;
+  font-size: 0.6em;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  row-gap: 5%;
+  position: relative;
+  top: 30vh;
+  text-align: center;
+  padding: 0% 10%;
+}
+
+main h1 {
+  color: white;
+  font-size: 1.2em;
+  font-family: "Lora", serif;
+}
+
+main p {
+  color: white;
+  font-size: 0.8em;
+}
+
+main .buttons {
+  text-decoration: none;
+  color: #202C39;
+  background: #f2d492;
+  font-size: 0.8em;
+  padding: 4% 7%;
+  border-radius: 20px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */

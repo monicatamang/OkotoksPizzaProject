@@ -1,6 +1,17 @@
 // FONTS
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap');
 
+// MIXINS
+@mixin gridCenter() {
+    display: grid;
+    place-items: center;
+}
+
+@mixin animatedNavBars ($degree) {
+    transform: rotate($degree);
+    transition: all 0.4s ease-in-out;
+}
+
 // VARIABLES
 $primaryColor: #202C39;
 $secondaryColor: #283845;

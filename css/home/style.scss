@@ -1,1 +1,65 @@
 @import "../partials/header";
+
+.banner {
+    @include gridCenter();
+    position: fixed;
+    width: 100%;
+    min-height: 5vh;
+    text-align: center;
+    z-index: 1;
+}
+
+#infoBanner {
+    top: 13vh;
+    grid-template-columns: auto auto;
+    background: $secondaryColor;
+
+    p {
+        margin: 8%;
+        color: $neutralColorOne;
+        font-size: 0.7em;
+    }
+}
+
+#openTimes {
+    top: 20vh;
+    grid-template-columns: auto auto auto;
+    background: $neutralColorOne;
+
+    p {
+        margin: 5%;
+        color: $primaryColor;
+        font-weight: bold;
+        font-size: 0.6em;
+    }
+}
+
+main {
+    @include gridCenter();
+    row-gap: 5%;
+    position: relative;
+    top: 30vh;
+    text-align: center;
+    padding: 0% 10%;
+
+    h1 {
+        color: $neutralColorOne;
+        font-size: 1.2em;
+        font-family: $titleFont;
+    }
+
+    p {
+        color: $neutralColorOne;
+        font-size: 0.8em;
+    }
+
+    .buttons {
+        text-decoration: none;
+        color: $primaryColor;
+        background: $accentColor;
+        font-size: 0.8em;
+        padding: 4% 7%;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+}
