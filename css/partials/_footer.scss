@@ -1,0 +1,45 @@
+@import "_globals.scss";
+
+footer {
+    @include gridCenter();
+
+    #subscriptionForm {
+        display: grid;
+        align-items: center;
+        background: $secondaryColor;
+        padding: 5%;
+        min-height: 30vh;
+        color: $neutralColorOne;
+
+        h1 {
+            font-size: 1.1em;
+        }
+
+        p {
+            font-size: 0.9em;
+        }
+
+        #firstName, #email {
+            padding: 2% 3%;
+            font-family: $bodyFont;
+            border: 1px solid $neutralColorOne;
+        }
+
+        #subscribeButton {
+            font-size: 0.9em;
+            background: $accentColor;
+            color: $primaryColor;
+            width: 40%;
+            padding: 3% 0%;
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+
+    #socialLinksAndCopyright {
+        background: $primaryColor;
+        color: $neutralColorOne;
+        font-size: 0.8em;
+        text-align: center;
+    }
+}

@@ -1,17 +1,16 @@
+@import "_globals.scss";
+
 #callButton {
     @include gridCenter();
     position: fixed;
-    bottom: 1%;
-    width: 65%;
-    margin: 0% 18%;
+    bottom: 2%;
+    width: 100%;
     background: $neutralColorOne;
-    border-radius: 20px;
-
 
     a {
         color: $primaryColor;
         text-decoration: none;
-        padding: 4% 0%;
+        padding: 5% 0%;
         width: 100%;
         text-align: center;
     }

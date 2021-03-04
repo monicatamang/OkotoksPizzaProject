@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -134,28 +136,85 @@ header .mobileHamburgerMenu .navPages a {
   overflow: hidden;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 #callButton {
   display: -ms-grid;
   display: grid;
   place-items: center;
   position: fixed;
-  bottom: 1%;
-  width: 65%;
-  margin: 0% 18%;
+  bottom: 2%;
+  width: 100%;
   background: white;
-  border-radius: 20px;
 }
 
 #callButton a {
   color: #202C39;
   text-decoration: none;
-  padding: 4% 0%;
+  padding: 5% 0%;
   width: 100%;
   text-align: center;
 }
 
 #callButton p {
-  font-size: 0.75em;
+  font-size: 0.8em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+footer #subscriptionForm {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #283845;
+  padding: 5%;
+  min-height: 30vh;
+  color: white;
+}
+
+footer #subscriptionForm h1 {
+  font-size: 1.1em;
+}
+
+footer #subscriptionForm p {
+  font-size: 0.9em;
+}
+
+footer #subscriptionForm #firstName, footer #subscriptionForm #email {
+  padding: 2% 3%;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid white;
+}
+
+footer #subscriptionForm #subscribeButton {
+  font-size: 0.9em;
+  background: #f2d492;
+  color: #202C39;
+  width: 40%;
+  padding: 3% 0%;
+  text-align: center;
+  font-weight: bold;
+}
+
+footer #socialLinksAndCopyright {
+  background: #202C39;
+  color: white;
+  font-size: 0.8em;
+  text-align: center;
 }
 
 .banner {
@@ -166,7 +225,7 @@ header .mobileHamburgerMenu .navPages a {
   width: 100%;
   min-height: 5vh;
   text-align: center;
-  z-index: -2;
+  z-index: -1;
 }
 
 #infoBanner {

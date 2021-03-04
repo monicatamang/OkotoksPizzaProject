@@ -1,5 +1,6 @@
 @import "../partials/header";
 @import "../partials/callButton";
+@import "../partials/footer";
 
 .banner {
     @include gridCenter();
@@ -7,7 +8,7 @@
     width: 100%;
     min-height: 5vh;
     text-align: center;
-    z-index: -2;
+    z-index: -1;
 }
 
 #infoBanner {
