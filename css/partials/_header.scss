@@ -1,12 +1,18 @@
 @import "_globals.scss";
 
+body {
+    background: $primaryColor;
+    font-family: $bodyFont;
+    max-width: 100vw;
+}
+
 header {
     @include gridCenter();
     grid-template-columns: 2fr 4fr 2fr;
     position: fixed;
     width: 100%;
     min-height: 10vh;
-    padding: 3% 0%;
+    padding: 2% 0%;
     background: $primaryColor;
 
     >a {
@@ -45,7 +51,7 @@ header {
         }
 
         #mobileNavCheckbox:checked ~ .navPages {
-            top: 10vh;
+            top: 100%;
             opacity: 1;
             transition: all 0.5s ease-in-out;
         }
@@ -83,13 +89,12 @@ header {
         .navPages {
             @include gridCenter();
             position: absolute;
-            top: -30vh;
+            top: -60vh;
             left: 0;
             width: 100%;
-            min-height: 20vh;
+            min-height: 60vh;
             background: $primaryColor;
             opacity: 0;
-            z-index: 2;
             transition: all 0.5s ease-in-out;
 
             a {
@@ -98,7 +103,9 @@ header {
                 text-decoration: none;
                 text-align: center;
                 color: $neutralColorOne;
+                font-size: 0.9em;
                 font-weight: bold;
+                overflow: hidden;
             }
         }
     }

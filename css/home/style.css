@@ -19,7 +19,7 @@ header {
   position: fixed;
   width: 100%;
   min-height: 10vh;
-  padding: 3% 0%;
+  padding: 2% 0%;
   background: #202C39;
 }
 
@@ -59,7 +59,7 @@ header .mobileHamburgerMenu #mobileNavCheckbox {
 }
 
 header .mobileHamburgerMenu #mobileNavCheckbox:checked ~ .navPages {
-  top: 10vh;
+  top: 100%;
   opacity: 1;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -113,13 +113,12 @@ header .mobileHamburgerMenu .navPages {
   display: grid;
   place-items: center;
   position: absolute;
-  top: -30vh;
+  top: -60vh;
   left: 0;
   width: 100%;
-  min-height: 20vh;
+  min-height: 60vh;
   background: #202C39;
   opacity: 0;
-  z-index: 2;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -130,7 +129,33 @@ header .mobileHamburgerMenu .navPages a {
   text-decoration: none;
   text-align: center;
   color: white;
+  font-size: 0.9em;
   font-weight: bold;
+  overflow: hidden;
+}
+
+#callButton {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  bottom: 1%;
+  width: 65%;
+  margin: 0% 18%;
+  background: white;
+  border-radius: 20px;
+}
+
+#callButton a {
+  color: #202C39;
+  text-decoration: none;
+  padding: 4% 0%;
+  width: 100%;
+  text-align: center;
+}
+
+#callButton p {
+  font-size: 0.75em;
 }
 
 .banner {
@@ -141,24 +166,24 @@ header .mobileHamburgerMenu .navPages a {
   width: 100%;
   min-height: 5vh;
   text-align: center;
-  z-index: 1;
+  z-index: -2;
 }
 
 #infoBanner {
-  top: 13vh;
+  top: 12.2%;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
   background: #283845;
 }
 
 #infoBanner p {
-  margin: 8%;
+  margin: 5%;
   color: white;
-  font-size: 0.7em;
+  font-size: 0.75em;
 }
 
 #openTimes {
-  top: 20vh;
+  top: 17.5%;
   -ms-grid-columns: auto auto auto;
       grid-template-columns: auto auto auto;
   background: white;
@@ -166,7 +191,7 @@ header .mobileHamburgerMenu .navPages a {
 
 #openTimes p {
   margin: 5%;
-  color: #202C39;
+  color: #283845;
   font-weight: bold;
   font-size: 0.6em;
 }
@@ -175,20 +200,23 @@ main {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  row-gap: 5%;
+  row-gap: 2%;
   position: relative;
-  top: 30vh;
+  top: 28vh;
+  min-height: 80vh;
+  padding: 0% 5%;
   text-align: center;
-  padding: 0% 10%;
+  z-index: -5;
 }
 
 main h1 {
   color: white;
-  font-size: 1.2em;
   font-family: "Lora", serif;
+  font-size: 1.1em;
 }
 
 main p {
+  padding: 0% 5%;
   color: white;
   font-size: 0.8em;
 }
@@ -196,10 +224,10 @@ main p {
 main .buttons {
   text-decoration: none;
   color: #202C39;
-  background: #f2d492;
-  font-size: 0.8em;
-  padding: 4% 7%;
-  border-radius: 20px;
+  font-size: 0.7em;
   font-weight: bold;
+  padding: 4% 7%;
+  background: #f2d492;
+  border-radius: 20px;
 }
 /*# sourceMappingURL=style.css.map */
