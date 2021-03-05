@@ -41,7 +41,7 @@ header {
         }
     }
 
-    .mobileHamburgerMenu {
+    #mobileHamburgerMenu {
 
         #mobileNavCheckbox {
             position: absolute;
@@ -51,27 +51,27 @@ header {
             z-index: 5;
         }
 
-        #mobileNavCheckbox:checked ~ .navPages {
+        #mobileNavCheckbox:checked ~ #navPages {
             top: 95%;
             opacity: 1;
             transition: all 0.5s ease-in-out;
         }
 
-        #mobileNavCheckbox:checked ~ .mobileHamburgerContainer #mobileBarOne {
+        #mobileNavCheckbox:checked ~ #mobileHamburgerContainer #mobileBarOne {
             transform-origin: top right;
             @include animatedNavBars (-41deg);
         }
 
-        #mobileNavCheckbox:checked ~ .mobileHamburgerContainer #mobileBarTwo {
+        #mobileNavCheckbox:checked ~ #mobileHamburgerContainer #mobileBarTwo {
             background: transparent;
         }
 
-        #mobileNavCheckbox:checked ~ .mobileHamburgerContainer #mobileBarThree {
+        #mobileNavCheckbox:checked ~ #mobileHamburgerContainer #mobileBarThree {
             transform-origin: bottom right;
             @include animatedNavBars (41deg);
         }
 
-        .mobileHamburgerContainer {
+        #mobileHamburgerContainer {
             @include gridCenter();
             position: relative;
             width: 28px;
@@ -87,7 +87,7 @@ header {
             }
         }
 
-        .navPages {
+        #navPages {
             @include gridCenter();
             position: absolute;
             top: -60vh;

@@ -53,7 +53,7 @@ header > a #logoInnerCircle {
   font-size: 0.85em;
 }
 
-header .mobileHamburgerMenu #mobileNavCheckbox {
+header #mobileHamburgerMenu #mobileNavCheckbox {
   position: absolute;
   width: 28px;
   height: 28px;
@@ -61,14 +61,14 @@ header .mobileHamburgerMenu #mobileNavCheckbox {
   z-index: 5;
 }
 
-header .mobileHamburgerMenu #mobileNavCheckbox:checked ~ .navPages {
+header #mobileHamburgerMenu #mobileNavCheckbox:checked ~ #navPages {
   top: 95%;
   opacity: 1;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-header .mobileHamburgerMenu #mobileNavCheckbox:checked ~ .mobileHamburgerContainer #mobileBarOne {
+header #mobileHamburgerMenu #mobileNavCheckbox:checked ~ #mobileHamburgerContainer #mobileBarOne {
   -webkit-transform-origin: top right;
           transform-origin: top right;
   -webkit-transform: rotate(-41deg);
@@ -77,11 +77,11 @@ header .mobileHamburgerMenu #mobileNavCheckbox:checked ~ .mobileHamburgerContain
   transition: all 0.4s ease-in-out;
 }
 
-header .mobileHamburgerMenu #mobileNavCheckbox:checked ~ .mobileHamburgerContainer #mobileBarTwo {
+header #mobileHamburgerMenu #mobileNavCheckbox:checked ~ #mobileHamburgerContainer #mobileBarTwo {
   background: transparent;
 }
 
-header .mobileHamburgerMenu #mobileNavCheckbox:checked ~ .mobileHamburgerContainer #mobileBarThree {
+header #mobileHamburgerMenu #mobileNavCheckbox:checked ~ #mobileHamburgerContainer #mobileBarThree {
   -webkit-transform-origin: bottom right;
           transform-origin: bottom right;
   -webkit-transform: rotate(41deg);
@@ -90,7 +90,7 @@ header .mobileHamburgerMenu #mobileNavCheckbox:checked ~ .mobileHamburgerContain
   transition: all 0.4s ease-in-out;
 }
 
-header .mobileHamburgerMenu .mobileHamburgerContainer {
+header #mobileHamburgerMenu #mobileHamburgerContainer {
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -100,7 +100,7 @@ header .mobileHamburgerMenu .mobileHamburgerContainer {
   z-index: 4;
 }
 
-header .mobileHamburgerMenu .mobileHamburgerContainer .navBars {
+header #mobileHamburgerMenu #mobileHamburgerContainer .navBars {
   width: 30px;
   height: 3px;
   background: white;
@@ -111,7 +111,7 @@ header .mobileHamburgerMenu .mobileHamburgerContainer .navBars {
   transition: all 0.4s ease-in-out;
 }
 
-header .mobileHamburgerMenu .navPages {
+header #mobileHamburgerMenu #navPages {
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -127,7 +127,7 @@ header .mobileHamburgerMenu .navPages {
   transition: all 0.5s ease-in-out;
 }
 
-header .mobileHamburgerMenu .navPages a {
+header #mobileHamburgerMenu #navPages a {
   width: 100%;
   padding: 5% 0%;
   text-decoration: none;
@@ -161,7 +161,7 @@ header .mobileHamburgerMenu .navPages a {
 }
 
 #callButton p {
-  font-size: 0.8em;
+  font-size: 0.85em;
 }
 
 * {
@@ -182,17 +182,17 @@ footer #subscriptionForm {
       -ms-flex-align: center;
           align-items: center;
   background: #283845;
-  padding: 5%;
+  padding: 10%;
   min-height: 40vh;
   color: white;
 }
 
 footer #subscriptionForm h1 {
-  font-size: 1.1em;
+  font-size: 1.0em;
 }
 
 footer #subscriptionForm p {
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 footer #subscriptionForm #firstName, footer #subscriptionForm #email {
@@ -285,20 +285,19 @@ main {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  row-gap: 2%;
-  margin-top: 30vh;
+  row-gap: 5%;
+  margin-top: 28vh;
   min-height: 80vh;
-  padding: 0% 5%;
+  padding: 0% 10%;
   text-align: center;
 }
 
 main h1 {
   color: white;
-  font-size: 1.1em;
+  font-size: 1.5em;
 }
 
 main p {
-  padding: 0% 5%;
   color: white;
   font-size: 0.8em;
 }
@@ -313,8 +312,8 @@ main .buttons {
   border-radius: 20px;
 }
 
-main img {
-  height: 300px;
-  margin-bottom: 30px;
+main #heroPizzaImage {
+  width: 225px;
+  margin-bottom: 30vh;
 }
 /*# sourceMappingURL=style.css.map */

@@ -7,16 +7,16 @@ footer {
         display: grid;
         align-items: center;
         background: $secondaryColor;
-        padding: 5%;
+        padding: 10%;
         min-height: 40vh;
         color: $neutralColorOne;
 
         h1 {
-            font-size: 1.1em;
+            font-size: 1.0em;
         }
 
         p {
-            font-size: 0.9em;
+            font-size: 0.8em;
         }
 
         #firstName, #email {

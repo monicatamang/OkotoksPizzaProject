@@ -1,23 +1,30 @@
 @import "../partials/globals";
 @import "../partials/header";
+@import "../partials/callButton";
+@import "../partials/footer";
 
-.aboutSection {
+section {
     @include gridCenter();
-    row-gap: 6%;
-    padding: 0% 8%;
+    row-gap: 5%;
+    margin-top: 16vh;
+    padding: 0% 10%;
     color: $neutralColorOne;
 
     article {
         display: grid;
-        grid-template-rows: auto auto;
-        row-gap: 3%;
+        row-gap: 5%;
 
         h1 {
             font-family: $titleFont;
         }
     
         p {
-            font-size: 0.8em;
+            font-size: 0.85em;
         }
+    }
+
+    #introVideo {
+        width: 100%;
+        border: 1px solid $neutralColorOne;
     }
 }
