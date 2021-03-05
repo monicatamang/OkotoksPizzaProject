@@ -155,11 +155,11 @@ header #mobileHamburgerMenu #navPages a {
   position: fixed;
   bottom: 2%;
   width: 100%;
-  background: white;
+  background: #283845;
 }
 
 #callButton a {
-  color: #202C39;
+  color: white;
   text-decoration: none;
   padding: 5% 0%;
   width: 100%;

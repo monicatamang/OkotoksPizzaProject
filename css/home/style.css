@@ -149,11 +149,11 @@ header #mobileHamburgerMenu #navPages a {
   position: fixed;
   bottom: 2%;
   width: 100%;
-  background: white;
+  background: #283845;
 }
 
 #callButton a {
-  color: #202C39;
+  color: white;
   text-decoration: none;
   padding: 5% 0%;
   width: 100%;
@@ -244,20 +244,17 @@ footer #mobileFooterSpacer {
   padding: 6% 0%;
 }
 
-.banner {
+#infoBanner {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  -ms-grid-columns: 1fr auto 1fr;
+      grid-template-columns: 1fr auto 1fr;
   position: fixed;
+  top: 12.2%;
   width: 100%;
   min-height: 5vh;
   text-align: center;
-}
-
-#infoBanner {
-  top: 12.2%;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
   background: #283845;
 }
 
@@ -267,26 +264,12 @@ footer #mobileFooterSpacer {
   font-size: 0.75em;
 }
 
-#openTimes {
-  top: 17.5%;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
-  background: white;
-}
-
-#openTimes p {
-  margin: 5%;
-  color: #283845;
-  font-weight: bold;
-  font-size: 0.6em;
-}
-
 main {
   display: -ms-grid;
   display: grid;
   place-items: center;
   row-gap: 5%;
-  margin-top: 28vh;
+  margin-top: 25vh;
   min-height: 80vh;
   padding: 0% 10%;
   text-align: center;
@@ -294,12 +277,17 @@ main {
 
 main h1 {
   color: white;
-  font-size: 1.5em;
+  font-family: "Lora", serif;
+  font-size: 1.2em;
 }
 
-main p {
+main article {
+  line-height: 25px;
+}
+
+main article p {
   color: white;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 main .buttons {
@@ -314,6 +302,7 @@ main .buttons {
 
 main #heroPizzaImage {
   width: 225px;
-  margin-bottom: 30vh;
+  margin-top: 8%;
+  margin-bottom: 25vh;
 }
 /*# sourceMappingURL=style.css.map */
