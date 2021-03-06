@@ -5,10 +5,12 @@
 
 section {
     @include gridCenter();
-    row-gap: 3%;
+    row-gap: 5%;
     margin-top: 15vh;
     margin-bottom: 53vh;
     padding: 0% 10%;
+    max-width: 100vw;
+    // overflow: hidden;
     color: $neutralColorOne;
 
     h1 {
@@ -30,7 +32,10 @@ section {
     }
 
     #salePoster {
+        width: 87%;
+        padding: 7%;
         background: $neutralColorOne;
+        border-radius: 3px;
         color: $neutralColorTwo;
 
         >h1 {
@@ -41,22 +46,69 @@ section {
         }
     }
 
-    .itemCard {
-        display: grid;
-        align-items: center;
-        width: 90%;
-        padding: 7%;
-        background: $secondaryColor;
+    article {
+        width: 100%;
+        overflow: hidden;
         border-radius: 3px;
         box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.5);
 
-        >h1 {
-            font-size: 0.9em;
+        .itemCard {
+            display: grid;
+            align-items: center;
+            padding: 8%;
+            background: $secondaryColor;
+    
+            >h1 {
+                font-size: 0.9em;
+            }
+            
+            p {
+                font-size: 0.7em;
+                margin-top: 5%;
+            }
+    
+            &:active {
+                box-shadow: 0px 0px 0px rgba(128, 128, 128, 0.5);
+            }
+
+            &:hover ~ .sidePanel {
+                opacity: 1;
+                right: 0;
+                transition: all 0.5s ease-in-out;
+            }
         }
-        
-        p {
-            font-size: 0.7em;
-            margin-top: 5%;
+
+        .sidePanel {
+            @include gridCenter();
+            position: absolute;
+            top: 0;
+            right: -100%;
+            opacity: 0;
+            width: 55%;
+            height: 100%;
+            padding: 10%;
+            background: $secondaryColor;
+            text-align: center;
+            transition: all 0.5s ease-in-out;
+
+            p {
+                font-size: 0.8em;
+            }
+
+            .itemPrice {
+                @include gridCenter();
+                grid-template-columns: auto auto;
+                width: 70%;
+                text-align: center;
+                font-size: 1.3em;
+
+                .itemSize {
+                    background: $neutralColorOne;
+                    color: $neutralColorTwo;
+                    padding: 10%;
+                    border-radius: 3px;
+                }
+            }
         }
     }
 }

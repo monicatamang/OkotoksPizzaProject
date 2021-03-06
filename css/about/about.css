@@ -330,7 +330,7 @@ section {
   place-items: center;
   row-gap: 3%;
   margin-top: 15vh;
-  margin-bottom: 37vh;
+  margin-bottom: 40vh;
   padding: 0% 10%;
   color: #393e46;
 }
@@ -341,7 +341,7 @@ section h1 {
 
 section p {
   font-size: 0.8em;
-  line-height: 1.7em;
+  line-height: 25px;
 }
 
 section #introVideo {
