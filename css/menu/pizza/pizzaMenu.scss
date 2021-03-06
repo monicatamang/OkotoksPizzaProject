@@ -30,6 +30,8 @@ section {
     }
 
     #salePoster {
+        background: $neutralColorOne;
+        color: $neutralColorTwo;
 
         >h1 {
             font-size: 0.9em;
@@ -44,8 +46,9 @@ section {
         align-items: center;
         width: 90%;
         padding: 7%;
+        background: $secondaryColor;
         border-radius: 3px;
-        box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.3);
+        box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.5);
 
         >h1 {
             font-size: 0.9em;
