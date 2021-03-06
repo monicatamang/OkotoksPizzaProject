@@ -1,0 +1,32 @@
+@import "../../partials/globals";
+@import "../../partials/header";
+@import "../../partials/callButton";
+@import "../../partials/footer";
+
+section {
+    @include gridCenter();
+    margin-top: 15vh;
+    margin-bottom: 100vh;
+    padding: 0% 5%;
+    color: $neutralColorOne;
+
+    h1 {
+        font-family: $titleFont;
+    }
+
+    #navMenuPages {
+        @include gridCenter();
+        grid-template-columns: auto auto auto auto;
+        width: 90%;
+        margin-top: 7%;
+        border-radius: 5px;
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            color: $neutralColorOne;
+            font-size: 0.8em;
+        }
+    }
+}
+
