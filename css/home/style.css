@@ -1,6 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap");
+@-webkit-keyframes restaurantSlideshow {
+  25% {
+    background: url(/images/restaurant/restaurantImage2.jpg);
+  }
+  50% {
+    background: url(/images/restaurant/restaurantImage3.jpg);
+  }
+  75% {
+    background: url(/images/restaurant/restaurantImage4.jpg);
+  }
+  100% {
+    background: url(/images/restaurant/restaurantImage5.jpg);
+  }
+}
+@keyframes restaurantSlideshow {
+  25% {
+    background: url(/images/restaurant/restaurantImage2.jpg);
+  }
+  50% {
+    background: url(/images/restaurant/restaurantImage3.jpg);
+  }
+  75% {
+    background: url(/images/restaurant/restaurantImage4.jpg);
+  }
+  100% {
+    background: url(/images/restaurant/restaurantImage5.jpg);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -137,6 +166,21 @@ header #mobileHamburgerMenu #navPages a {
   font-weight: bold;
 }
 
+@keyframes restaurantSlideshow {
+  25% {
+    background: url(/images/restaurant/restaurantImage2.jpg);
+  }
+  50% {
+    background: url(/images/restaurant/restaurantImage3.jpg);
+  }
+  75% {
+    background: url(/images/restaurant/restaurantImage4.jpg);
+  }
+  100% {
+    background: url(/images/restaurant/restaurantImage5.jpg);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -162,6 +206,21 @@ header #mobileHamburgerMenu #navPages a {
 
 #callButton p {
   font-size: 0.85em;
+}
+
+@keyframes restaurantSlideshow {
+  25% {
+    background: url(/images/restaurant/restaurantImage2.jpg);
+  }
+  50% {
+    background: url(/images/restaurant/restaurantImage3.jpg);
+  }
+  75% {
+    background: url(/images/restaurant/restaurantImage4.jpg);
+  }
+  100% {
+    background: url(/images/restaurant/restaurantImage5.jpg);
+  }
 }
 
 * {

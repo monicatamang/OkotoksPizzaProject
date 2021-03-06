@@ -5,26 +5,45 @@
 
 section {
     @include gridCenter();
-    row-gap: 5%;
-    margin-top: 16vh;
+    row-gap: 3%;
+    margin-top: 15vh;
+    margin-bottom: 33vh;
     padding: 0% 10%;
     color: $neutralColorOne;
 
-    article {
-        display: grid;
-        row-gap: 5%;
+    h1 {
+        font-family: $titleFont;
+    }
 
-        h1 {
-            font-family: $titleFont;
-        }
-    
-        p {
-            font-size: 0.85em;
-        }
+    p {
+        font-size: 0.8em;
     }
 
     #introVideo {
         width: 100%;
-        border: 1px solid $neutralColorOne;
+    }
+
+    .aboutContent {
+        display: grid;
+
+        h2 {
+            font-family: $titleFont;
+            font-size: 1.2em;
+            margin-bottom: 5%;
+        }
+
+        p {
+            margin: 3% 0%;
+        }
+
+        #slideshow {
+            @include gridCenter();
+            height: 35vh;
+            margin-top: 10%;
+            background: url(/images/restaurant/restaurantImage1.jpg);
+            background-size: cover;
+            background-position: center center;
+            animation: restaurantSlideshow 20s infinite 2s;
+        }
     }
 }

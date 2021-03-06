@@ -2,9 +2,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap");
+@-webkit-keyframes restaurantSlideshow {
+  25% {
+    background: url(/images/restaurant/restaurantImage2.jpg);
+  }
+  50% {
+    background: url(/images/restaurant/restaurantImage3.jpg);
+  }
+  75% {
+    background: url(/images/restaurant/restaurantImage4.jpg);
+  }
+  100% {
+    background: url(/images/restaurant/restaurantImage5.jpg);
+  }
+}
+@keyframes restaurantSlideshow {
+  25% {
+    background: url(/images/restaurant/restaurantImage2.jpg);
+  }
+  50% {
+    background: url(/images/restaurant/restaurantImage3.jpg);
+  }
+  75% {
+    background: url(/images/restaurant/restaurantImage4.jpg);
+  }
+  100% {
+    background: url(/images/restaurant/restaurantImage5.jpg);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+
+@keyframes restaurantSlideshow {
+  25% {
+    background: url(/images/restaurant/restaurantImage2.jpg);
+  }
+  50% {
+    background: url(/images/restaurant/restaurantImage3.jpg);
+  }
+  75% {
+    background: url(/images/restaurant/restaurantImage4.jpg);
+  }
+  100% {
+    background: url(/images/restaurant/restaurantImage5.jpg);
+  }
 }
 
 * {
@@ -143,6 +187,21 @@ header #mobileHamburgerMenu #navPages a {
   font-weight: bold;
 }
 
+@keyframes restaurantSlideshow {
+  25% {
+    background: url(/images/restaurant/restaurantImage2.jpg);
+  }
+  50% {
+    background: url(/images/restaurant/restaurantImage3.jpg);
+  }
+  75% {
+    background: url(/images/restaurant/restaurantImage4.jpg);
+  }
+  100% {
+    background: url(/images/restaurant/restaurantImage5.jpg);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -168,6 +227,21 @@ header #mobileHamburgerMenu #navPages a {
 
 #callButton p {
   font-size: 0.85em;
+}
+
+@keyframes restaurantSlideshow {
+  25% {
+    background: url(/images/restaurant/restaurantImage2.jpg);
+  }
+  50% {
+    background: url(/images/restaurant/restaurantImage3.jpg);
+  }
+  75% {
+    background: url(/images/restaurant/restaurantImage4.jpg);
+  }
+  100% {
+    background: url(/images/restaurant/restaurantImage5.jpg);
+  }
 }
 
 * {
@@ -254,28 +328,50 @@ section {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  row-gap: 5%;
-  margin-top: 16vh;
+  row-gap: 3%;
+  margin-top: 15vh;
+  margin-bottom: 33vh;
   padding: 0% 10%;
   color: white;
 }
 
-section article {
-  display: -ms-grid;
-  display: grid;
-  row-gap: 5%;
-}
-
-section article h1 {
+section h1 {
   font-family: "Lora", serif;
 }
 
-section article p {
-  font-size: 0.85em;
+section p {
+  font-size: 0.8em;
 }
 
 section #introVideo {
   width: 100%;
-  border: 1px solid white;
+}
+
+section .aboutContent {
+  display: -ms-grid;
+  display: grid;
+}
+
+section .aboutContent h2 {
+  font-family: "Lora", serif;
+  font-size: 1.2em;
+  margin-bottom: 5%;
+}
+
+section .aboutContent p {
+  margin: 3% 0%;
+}
+
+section .aboutContent #slideshow {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 35vh;
+  margin-top: 10%;
+  background: url(/images/restaurant/restaurantImage1.jpg);
+  background-size: cover;
+  background-position: center center;
+  -webkit-animation: restaurantSlideshow 20s infinite 2s;
+          animation: restaurantSlideshow 20s infinite 2s;
 }
 /*# sourceMappingURL=about.css.map */
