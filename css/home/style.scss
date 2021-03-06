@@ -21,7 +21,7 @@
 
 main {
     @include gridCenter();
-    row-gap: 5%;
+    row-gap: 30px;
     margin-top: 25vh;
     min-height: 80vh;
     padding: 0% 10%;
@@ -46,7 +46,6 @@ main {
         text-decoration: none;
         color: $neutralColorTwo;
         font-size: 0.8em;
-        // font-weight: bold;
         padding: 4% 7%;
         background: $neutralColorOne;
         border-radius: 20px;
@@ -54,7 +53,5 @@ main {
 
     #heroPizzaImage {
         width: 225px;
-        margin-top: 8%;
-        margin-bottom: 25vh;
     }
 }

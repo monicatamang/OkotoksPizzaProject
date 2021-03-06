@@ -5,9 +5,8 @@
 
 section {
     @include gridCenter();
-    row-gap: 3%;
+    row-gap: 30px;
     margin-top: 15vh;
-    margin-bottom: 40vh;
     padding: 0% 10%;
     color: $neutralColorOne;
 
@@ -26,25 +25,21 @@ section {
 
     .aboutContent {
         display: grid;
+        row-gap: 20px;
 
         h2 {
             font-family: $titleFont;
             font-size: 1.2em;
-            margin-bottom: 5%;
-        }
-
-        p {
-            margin: 3% 0%;
         }
 
         #slideshow {
             @include gridCenter();
             height: 35vh;
-            margin-top: 10%;
+            // margin-top: 10%;
             background: url(/images/restaurant/restaurantImage1.jpg);
             background-size: cover;
             background-position: center center;
-            animation: restaurantSlideshow 20s infinite 2s;
+            animation: restaurantSlideshow 10s infinite 10s;
         }
     }
 }
