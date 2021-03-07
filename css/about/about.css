@@ -213,7 +213,7 @@ header #mobileHamburgerMenu #navPages a {
   position: fixed;
   bottom: 2%;
   width: 100%;
-  background: #eeeeee;
+  background: white;
   -webkit-box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.4);
           box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.4);
 }
