@@ -2,7 +2,6 @@
 @import "../../partials/header";
 @import "../../partials/callButton";
 @import "../../partials/footer";
-// @import "../../partials/menuItemCard";
 
 section {
     @include gridCenter();
@@ -92,4 +91,3 @@ section {
         }
     }
 }
-

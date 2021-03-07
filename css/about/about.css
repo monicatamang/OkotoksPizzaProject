@@ -367,7 +367,7 @@ section .aboutContent #slideshow {
   background: url(/images/restaurant/restaurantImage1.jpg);
   background-size: cover;
   background-position: center center;
-  -webkit-animation: restaurantSlideshow 10s infinite 10s;
-          animation: restaurantSlideshow 10s infinite 10s;
+  -webkit-animation: restaurantSlideshow 5s infinite 5s;
+          animation: restaurantSlideshow 5s infinite 5s;
 }
 /*# sourceMappingURL=about.css.map */
