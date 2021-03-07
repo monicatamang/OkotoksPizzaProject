@@ -60,31 +60,31 @@ section {
             transform: scaleX(1);
             transition: all 0.5s ease-in-out;
         }
-    }
 
-    .sidePanel {
-        @include gridCenter();
-        position: fixed;
-        top: 0;
-        right: 0;
-        transform: scaleX(0);
-        transform-origin: right;
-        opacity: 0;
-        z-index: 10;
-        width: 55%;
-        height: 80%;
-        padding: 10%;
-        background: $secondaryColor;
-        text-align: center;
-        transition: all 0.5s ease-in-out;
-
-        p {
-            font-size: 0.7em;
-        }
-
-        .generalItemPrice {
-            font-size: 1.2em;
-            font-weight: bold;
+        .sidePanel {
+            @include gridCenter();
+            position: fixed;
+            top: 0;
+            right: 0;
+            transform: scaleX(0);
+            transform-origin: right;
+            opacity: 0;
+            z-index: 10;
+            width: 55%;
+            height: 80%;
+            padding: 10%;
+            background: $secondaryColor;
+            text-align: center;
+            transition: all 0.5s ease-in-out;
+    
+            p {
+                font-size: 0.7em;
+            }
+    
+            .generalItemPrice {
+                font-size: 1.2em;
+                font-weight: bold;
+            }
         }
     }
 }

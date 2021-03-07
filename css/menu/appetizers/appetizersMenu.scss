@@ -32,8 +32,13 @@ section {
         }
     }
 
-    article {
-        width: 100%;
+    .itemCard {
+        display: grid;
+        align-items: center;
+        row-gap: 14px;
+        width: 85%;
+        padding: 8%;
+        background: $secondaryColor;
         border-radius: 3px;
         box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.5);
 
@@ -41,27 +46,19 @@ section {
             box-shadow: 0px 0px 0px rgba(128, 128, 128, 0.5);
         }
 
-        .itemCard {
-            display: grid;
-            align-items: center;
-            padding: 8%;
-            background: $secondaryColor;
-    
-            >h1 {
-                font-size: 0.9em;
-            }
-            
-            p {
-                font-size: 0.68em;
-                margin-top: 5%;
-            }
+        >h1 {
+            font-size: 0.9em;
+        }
+        
+        p {
+            font-size: 0.68em;
+        }
 
-            &:hover ~ .sidePanel {
-                opacity: 1;
-                right: 0;
-                transform: scaleX(1);
-                transition: all 0.5s ease-in-out;
-            }
+        &:hover .sidePanel {
+            opacity: 1;
+            right: 0;
+            transform: scaleX(1);
+            transition: all 0.5s ease-in-out;
         }
 
         .sidePanel {
@@ -79,11 +76,11 @@ section {
             background: $secondaryColor;
             text-align: center;
             transition: all 0.5s ease-in-out;
-
+    
             p {
                 font-size: 0.7em;
             }
-
+    
             .generalItemPrice {
                 font-size: 1.2em;
                 font-weight: bold;

@@ -397,7 +397,7 @@ section .itemCard:hover .sidePanel {
   transition: all 0.5s ease-in-out;
 }
 
-section .sidePanel {
+section .itemCard .sidePanel {
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -419,11 +419,11 @@ section .sidePanel {
   transition: all 0.5s ease-in-out;
 }
 
-section .sidePanel p {
+section .itemCard .sidePanel p {
   font-size: 0.7em;
 }
 
-section .sidePanel .generalItemPrice {
+section .itemCard .sidePanel .generalItemPrice {
   font-size: 1.2em;
   font-weight: bold;
 }

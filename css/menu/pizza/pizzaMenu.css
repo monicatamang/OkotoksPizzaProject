@@ -361,7 +361,7 @@ section #navMenuPages a:hover {
 }
 
 section #salePoster {
-  width: 87%;
+  width: 88%;
   padding: 7%;
   background: #393e46;
   border-radius: 3px;
@@ -375,38 +375,35 @@ section #salePoster > h1 {
   letter-spacing: 1px;
 }
 
-section article {
-  width: 100%;
-  border-radius: 3px;
-  -webkit-box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.5);
-          box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.5);
-}
-
-section article:active {
-  -webkit-box-shadow: 0px 0px 0px rgba(128, 128, 128, 0.5);
-          box-shadow: 0px 0px 0px rgba(128, 128, 128, 0.5);
-}
-
-section article .itemCard {
+section .itemCard {
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  row-gap: 14px;
+  width: 85%;
   padding: 8%;
   background: #eeeeee;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.5);
+          box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.5);
 }
 
-section article .itemCard > h1 {
+section .itemCard:active {
+  -webkit-box-shadow: 0px 0px 0px rgba(128, 128, 128, 0.5);
+          box-shadow: 0px 0px 0px rgba(128, 128, 128, 0.5);
+}
+
+section .itemCard > h1 {
   font-size: 0.9em;
 }
 
-section article .itemCard p {
+section .itemCard p {
   font-size: 0.68em;
-  margin-top: 5%;
 }
 
-section article .itemCard:hover ~ .sidePanel {
+section .itemCard:hover .sidePanel {
   opacity: 1;
   right: 0;
   -webkit-transform: scaleX(1);
@@ -415,7 +412,7 @@ section article .itemCard:hover ~ .sidePanel {
   transition: all 0.5s ease-in-out;
 }
 
-section article .sidePanel {
+section .itemCard .sidePanel {
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -437,11 +434,11 @@ section article .sidePanel {
   transition: all 0.5s ease-in-out;
 }
 
-section article .sidePanel p {
+section .itemCard .sidePanel p {
   font-size: 0.7em;
 }
 
-section article .sidePanel .itemPrice {
+section .itemCard .sidePanel .itemPrice {
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -453,7 +450,7 @@ section article .sidePanel .itemPrice {
   font-weight: bold;
 }
 
-section article .sidePanel .itemPrice .itemSize {
+section .itemCard .sidePanel .itemPrice .itemSize {
   background: #393e46;
   color: white;
   padding: 10%;
