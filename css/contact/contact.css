@@ -363,7 +363,7 @@ section > h1 {
 section .contactPageSections {
   display: -ms-grid;
   display: grid;
-  row-gap: 10px;
+  row-gap: 15px;
   font-size: 0.8em;
 }
 

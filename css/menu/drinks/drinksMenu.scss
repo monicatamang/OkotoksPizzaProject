@@ -58,7 +58,6 @@ section {
         }
 
         &:hover .sidePanel {
-            right: 0;
             transform: translateX(0%);
             transition: all 0.5s ease-in-out;
         }
