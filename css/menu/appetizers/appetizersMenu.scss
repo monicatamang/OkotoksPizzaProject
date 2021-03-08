@@ -3,6 +3,13 @@
 @import "../../partials/callButton";
 @import "../../partials/footer";
 
+#navPages {
+
+    #currentPage {
+        background: $secondaryColor;
+    }
+}
+
 section {
     @include gridCenter();
     row-gap: 20px;
@@ -27,8 +34,8 @@ section {
             font-size: 0.9em;
         }
 
-        a:hover {
-            text-decoration: underline;
+        #currentCategory {
+            font-weight: bold;
         }
     }
 

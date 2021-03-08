@@ -325,6 +325,10 @@ footer #mobileFooterSpacer {
   padding: 6% 0%;
 }
 
+#navPages #currentPage {
+  background: #eeeeee;
+}
+
 section {
   display: -ms-grid;
   display: grid;
@@ -356,8 +360,8 @@ section #navMenuPages a {
   font-size: 0.9em;
 }
 
-section #navMenuPages a:hover {
-  text-decoration: underline;
+section #navMenuPages #currentCategory {
+  font-weight: bold;
 }
 
 section .itemCard {

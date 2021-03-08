@@ -304,6 +304,10 @@ footer #mobileFooterSpacer {
   padding: 6% 0%;
 }
 
+#navPages #currentPage {
+  background: #eeeeee;
+}
+
 #infoBanner {
   display: -ms-grid;
   display: grid;

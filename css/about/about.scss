@@ -3,6 +3,13 @@
 @import "../partials/callButton";
 @import "../partials/footer";
 
+#navPages {
+
+    #currentPage {
+        background: $secondaryColor;
+    }
+}
+
 section {
     @include gridCenter();
     row-gap: 30px;

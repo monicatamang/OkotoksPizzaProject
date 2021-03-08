@@ -2,7 +2,13 @@
 @import "../../partials/header";
 @import "../../partials/callButton";
 @import "../../partials/footer";
-// @import "../../partials/menuItemCard";
+
+#navPages {
+
+    #currentPage {
+        background: $secondaryColor;
+    }
+}
 
 section {
     @include gridCenter();
@@ -28,8 +34,8 @@ section {
             font-size: 0.9em;
         }
 
-        a:hover {
-            text-decoration: underline;
+        #currentCategory {
+            font-weight: bold;
         }
     }
 

@@ -2,6 +2,13 @@
 @import "../partials/callButton";
 @import "../partials/footer";
 
+#navPages {
+
+    #currentPage {
+        background: $secondaryColor;
+    }
+}
+
 #infoBanner {
     @include gridCenter();
     grid-template-columns: 1fr auto 1fr;
