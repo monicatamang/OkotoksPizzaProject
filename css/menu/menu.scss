@@ -1,0 +1,189 @@
+@import "../partials/globals";
+@import "../partials/header";
+@import "../partials/callButton";
+@import "../partials/footer";
+
+#currentPage {
+    background: $secondaryColor;
+}
+
+#menuNav {
+    @include gridCenter();
+    row-gap: 20px;
+    margin-top: 15vh;
+
+    >h1 {
+        font-family: $titleFont;
+    }
+
+    .menuRadioButtons {
+        position: absolute;
+        z-index: 1;
+        width: 40px;
+        height: 40px;
+        opacity: 0;
+    }
+
+    #categoryOne {
+        top: 22%;
+        left: 12%;
+
+        &:checked ~ #pizzaMenu {
+            display: grid;
+        }
+
+        &:checked ~ #navMenuPages #pizza {
+            font-weight: bold;
+        }
+    }
+
+    #categoryTwo {
+        top: 22%;
+        left: 28%;
+
+        &:checked ~ #pastaMenu {
+            display: grid;
+        }
+
+        &:checked ~ #navMenuPages #pasta {
+            font-weight: bold;
+        }
+    }
+
+    #categoryThree {
+        top: 22%;
+        left: 50%;
+
+        &:checked ~ #appetizersMenu {
+            display: grid;
+        }
+
+        &:checked ~ #navMenuPages #appetizers {
+            font-weight: bold;
+        }
+    }
+
+    #categoryFour {
+        top: 22%;
+        left: 74%;
+
+        &:checked ~ #drinksMenu {
+            display: grid;
+            width: 80%;
+        }
+
+        &:checked ~ #navMenuPages #drinks {
+            font-weight: bold;
+        }
+    }
+
+    #navMenuPages {
+        position: relative;
+        z-index: -1;
+        @include gridCenter();
+        grid-template-columns: auto auto auto auto;
+        width: 80%;
+        border-radius: 5px;
+        text-align: center;
+
+        p {
+            font-size: 0.9em;
+        }
+    }
+
+    .menu {
+        @include gridCenter();
+        row-gap: 20px;
+        min-height: 90vh;
+        padding: 0% 10%;
+        color: $neutralColorOne;
+        display: none;
+    
+        h1 {
+            font-family: $titleFont;
+        }
+    
+        #salePoster {
+            width: 88%;
+            padding: 7%;
+            background: $neutralColorOne;
+            border-radius: 3px;
+            color: $neutralColorTwo;
+        
+            >h1 {
+                font-size: 0.9em;
+                text-align: center;
+                margin: 1% 0%;
+                letter-spacing: 1px;
+            }
+        }
+    
+        .itemCard {
+            display: grid;
+            align-items: center;
+            row-gap: 14px;
+            width: 85%;
+            padding: 8%;
+            background: $secondaryColor;
+            border-radius: 3px;
+            box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.5);
+    
+            &:active {
+                box-shadow: none;
+            }
+    
+            >h1 {
+                font-size: 0.9em;
+            }
+            
+            p {
+                font-size: 0.68em;
+            }
+    
+            &:hover .sidePanel {
+                transform: translateX(0%);
+                transition: all 0.5s ease-in-out;
+            }
+    
+            .sidePanel {
+                @include gridCenter();
+                position: fixed;
+                top: 0;
+                right: 0;
+                transform: translateX(101%);
+                width: 55%;
+                height: 78%;
+                padding: 10%;
+                background: $secondaryColor;
+                text-align: center;
+                transition: all 0.5s ease-in-out;
+    
+                p {
+                    font-size: 0.7em;
+                }
+    
+                .itemPrice {
+                    @include gridCenter();
+                    grid-template-columns: auto auto;
+                    width: 70%;
+                    text-align: center;
+                    font-size: 1.3em;
+                    font-weight: bold;
+    
+                    .itemSize {
+                        background: $neutralColorOne;
+                        color: $neutralColorTwo;
+                        padding: 10%;
+                        border-radius: 3px;
+                        font-weight: normal;
+                    }
+                }
+    
+                .generalItemPrice {
+                    font-size: 1.2em;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
