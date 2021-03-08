@@ -302,6 +302,7 @@ footer #subscriptionForm .inputSubscriptionForm {
 footer #subscriptionForm #subscribeButton {
   font-size: 0.9em;
   background: #393e46;
+  border-radius: 3px;
   color: white;
   width: 40%;
   padding: 3% 0%;

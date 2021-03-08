@@ -50,5 +50,6 @@ main {
         @include linksStyle($neutralColorTwo, 0.8em);
         padding: 4% 7%;
         background: $neutralColorOne;
+        border-radius: 3px;
     }
 }
