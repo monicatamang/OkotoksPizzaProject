@@ -2,11 +2,8 @@
 @import "../partials/callButton";
 @import "../partials/footer";
 
-#navPages {
-
-    #currentPage {
-        background: $secondaryColor;
-    }
+#currentPage {
+    background: $secondaryColor;
 }
 
 #infoBanner {
@@ -50,15 +47,8 @@ main {
     }
 
     .buttons {
-        text-decoration: none;
-        color: $neutralColorTwo;
-        font-size: 0.8em;
+        @include linksStyle($neutralColorTwo, 0.8em);
         padding: 4% 7%;
         background: $neutralColorOne;
-        // border-radius: 20px;
-    }
-
-    #heroPizzaImage {
-        width: 225px;
     }
 }
