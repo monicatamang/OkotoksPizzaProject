@@ -1,0 +1,43 @@
+@import "../partials/globals";
+@import "../partials/header";
+@import "../partials/callButton";
+@import "../partials/footer";
+
+section {
+    display: grid;
+    row-gap: 20px;
+    margin-top: 15vh;
+    padding: 0% 10%;
+    color: $neutralColorOne;
+
+    h1 {
+        font-family: $titleFont;
+        text-align: center;
+    }
+
+    p {
+        font-size: 0.8em;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    h5 {
+        font-family: $titleFont;
+    }
+
+    .inputReservationForm {
+        padding: 3% 2%;
+        border: 0.1px solid $neutralColorOne;
+        font-family: $bodyFont;
+    }
+
+    #reserveButton {
+        justify-self: center;
+        width: 40%;
+        margin-top: 10%;
+        padding: 2% 0%;
+        background: $neutralColorOne;
+        color: $neutralColorTwo;
+        font-size: 0.9em;
+    }
+}

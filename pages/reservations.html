@@ -6,10 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservations</title>
     <link rel="shortcut icon" type="image/jpg" href="../images/favicon.png">
-    <link rel="stylesheet" href="../css/about/about.css">
+    <link rel="stylesheet" href="../css/reservations/reservations.css">
     <script src="https://kit.fontawesome.com/79c5ac932a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <header>
+        <a href="../index.html">
+            <div id="logoOuterCircle" class="logo">
+                <div id="logoInnerCircle" class="logo">OP</div>
+            </div>
+        </a>
+        <div id="mobileNavSpacer"></div>
+        <div id="mobileHamburgerMenu">
+            <input type="checkbox" name="mobileNavCheckbox" id="mobileNavCheckbox">
+            <div id="mobileHamburgerContainer">
+                <span id="mobileBarOne" class="navBars"></span>
+                <span id="mobileBarTwo" class="navBars"></span>
+                <span id="mobileBarThree" class="navBars"></span>
+            </div>
+            <nav id="navPages">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="pizzaMenu.html">Menu</a>
+                <a href="reservations.html">Reservations</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <h1>Reservations</h1>
+        <p>Please fill out the form below.</p>
+        <h5>First Name*</h5>
+        <input type="text" name="firstName" id="firstNameReserve" class="inputReservationForm">
+        <h5>Last Name*</h5>
+        <input type="text" name="lastName" id="lastNameReserve" class="inputReservationForm">
+        <h5>Email*</h5>
+        <input type="text" name="email" id="emailReservation" class="inputReservationForm">
+        <h5>Date*</h5>
+        <input type="date" name="date" id="dateReservation" class="inputReservationForm">
+        <h5>Time*</h5>
+        <input type="time" name="time" id="timeReservation" class="inputReservationForm">
+        <h5>Number of Attendees*</h5>
+        <select name="attendees" id="numberOfAttendees" class="inputReservationForm">
+            <option value="0">Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="9">10</option>
+        </select>
+        <p id="reserveButton">Reserve</p>
+    </section>
+    <article id="callButton">
+        <a href="tel:4035555555">
+            <p>Call <i class="fas fa-phone-alt"></i> (403) 555-5555 to Order</p>
+        </a>
+    </article>
+    <footer>
+        <article id="subscriptionForm">
+            <h1><i class="far fa-envelope"></i> Subscribe to our Newsletter</h1>
+            <p>Stay updated with new items and sales!</p>
+            <input type="text" name="firstName" id="firstName" placeholder="First Name*" class="inputSubscriptionForm">
+            <input type="email" name="email" placeholder="Email*" id="email" class="inputSubscriptionForm">
+            <p id="subscribeButton">Subscribe</p>
+        </article>
+        <article id="socialLinksAndCopyright">
+            <div id="socialMedia">
+                <a target="_blank" href="https://linkedin.com">
+                    <img src="../images/socialMedia/linkedinLogo.svg" alt="A LinkedIn Logo where the letters 'i' and 'n' are a white colour and is inside of a black circle">
+                </a>
+                <a target="_blank" href="https://facebook.com">
+                    <img src="../images/socialMedia/facebookLogo.svg" alt="A Facebook Logo where the letter 'f' is a white colour and is inside of a black circle">
+                </a>
+                <a target="_blank" href="https://instagram.com">
+                    <img src="../images/socialMedia/instagramLogo.svg" alt="A Instagram Logo where logo symbol is a white colour and is inside of a black circle">
+                </a>
+                <a target="_blank" href="https://twitter.com">
+                    <img src="../images/socialMedia/twitterLogo.svg" alt="A Twitter Logo where the 'bird' is a white colour and is inside of a black circle">
+                </a>
+            </div>
+            <p id="copyright">&copy; 2021 Okotoks Pizza. All Rights Reserved.</p>
+        </article>
+        <div id="mobileFooterSpacer"></div>
+    </footer>
 </body>
 </html>

@@ -13,17 +13,17 @@ footer {
         color: $neutralColorOne;
 
         h1 {
-            font-size: 1.0em;
+            font-size: 1em;
         }
 
         p {
             font-size: 0.8em;
         }
 
-        #firstName, #email {
-            padding: 2% 3%;
+        .inputSubscriptionForm {
+            padding: 3%;
             font-family: $bodyFont;
-            border: 1px solid $neutralColorOne;
+            border: 0.5px solid $neutralColorOne;
         }
 
         #subscribeButton {
@@ -33,7 +33,6 @@ footer {
             width: 40%;
             padding: 3% 0%;
             text-align: center;
-            // font-weight: bold;
         }
     }
 
