@@ -39,11 +39,88 @@ section {
 
         #slideshow {
             @include gridCenter();
-            height: 35vh;
-            background: url(/images/restaurant/restaurantImage1.jpg);
-            background-size: cover;
-            background-position: center center;
-            animation: restaurantSlideshow 5s infinite 5s;
+            position: relative;
+            height: 31vh;
+
+            .slideshowButton {
+                position: absolute;
+                top: 80%;
+                width: 20px;
+                height: 20px;
+                opacity: 0;
+                z-index: 1;
+            }
+
+            #buttonOne {
+                left: 14%;
+            }
+
+            #buttonTwo {
+                left: 30%;
+            }
+
+            #buttonThree {
+                left: 46%;
+            }
+
+            #buttonFour {
+                right: 30%;
+            }
+
+            #buttonFive {
+                right: 14%;
+            }
+
+            #buttonOne:checked ~ #restaurantOne, #buttonTwo:checked ~ #restaurantTwo, #buttonThree:checked ~ #restaurantThree, #buttonFour:checked ~ #restaurantFour, #buttonFive:checked ~ #restaurantFive {
+                opacity: 1;
+                transform: scaleX(1);
+            }
+
+            #buttonOne:checked ~ #slideshowNavigation #circleOne, #buttonTwo:checked ~ #slideshowNavigation #circleTwo, #buttonThree:checked ~ #slideshowNavigation #circleThree, #buttonFour:checked ~ #slideshowNavigation #circleFour, #buttonFive:checked ~ #slideshowNavigation #circleFive {
+                background: $neutralColorTwo;
+            } 
+
+            .restaurantImage {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transform: scaleX(0.8);
+                z-index: -1;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            #slideshowNavigation {
+                position: relative;
+                @include gridCenter();
+                grid-template-columns: auto auto auto auto auto;
+                width: 80%;
+                height: 80%;
+                z-index: -1;
+                
+                .circleNav {
+                    align-self: end;
+                    width: 15px;
+                    height: 15px;
+                    border: 2px solid $neutralColorTwo;
+                    border-radius: 100%;
+                }
+            }
         }
     }
 }
+
+// #slideshow {
+//     @include gridCenter();
+//     height: 35vh;
+//     background: url(/images/restaurant/restaurantImage1.jpg);
+//     background-size: cover;
+//     background-position: center center;
+//     animation: restaurantSlideshow 5s infinite 5s;
+// }   

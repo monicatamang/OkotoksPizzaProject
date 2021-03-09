@@ -18,14 +18,14 @@
 
     .menuRadioButtons {
         position: absolute;
-        z-index: 1;
+        top: 22%;
         width: 40px;
         height: 40px;
         opacity: 0;
+        z-index: 1;
     }
 
     #categoryOne {
-        top: 22%;
         left: 12%;
 
         &:checked ~ #pizzaMenu {
@@ -38,7 +38,6 @@
     }
 
     #categoryTwo {
-        top: 22%;
         left: 28%;
 
         &:checked ~ #pastaMenu {
@@ -51,7 +50,6 @@
     }
 
     #categoryThree {
-        top: 22%;
         left: 50%;
 
         &:checked ~ #appetizersMenu {
@@ -64,7 +62,6 @@
     }
 
     #categoryFour {
-        top: 22%;
         left: 74%;
 
         &:checked ~ #drinksMenu {
@@ -162,7 +159,7 @@
                     font-size: 0.7em;
                 }
     
-                .itemPrice {
+                .pizzaPrice {
                     @include gridCenter();
                     grid-template-columns: auto auto;
                     width: 70%;
@@ -170,7 +167,7 @@
                     font-size: 1.3em;
                     font-weight: bold;
     
-                    .itemSize {
+                    .pizzaSize {
                         background: $neutralColorOne;
                         color: $neutralColorTwo;
                         padding: 10%;
