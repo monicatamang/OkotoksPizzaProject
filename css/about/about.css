@@ -312,12 +312,12 @@ section .aboutContent #slideshow {
   display: grid;
   place-items: center;
   position: relative;
-  height: 31vh;
+  height: 36vh;
 }
 
 section .aboutContent #slideshow .slideshowButton {
   position: absolute;
-  top: 80%;
+  top: 90%;
   width: 20px;
   height: 20px;
   opacity: 0;
@@ -351,7 +351,7 @@ section .aboutContent #slideshow #buttonOne:checked ~ #restaurantOne, section .a
 }
 
 section .aboutContent #slideshow #buttonOne:checked ~ #slideshowNavigation #circleOne, section .aboutContent #slideshow #buttonTwo:checked ~ #slideshowNavigation #circleTwo, section .aboutContent #slideshow #buttonThree:checked ~ #slideshowNavigation #circleThree, section .aboutContent #slideshow #buttonFour:checked ~ #slideshowNavigation #circleFour, section .aboutContent #slideshow #buttonFive:checked ~ #slideshowNavigation #circleFive {
-  background: white;
+  background: #393e46;
 }
 
 section .aboutContent #slideshow .restaurantImage {
@@ -380,7 +380,7 @@ section .aboutContent #slideshow #slideshowNavigation {
   -ms-grid-columns: auto auto auto auto auto;
       grid-template-columns: auto auto auto auto auto;
   width: 80%;
-  height: 80%;
+  height: 100%;
   z-index: -1;
 }
 
@@ -390,7 +390,7 @@ section .aboutContent #slideshow #slideshowNavigation .circleNav {
       align-self: end;
   width: 15px;
   height: 15px;
-  border: 2px solid white;
+  border: 2px solid #393e46;
   border-radius: 100%;
 }
 /*# sourceMappingURL=about.css.map */

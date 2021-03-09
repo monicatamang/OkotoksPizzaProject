@@ -40,11 +40,11 @@ section {
         #slideshow {
             @include gridCenter();
             position: relative;
-            height: 31vh;
+            height: 36vh;
 
             .slideshowButton {
                 position: absolute;
-                top: 80%;
+                top: 90%;
                 width: 20px;
                 height: 20px;
                 opacity: 0;
@@ -77,7 +77,7 @@ section {
             }
 
             #buttonOne:checked ~ #slideshowNavigation #circleOne, #buttonTwo:checked ~ #slideshowNavigation #circleTwo, #buttonThree:checked ~ #slideshowNavigation #circleThree, #buttonFour:checked ~ #slideshowNavigation #circleFour, #buttonFive:checked ~ #slideshowNavigation #circleFive {
-                background: $neutralColorTwo;
+                background: $neutralColorOne;
             } 
 
             .restaurantImage {
@@ -102,14 +102,14 @@ section {
                 @include gridCenter();
                 grid-template-columns: auto auto auto auto auto;
                 width: 80%;
-                height: 80%;
+                height: 100%;
                 z-index: -1;
                 
                 .circleNav {
                     align-self: end;
                     width: 15px;
                     height: 15px;
-                    border: 2px solid $neutralColorTwo;
+                    border: 2px solid $neutralColorOne;
                     border-radius: 100%;
                 }
             }
