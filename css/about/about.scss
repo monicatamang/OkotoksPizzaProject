@@ -86,9 +86,10 @@ section {
                 left: 0;
                 width: 100%;
                 height: 100%;
+                z-index: -1;
+
                 opacity: 0;
                 transform: scaleX(0.8);
-                z-index: -1;
 
                 img {
                     width: 100%;
@@ -115,12 +116,3 @@ section {
         }
     }
 }
-
-// #slideshow {
-//     @include gridCenter();
-//     height: 35vh;
-//     background: url(/images/restaurant/restaurantImage1.jpg);
-//     background-size: cover;
-//     background-position: center center;
-//     animation: restaurantSlideshow 5s infinite 5s;
-// }   

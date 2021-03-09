@@ -14,6 +14,7 @@
 
     >h1 {
         font-family: $titleFont;
+        color: $neutralColorOne;
     }
 
     .menuRadioButtons {
@@ -27,51 +28,26 @@
 
     #categoryOne {
         left: 12%;
-
-        &:checked ~ #pizzaMenu {
-            display: grid;
-        }
-
-        &:checked ~ #navMenuPages #pizza {
-            font-weight: bold;
-        }
     }
 
     #categoryTwo {
         left: 28%;
-
-        &:checked ~ #pastaMenu {
-            display: grid;
-        }
-
-        &:checked ~ #navMenuPages #pasta {
-            font-weight: bold;
-        }
     }
 
     #categoryThree {
         left: 50%;
-
-        &:checked ~ #appetizersMenu {
-            display: grid;
-        }
-
-        &:checked ~ #navMenuPages #appetizers {
-            font-weight: bold;
-        }
     }
 
     #categoryFour {
         left: 74%;
+    }
 
-        &:checked ~ #drinksMenu {
-            display: grid;
-            width: 80%;
-        }
+    #categoryOne:checked ~ #pizzaMenu, #categoryTwo:checked ~ #pastaMenu, #categoryThree:checked ~ #appetizersMenu, #categoryFour:checked ~ #drinksMenu {
+        display: grid;
+    }
 
-        &:checked ~ #navMenuPages #drinks {
-            font-weight: bold;
-        }
+    #categoryOne:checked ~ #navMenuPages #pizza, #categoryTwo:checked ~ #navMenuPages #pasta, #categoryThree:checked ~ #navMenuPages #appetizers, #categoryFour:checked ~ #navMenuPages #drinks{
+        font-weight: bold;
     }
 
     #navMenuPages {
@@ -82,6 +58,7 @@
         width: 80%;
         border-radius: 5px;
         text-align: center;
+        color: $neutralColorOne;
 
         p {
             font-size: 0.9em;
@@ -147,12 +124,13 @@
                 position: fixed;
                 top: 0;
                 right: 0;
-                transform: translateX(101%);
                 width: 55%;
                 height: 78%;
                 padding: 10%;
                 background: $secondaryColor;
                 text-align: center;
+
+                transform: translateX(101%);
                 transition: all 0.5s ease-in-out;
     
                 p {
@@ -182,5 +160,9 @@
                 }
             }
         }
+    }
+
+    #drinksMenu {
+        width: 80%;
     }
 }

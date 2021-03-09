@@ -282,6 +282,7 @@ footer #mobileFooterSpacer {
 
 #menuNav > h1 {
   font-family: "Lora", serif;
+  color: #393e46;
 }
 
 #menuNav .menuRadioButtons {
@@ -297,52 +298,24 @@ footer #mobileFooterSpacer {
   left: 12%;
 }
 
-#menuNav #categoryOne:checked ~ #pizzaMenu {
-  display: -ms-grid;
-  display: grid;
-}
-
-#menuNav #categoryOne:checked ~ #navMenuPages #pizza {
-  font-weight: bold;
-}
-
 #menuNav #categoryTwo {
   left: 28%;
-}
-
-#menuNav #categoryTwo:checked ~ #pastaMenu {
-  display: -ms-grid;
-  display: grid;
-}
-
-#menuNav #categoryTwo:checked ~ #navMenuPages #pasta {
-  font-weight: bold;
 }
 
 #menuNav #categoryThree {
   left: 50%;
 }
 
-#menuNav #categoryThree:checked ~ #appetizersMenu {
-  display: -ms-grid;
-  display: grid;
-}
-
-#menuNav #categoryThree:checked ~ #navMenuPages #appetizers {
-  font-weight: bold;
-}
-
 #menuNav #categoryFour {
   left: 74%;
 }
 
-#menuNav #categoryFour:checked ~ #drinksMenu {
+#menuNav #categoryOne:checked ~ #pizzaMenu, #menuNav #categoryTwo:checked ~ #pastaMenu, #menuNav #categoryThree:checked ~ #appetizersMenu, #menuNav #categoryFour:checked ~ #drinksMenu {
   display: -ms-grid;
   display: grid;
-  width: 80%;
 }
 
-#menuNav #categoryFour:checked ~ #navMenuPages #drinks {
+#menuNav #categoryOne:checked ~ #navMenuPages #pizza, #menuNav #categoryTwo:checked ~ #navMenuPages #pasta, #menuNav #categoryThree:checked ~ #navMenuPages #appetizers, #menuNav #categoryFour:checked ~ #navMenuPages #drinks {
   font-weight: bold;
 }
 
@@ -357,6 +330,7 @@ footer #mobileFooterSpacer {
   width: 80%;
   border-radius: 5px;
   text-align: center;
+  color: #393e46;
 }
 
 #menuNav #navMenuPages p {
@@ -435,13 +409,13 @@ footer #mobileFooterSpacer {
   position: fixed;
   top: 0;
   right: 0;
-  -webkit-transform: translateX(101%);
-          transform: translateX(101%);
   width: 55%;
   height: 78%;
   padding: 10%;
   background: #eeeeee;
   text-align: center;
+  -webkit-transform: translateX(101%);
+          transform: translateX(101%);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -473,5 +447,9 @@ footer #mobileFooterSpacer {
 #menuNav .menu .itemCard .sidePanel .generalItemPrice {
   font-size: 1.2em;
   font-weight: bold;
+}
+
+#menuNav #drinksMenu {
+  width: 80%;
 }
 /*# sourceMappingURL=menu.css.map */
