@@ -37,7 +37,7 @@ main {
         font-size: 1.2em;
     }
 
-    article {
+    #openHours {
         line-height: 25px;
 
         p {
@@ -46,10 +46,56 @@ main {
         }
     }
 
-    .buttons {
-        @include linksStyle($neutralColorTwo, 0.8em);
-        padding: 4% 7%;
-        background: $neutralColorOne;
-        border-radius: 3px;
+    #heroSectionButtons {
+        @include gridCenter();
+        row-gap: 10px;
+        width: 100%;
+
+        .buttons {
+            @include linksStyle($neutralColorTwo, 0.8em);
+            padding: 5% 10%;
+            background: $neutralColorOne;
+            border-radius: 3px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #infoBanner {
+        top: 16.8%;
+
+        p {
+            font-size: 1.1em;
+        }
+    }
+
+    main {
+        margin-top: 30vh;
+        row-gap: 70px;
+
+        h1 {
+            font-size: 2.3em;
+        }
+
+        #openHours {
+            line-height: 40px;
+
+            p {
+                font-size: 1.4em;
+            }
+        }
+
+        #heroSectionButtons {
+            row-gap: 20px;
+
+            .buttons {
+                @include linksStyle($neutralColorTwo, 1.3em);
+                padding: 4% 8%;
+            }
+        }
+
+        #heroPizzaImage {
+            width: 65vw;
+        }
     }
 }

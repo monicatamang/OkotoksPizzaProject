@@ -100,3 +100,51 @@ header {
         }
     }
 }
+
+@media only screen and (min-width: 768px) {
+    header {
+        background: $primaryColor;
+        top: 6.9%;
+        min-height: 7vh;
+
+        >a {
+
+            #logoOuterCircle {
+                width: 55px;
+                height: 55px;
+            }
+
+            #logoInnerCircle {
+                width: 42px;
+                height: 42px;
+                font-size: 1.2em;
+            }
+        }
+
+        #mobileHamburgerMenu {
+
+            #mobileNavCheckbox {
+                width: 30px;
+                height: 30px;
+            }
+
+            #mobileHamburgerContainer {
+                width: 30px;
+                height: 30px;
+    
+                .navBars {
+                    width: 32px;
+                    height: 4px;
+                }
+            }
+
+            #navPages {
+                top: -100vh;
+                
+                a {
+                    font-size: 1.3em;
+                }
+            }
+        }
+    }
+}

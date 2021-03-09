@@ -146,6 +146,41 @@ header #mobileHamburgerMenu #navPages a {
   font-size: 0.9em;
 }
 
+@media only screen and (min-width: 768px) {
+  header {
+    background: #f7f7f7;
+    top: 6.9%;
+    min-height: 7vh;
+  }
+  header > a #logoOuterCircle {
+    width: 55px;
+    height: 55px;
+  }
+  header > a #logoInnerCircle {
+    width: 42px;
+    height: 42px;
+    font-size: 1.2em;
+  }
+  header #mobileHamburgerMenu #mobileNavCheckbox {
+    width: 30px;
+    height: 30px;
+  }
+  header #mobileHamburgerMenu #mobileHamburgerContainer {
+    width: 30px;
+    height: 30px;
+  }
+  header #mobileHamburgerMenu #mobileHamburgerContainer .navBars {
+    width: 32px;
+    height: 4px;
+  }
+  header #mobileHamburgerMenu #navPages {
+    top: -100vh;
+  }
+  header #mobileHamburgerMenu #navPages a {
+    font-size: 1.3em;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -179,6 +214,29 @@ body {
 
 #callButton p {
   font-size: 0.85em;
+}
+
+#callButton #tabletDesktopPhoneNumber {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  #callButton {
+    top: 0;
+    height: 4vh;
+    padding: 2% 0%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  #callButton p {
+    font-size: 1.2em;
+  }
+  #callButton a {
+    display: none;
+  }
+  #callButton #tabletDesktopPhoneNumber {
+    display: block;
+  }
 }
 
 * {
@@ -268,6 +326,42 @@ footer #mobileFooterSpacer {
   padding: 6% 0%;
 }
 
+@media only screen and (min-width: 768px) {
+  footer {
+    margin-top: 10vh;
+    width: 100vw;
+  }
+  footer #subscriptionForm {
+    row-gap: 40px;
+    width: 80%;
+  }
+  footer #subscriptionForm h1 {
+    font-size: 1.8em;
+  }
+  footer #subscriptionForm p {
+    font-size: 1.4em;
+  }
+  footer #subscriptionForm .inputSubscriptionForm {
+    font-size: 1.2em;
+  }
+  footer #subscriptionForm #subscribeButton {
+    font-size: 1.3em;
+    width: 30%;
+  }
+  footer #socialLinksAndCopyright {
+    font-size: 1.1em;
+  }
+  footer #socialLinksAndCopyright #socialMedia {
+    padding: 4% 0%;
+  }
+  footer #socialLinksAndCopyright #socialMedia img {
+    width: 45px;
+  }
+  footer #mobileFooterSpacer {
+    display: none;
+  }
+}
+
 #currentPage {
   background: #eeeeee;
 }
@@ -312,7 +406,8 @@ section .aboutContent #slideshow {
   display: grid;
   place-items: center;
   position: relative;
-  height: 36vh;
+  height: 38vh;
+  margin-bottom: 5%;
 }
 
 section .aboutContent #slideshow .slideshowButton {

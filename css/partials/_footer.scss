@@ -64,3 +64,49 @@ footer {
         padding: 6% 0%;
     }
 }
+
+@media only screen and (min-width: 768px) {
+    footer {
+        margin-top: 10vh;
+        width: 100vw;
+        
+        #subscriptionForm {
+            row-gap: 40px;
+            width: 80%;
+
+            h1 {
+                font-size: 1.8em;
+            }
+    
+            p {
+                font-size: 1.4em;
+            }
+
+            .inputSubscriptionForm {
+                font-size: 1.2em;
+            }
+
+            #subscribeButton {
+                font-size: 1.3em;
+                width: 30%;
+            }
+        }
+
+        #socialLinksAndCopyright {
+            font-size: 1.1em;
+            
+
+            #socialMedia {
+                padding: 4% 0%;
+                
+                img {
+                    width: 45px;
+                }
+            }
+        }
+
+        #mobileFooterSpacer {
+            display: none;
+        }
+    }
+}

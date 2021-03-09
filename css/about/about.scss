@@ -40,7 +40,8 @@ section {
         #slideshow {
             @include gridCenter();
             position: relative;
-            height: 36vh;
+            height: 38vh;
+            margin-bottom: 5%;
 
             .slideshowButton {
                 position: absolute;
