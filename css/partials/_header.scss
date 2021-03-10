@@ -13,18 +13,18 @@
     >a {
         text-decoration: none;
 
-        .logo {
+        .logoOuterCircle, .logoInnerCircle {
             @include gridCenter();
             background: $neutralColorOne;
             border-radius: 100%;
         }
     
-        #logoOuterCircle {
+        .logoOuterCircle {
             width: 38px;
             height: 38px;
         }
     
-        #logoInnerCircle {
+        .logoInnerCircle {
             width: 28px;
             height: 28px;
             border: 1.5px solid $primaryColor;
@@ -108,19 +108,20 @@
 @media only screen and (min-width: 600px) {
 
     #mobileTabletHeader {
-        // background: $primaryColor;
-        background: pink;
-        top: 6.9%;
+        background: $primaryColor;
+        // background: pink;
+        // top: 6.9%;
+        top: 15%;
         min-height: 7vh;
 
         >a {
 
-            #logoOuterCircle {
+            .logoOuterCircle {
                 width: 55px;
                 height: 55px;
             }
 
-            #logoInnerCircle {
+            .logoInnerCircle {
                 width: 42px;
                 height: 42px;
                 font-size: 1.2em;
@@ -145,7 +146,7 @@
             }
 
             #mobileNavPages {
-                top: -100vh;
+                top: -200vh;
                 
                 a {
                     font-size: 1.4em;
@@ -163,46 +164,61 @@
 
     #desktopHeader {
         @include gridCenter();
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
         position: fixed;
-        top: 6.9%;
+        top: 13.8%;
         min-height: 10vh;
         width: 100%;
-        // background: $primaryColor;
-        background: pink;
+        padding: 1% 0%;
+        background: $primaryColor;
         color: $neutralColorOne;
 
         >a {
             @include gridCenter();
             grid-template-columns: auto auto;
+            column-gap: 20px;
             @include linksStyle($neutralColorOne, 1em);
 
-
+            h1 {
+                font-size: 1.1em;
+                font-weight: 600;
+                font-family: $titleFont;
+            }
+    
+            .logoOuterCircle, .logoInnerCircle {
+                @include gridCenter();
+                background: $neutralColorOne;
+                border-radius: 100%;
+            }
+        
+            .logoOuterCircle {
+                width: 38px;
+                height: 38px;
+            }
+        
+            .logoInnerCircle {
+                width: 28px;
+                height: 28px;
+                border: 1.5px solid $primaryColor;
+                color: $primaryColor;
+                font-family: $titleFont;
+                font-weight: bold;
+                font-size: 0.85em;
+            }
         }
 
-        h1 {
-            font-family: $titleFont;
-        }
-
-        .logo {
+        #desktopNavPages {
             @include gridCenter();
-            background: $neutralColorOne;
-            border-radius: 100%;
-        }
-    
-        #logoOuterCircle {
-            width: 38px;
-            height: 38px;
-        }
-    
-        #logoInnerCircle {
-            width: 28px;
-            height: 28px;
-            border: 1.5px solid $primaryColor;
-            color: $primaryColor;
-            font-family: $titleFont;
-            font-weight: bold;
-            font-size: 0.85em;
+            grid-template-columns: auto auto auto auto auto;
+            column-gap: 50px;
+
+            a {
+                @include linksStyle($neutralColorOne, 0.9em);
+
+                &:hover {
+                    font-weight: bold;
+                }
+            }
         }
     }
 }

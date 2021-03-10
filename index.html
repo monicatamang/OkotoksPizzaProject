@@ -12,8 +12,8 @@
 <body>
     <header id="mobileTabletHeader">
         <a href="index.html">
-            <div id="logoOuterCircle" class="logo">
-                <div id="logoInnerCircle" class="logo">OP</div>
+            <div class="logoOuterCircle">
+                <div class="logoInnerCircle">OP</div>
             </div>
         </a>
         <div id="mobileNavSpacer"></div>
@@ -32,7 +32,7 @@
                 <a href="pages/contact.html">Contact</a>
             </nav>
         </div>
-        <article id="infoBanner">
+        <article class="infoBanner">
             <p>Pickup & Dine-in Only</p>
             <p>|</p>
             <p>5050 Pizza Palace SW</p>
@@ -40,11 +40,12 @@
     </header>
     <header id="desktopHeader">
         <a href="index.html">
-            <div id="logoOuterCircle" class="logo">
-                <div id="logoInnerCircle" class="logo">OP</div>
+            <div class="logoOuterCircle">
+                <div class="logoInnerCircle">OP</div>
             </div>
             <h1>Okotoks Pizza</h1>
         </a>
+        <div id="desktopHeaderSpacer"></div>
         <nav id="desktopNavPages">
             <a href="index.html">Home</a>
             <a href="pages/about.html">About</a>
@@ -52,22 +53,24 @@
             <a href="pages/reservations.html">Reservations</a>
             <a href="pages/contact.html">Contact</a>
         </nav>
-        <article id="infoBanner">
+        <article class="infoBanner">
             <p>Pickup & Dine-in Only</p>
             <p>|</p>
             <p>5050 Pizza Palace SW</p>
         </article>
     </header>
     <main>
-        <h1>Pizza by Any Other Name</h1>
-        <article id="openHours">
-            <p>Sun to Thu from 12PM - 11PM</p>
-            <p>Fri & Sat from 12PM - 1AM</p>
-        </article>
-        <article id="heroSectionButtons">
-            <a class="buttons" href="pages/menu.html">View Our Menu</a>
-            <a class="buttons" href="pages/reservations.html">Reserve a Table</a>
-        </article>
+        <section>
+            <h1>Pizza by Any Other Name</h1>
+            <article id="openHours">
+                <p>Sun to Thu from 12PM - 11PM</p>
+                <p>Fri & Sat from 12PM - 1AM</p>
+            </article>
+            <article id="heroSectionButtons">
+                <a class="buttons" href="pages/menu.html">View Our Menu</a>
+                <a class="buttons" href="pages/reservations.html">Reserve a Table</a>
+            </article>
+        </section>
         <img id="heroPizzaImage" src="images/heroPizzaImage.jpg" alt="A classic pepperoni pizza made with pepperoni, mozzarella cheese, black olives, and sliced tomatoes on top">
     </main>
     <article id="callButton">
@@ -80,8 +83,10 @@
         <article id="subscriptionForm">
             <h1><i class="far fa-envelope"></i> Subscribe to our Newsletter</h1>
             <p>Stay updated with new items and sales!</p>
-            <input type="text" name="firstName" id="firstName" placeholder="First Name*" class="inputSubscriptionForm">
-            <input type="email" name="email" placeholder="Email*" id="email" class="inputSubscriptionForm">
+            <div id="subscriptionInputs">
+                <input type="text" name="firstName" id="firstName" placeholder="First Name*" class="inputSubscriptionForm">
+                <input type="email" name="email" placeholder="Email*" id="email" class="inputSubscriptionForm">
+            </div>
             <p id="subscribeButton">Subscribe</p>
         </article>
         <article id="socialLinksAndCopyright">

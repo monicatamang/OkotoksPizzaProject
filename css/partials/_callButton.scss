@@ -31,10 +31,12 @@
         height: 5vh;
         padding: 1% 0%;
         box-shadow: none;
+        background: $neutralColorOne;
 
-        // p {
-        //     font-size: 0.em;
-        // }
+        p {
+            color: $neutralColorTwo;
+            font-size: 1em;
+        }
 
         a {
             display: none;
@@ -48,13 +50,11 @@
 
 @media only screen and (min-width: 1000px) {
     #callButton {
-        top: 0;
         height: 4vh;
         padding: 1% 0%;
-        box-shadow: none;
 
         p {
-            font-size: 1em;
+            font-size: 0.9em;
         }
     }
 }

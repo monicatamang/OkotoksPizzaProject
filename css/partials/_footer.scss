@@ -4,37 +4,45 @@ footer {
     @include gridCenter();
     margin-top: 8vh;
     width: 100%;
+    background: $secondaryColor;
 
     #subscriptionForm {
         display: grid;
+        row-gap: 15px;
         align-items: center;
-        background: $secondaryColor;
         padding: 10%;
-        min-height: 40vh;
+        min-height: 30vh;
         width: 80%;
         color: $neutralColorOne;
 
         h1 {
-            font-size: 1em;
+            font-size: 0.9em;
+            font-weight: 600;
         }
 
         p {
-            font-size: 0.8em;
+            font-size: 0.7em;
         }
 
-        .inputSubscriptionForm {
-            padding: 3%;
-            font-family: $bodyFont;
-            border: 0.5px solid $neutralColorOne;
+        #subscriptionInputs {
+            display: grid;
+            row-gap: 15px;
+
+            .inputSubscriptionForm {
+                padding: 2%;
+                font-family: $bodyFont;
+                border: 0.5px solid $neutralColorOne;
+                font-size: 0.7em;
+            }
         }
 
         #subscribeButton {
-            font-size: 0.9em;
+            font-size: 0.7em;
             background: $neutralColorOne;
             border-radius: 3px;
             color: $neutralColorTwo;
-            width: 40%;
-            padding: 3% 0%;
+            width: 80px;
+            padding: 3%;
             text-align: center;
         }
     }
@@ -44,7 +52,7 @@ footer {
         grid-template-rows: auto auto auto;
         background: $primaryColor;
         color: $neutralColorOne;
-        font-size: 0.8em;
+        font-size: 0.7em;
         text-align: center;
         min-height: 20vh;
         width: 100%;
@@ -54,6 +62,10 @@ footer {
             @include gridCenter();
             grid-template-columns: repeat(4, auto);
             width: 70%;
+
+            img {
+                width: 20px;
+            }
             
             a {
                 text-decoration: none;
@@ -73,6 +85,8 @@ footer {
         
         #subscriptionForm {
             row-gap: 40px;
+            padding: 5% 0%;
+            width: 85%;
 
             h1 {
                 font-size: 1.8em;
@@ -82,8 +96,11 @@ footer {
                 font-size: 1.4em;
             }
 
-            .inputSubscriptionForm {
-                font-size: 1.2em;
+            #subscriptionInputs {
+
+                .inputSubscriptionForm {
+                    font-size: 1.2em;
+                }
             }
 
             #subscribeButton {
@@ -93,20 +110,66 @@ footer {
         }
 
         #socialLinksAndCopyright {
-            font-size: 1.1em;
+            font-size: 0.9em;
             
 
             #socialMedia {
                 padding: 4% 0%;
-                
+
                 img {
-                    width: 45px;
+                    width: 30px;
                 }
             }
         }
 
         #mobileFooterSpacer {
             display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    footer {
+
+        #subscriptionForm {
+            row-gap: 20px;
+
+            h1 {
+                font-size: 1em;
+            }
+    
+            p {
+                font-size: 0.8em;
+            }
+
+            #subscriptionInputs {
+                grid-template-columns: auto auto;
+                column-gap: 20px;
+
+                .inputSubscriptionForm {
+                    font-size: 0.8em;
+                    padding: 2%;
+                }
+            }
+
+            #subscribeButton {
+                font-size: 0.8em;
+                width: 80px;
+                padding: 1%;
+            }
+        }
+
+        #socialLinksAndCopyright {
+            row-gap: 20px;
+            font-size: 0.8em;
+            padding: 0%;
+
+            #socialMedia {
+                
+                img {
+                    width: 25px;
+                }
+            }
         }
     }
 }

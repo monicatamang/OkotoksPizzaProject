@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -42,7 +42,7 @@ body {
   text-decoration: none;
 }
 
-#mobileTabletHeader > a .logo {
+#mobileTabletHeader > a .logoOuterCircle, #mobileTabletHeader > a .logoInnerCircle {
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -50,12 +50,12 @@ body {
   border-radius: 100%;
 }
 
-#mobileTabletHeader > a #logoOuterCircle {
+#mobileTabletHeader > a .logoOuterCircle {
   width: 38px;
   height: 38px;
 }
 
-#mobileTabletHeader > a #logoInnerCircle {
+#mobileTabletHeader > a .logoInnerCircle {
   width: 28px;
   height: 28px;
   border: 1.5px solid #f7f7f7;
@@ -152,15 +152,15 @@ body {
 
 @media only screen and (min-width: 600px) {
   #mobileTabletHeader {
-    background: pink;
-    top: 6.9%;
+    background: #f7f7f7;
+    top: 15%;
     min-height: 7vh;
   }
-  #mobileTabletHeader > a #logoOuterCircle {
+  #mobileTabletHeader > a .logoOuterCircle {
     width: 55px;
     height: 55px;
   }
-  #mobileTabletHeader > a #logoInnerCircle {
+  #mobileTabletHeader > a .logoInnerCircle {
     width: 42px;
     height: 42px;
     font-size: 1.2em;
@@ -178,7 +178,7 @@ body {
     height: 4px;
   }
   #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages {
-    top: -100vh;
+    top: -200vh;
   }
   #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages a {
     font-size: 1.4em;
@@ -193,13 +193,14 @@ body {
     display: -ms-grid;
     display: grid;
     place-items: center;
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
     position: fixed;
-    top: 6.9%;
+    top: 13.8%;
     min-height: 10vh;
     width: 100%;
-    background: pink;
+    padding: 1% 0%;
+    background: #f7f7f7;
     color: #393e46;
   }
   #desktopHeader > a {
@@ -208,25 +209,29 @@ body {
     place-items: center;
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
     text-decoration: none;
     color: #393e46;
     font-size: 1em;
   }
-  #desktopHeader h1 {
+  #desktopHeader > a h1 {
+    font-size: 1.1em;
+    font-weight: 600;
     font-family: "Lora", serif;
   }
-  #desktopHeader .logo {
+  #desktopHeader > a .logoOuterCircle, #desktopHeader > a .logoInnerCircle {
     display: -ms-grid;
     display: grid;
     place-items: center;
     background: #393e46;
     border-radius: 100%;
   }
-  #desktopHeader #logoOuterCircle {
+  #desktopHeader > a .logoOuterCircle {
     width: 38px;
     height: 38px;
   }
-  #desktopHeader #logoInnerCircle {
+  #desktopHeader > a .logoInnerCircle {
     width: 28px;
     height: 28px;
     border: 1.5px solid #f7f7f7;
@@ -234,6 +239,23 @@ body {
     font-family: "Lora", serif;
     font-weight: bold;
     font-size: 0.85em;
+  }
+  #desktopHeader #desktopNavPages {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    -ms-grid-columns: auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto;
+    -webkit-column-gap: 50px;
+            column-gap: 50px;
+  }
+  #desktopHeader #desktopNavPages a {
+    text-decoration: none;
+    color: #393e46;
+    font-size: 0.9em;
+  }
+  #desktopHeader #desktopNavPages a:hover {
+    font-weight: bold;
   }
 }
 
@@ -283,6 +305,11 @@ body {
     padding: 1% 0%;
     -webkit-box-shadow: none;
             box-shadow: none;
+    background: #393e46;
+  }
+  #callButton p {
+    color: white;
+    font-size: 1em;
   }
   #callButton a {
     display: none;
@@ -294,14 +321,11 @@ body {
 
 @media only screen and (min-width: 1000px) {
   #callButton {
-    top: 0;
     height: 4vh;
     padding: 1% 0%;
-    -webkit-box-shadow: none;
-            box-shadow: none;
   }
   #callButton p {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 }
 
@@ -322,42 +346,51 @@ footer {
   place-items: center;
   margin-top: 8vh;
   width: 100%;
+  background: #eeeeee;
 }
 
 footer #subscriptionForm {
   display: -ms-grid;
   display: grid;
+  row-gap: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #eeeeee;
   padding: 10%;
-  min-height: 40vh;
+  min-height: 30vh;
   width: 80%;
   color: #393e46;
 }
 
 footer #subscriptionForm h1 {
-  font-size: 1em;
+  font-size: 0.9em;
+  font-weight: 600;
 }
 
 footer #subscriptionForm p {
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 
-footer #subscriptionForm .inputSubscriptionForm {
-  padding: 3%;
+footer #subscriptionForm #subscriptionInputs {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 15px;
+}
+
+footer #subscriptionForm #subscriptionInputs .inputSubscriptionForm {
+  padding: 2%;
   font-family: "Montserrat", sans-serif;
   border: 0.5px solid #393e46;
+  font-size: 0.7em;
 }
 
 footer #subscriptionForm #subscribeButton {
-  font-size: 0.9em;
+  font-size: 0.7em;
   background: #393e46;
   border-radius: 3px;
   color: white;
-  width: 40%;
-  padding: 3% 0%;
+  width: 80px;
+  padding: 3%;
   text-align: center;
 }
 
@@ -369,7 +402,7 @@ footer #socialLinksAndCopyright {
       grid-template-rows: auto auto auto;
   background: #f7f7f7;
   color: #393e46;
-  font-size: 0.8em;
+  font-size: 0.7em;
   text-align: center;
   min-height: 20vh;
   width: 100%;
@@ -383,6 +416,10 @@ footer #socialLinksAndCopyright #socialMedia {
   -ms-grid-columns: (auto)[4];
       grid-template-columns: repeat(4, auto);
   width: 70%;
+}
+
+footer #socialLinksAndCopyright #socialMedia img {
+  width: 20px;
 }
 
 footer #socialLinksAndCopyright #socialMedia a {
@@ -400,6 +437,8 @@ footer #mobileFooterSpacer {
   }
   footer #subscriptionForm {
     row-gap: 40px;
+    padding: 5% 0%;
+    width: 85%;
   }
   footer #subscriptionForm h1 {
     font-size: 1.8em;
@@ -407,7 +446,7 @@ footer #mobileFooterSpacer {
   footer #subscriptionForm p {
     font-size: 1.4em;
   }
-  footer #subscriptionForm .inputSubscriptionForm {
+  footer #subscriptionForm #subscriptionInputs .inputSubscriptionForm {
     font-size: 1.2em;
   }
   footer #subscriptionForm #subscribeButton {
@@ -415,16 +454,51 @@ footer #mobileFooterSpacer {
     width: 30%;
   }
   footer #socialLinksAndCopyright {
-    font-size: 1.1em;
+    font-size: 0.9em;
   }
   footer #socialLinksAndCopyright #socialMedia {
     padding: 4% 0%;
   }
   footer #socialLinksAndCopyright #socialMedia img {
-    width: 45px;
+    width: 30px;
   }
   footer #mobileFooterSpacer {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  footer #subscriptionForm {
+    row-gap: 20px;
+  }
+  footer #subscriptionForm h1 {
+    font-size: 1em;
+  }
+  footer #subscriptionForm p {
+    font-size: 0.8em;
+  }
+  footer #subscriptionForm #subscriptionInputs {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+  }
+  footer #subscriptionForm #subscriptionInputs .inputSubscriptionForm {
+    font-size: 0.8em;
+    padding: 2%;
+  }
+  footer #subscriptionForm #subscribeButton {
+    font-size: 0.8em;
+    width: 80px;
+    padding: 1%;
+  }
+  footer #socialLinksAndCopyright {
+    row-gap: 20px;
+    font-size: 0.8em;
+    padding: 0%;
+  }
+  footer #socialLinksAndCopyright #socialMedia img {
+    width: 25px;
   }
 }
 
