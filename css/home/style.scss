@@ -69,11 +69,10 @@ main {
 // TABLET
 @media only screen and (min-width: 600px) {
     .infoBanner {
-        top: 20%;
-        // top: 6.8%;
+        top: 19.5%;
 
         p {
-            font-size: 1.1em;
+            font-size: 0.8em;
         }
     }
 
@@ -110,12 +109,12 @@ main {
 // DESKTOP
 @media only screen and (min-width: 1000px) {
     .infoBanner {
-        // top: 7.3%;
-        top: 20%;
+        top: 19.7%;
         padding: 0.5% 0%;
+        background: $secondaryColor;
 
         p {
-            font-size: 0.8em;
+            font-size: 0.7em;
             margin: 0%;
         }
     }

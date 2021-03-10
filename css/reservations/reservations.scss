@@ -7,12 +7,12 @@
     background: $secondaryColor;
 }
 
-section {
-    display: grid;
+#reservations {
+    @include gridCenter();
     row-gap: 20px;
     margin-top: 15vh;
     min-height: 90vh;
-    padding: 0% 10%;
+    padding: 0% 15%;
     color: $neutralColorOne;
 
     h1 {
@@ -22,25 +22,37 @@ section {
 
     p {
         font-size: 0.8em;
-        line-height: 25px;
         text-align: center;
     }
 
-    h5 {
-        font-family: $titleFont;
-    }
+    #reservationForm {
+        margin-top: 4vh;
+        @include gridCenter();
+        row-gap: 40px;
+        width: 100%;
 
-    .inputReservationForm {
-        padding: 3% 2%;
-        border: 0.1px solid $neutralColorOne;
-        font-family: $bodyFont;
+        article {
+            display: grid;
+            row-gap: 10px;
+            width: 100%;
+
+            h5 {
+                font-family: $titleFont;
+            }
+        
+            .inputReservationForm {
+                padding: 3% 2%;
+                border: 0.1px solid $neutralColorOne;
+                font-family: $bodyFont;
+            }
+        }
     }
 
     #reserveButton {
         justify-self: center;
         width: 40%;
         margin-top: 10%;
-        padding: 2% 0%;
+        padding: 3% 0%;
         background: $neutralColorOne;
         border-radius: 3px;
         color: $neutralColorTwo;
@@ -50,4 +62,61 @@ section {
 
 @media only screen and (min-width: 600px) {
     
+    #reservations {
+        margin-top: 30vh;
+
+        h1 {
+            font-size: 1.8em;
+        }
+
+        p {
+            font-size: 0.9em;
+        }
+
+        #reserveButton {
+            width: 30%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    
+    #reservations {
+        // margin-top: 30vh;
+        padding: 0%;
+        width: 100%;
+
+        h1 {
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1em;
+        }
+
+        #reservationForm {
+            margin-top: 10vh;
+            grid-template-columns: auto auto;
+
+            article {
+                width: 80%;
+
+                h5 {
+                    font-size: 0.9em;
+                }
+
+                .inputReservationForm {
+                    padding: 2%;
+                }
+            }
+        }
+
+        #reserveButton {
+            margin-top: 5%;
+            width: 10%;
+            font-size: 1em;
+            padding: 1% 2%;
+            cursor: pointer;
+        }
+    }
 }

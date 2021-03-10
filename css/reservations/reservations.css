@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -157,7 +161,7 @@ body {
 @media only screen and (min-width: 600px) {
   #mobileTabletHeader {
     background: #f7f7f7;
-    top: 6.9%;
+    top: 0;
     min-height: 7vh;
   }
   #mobileTabletHeader > a .logoOuterCircle {
@@ -200,7 +204,7 @@ body {
     -ms-grid-columns: auto auto auto;
         grid-template-columns: auto auto auto;
     position: fixed;
-    top: 7%;
+    top: 0;
     min-height: 10vh;
     width: 100%;
     padding: 1% 0%;
@@ -304,7 +308,7 @@ body {
 
 @media only screen and (min-width: 600px) {
   #callButton {
-    top: 0;
+    top: 12.8%;
     height: 5vh;
     padding: 1% 0%;
     -webkit-box-shadow: none;
@@ -313,7 +317,8 @@ body {
   }
   #callButton p {
     color: white;
-    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 2px;
   }
   #callButton a {
     display: none;
@@ -325,11 +330,12 @@ body {
 
 @media only screen and (min-width: 1000px) {
   #callButton {
-    height: 4vh;
+    height: 3vh;
     padding: 1% 0%;
+    top: 13.4%;
   }
   #callButton p {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 }
 
@@ -510,46 +516,111 @@ footer #mobileFooterSpacer {
   background: #eeeeee;
 }
 
-section {
+#reservations {
   display: -ms-grid;
   display: grid;
+  place-items: center;
   row-gap: 20px;
   margin-top: 15vh;
   min-height: 90vh;
-  padding: 0% 10%;
+  padding: 0% 15%;
   color: #393e46;
 }
 
-section h1 {
+#reservations h1 {
   font-family: "Lora", serif;
   text-align: center;
 }
 
-section p {
+#reservations p {
   font-size: 0.8em;
-  line-height: 25px;
   text-align: center;
 }
 
-section h5 {
+#reservations #reservationForm {
+  margin-top: 4vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  row-gap: 40px;
+  width: 100%;
+}
+
+#reservations #reservationForm article {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 10px;
+  width: 100%;
+}
+
+#reservations #reservationForm article h5 {
   font-family: "Lora", serif;
 }
 
-section .inputReservationForm {
+#reservations #reservationForm article .inputReservationForm {
   padding: 3% 2%;
   border: 0.1px solid #393e46;
   font-family: "Montserrat", sans-serif;
 }
 
-section #reserveButton {
+#reservations #reserveButton {
   -ms-grid-column-align: center;
       justify-self: center;
   width: 40%;
   margin-top: 10%;
-  padding: 2% 0%;
+  padding: 3% 0%;
   background: #393e46;
   border-radius: 3px;
   color: white;
   font-size: 0.9em;
+}
+
+@media only screen and (min-width: 600px) {
+  #reservations {
+    margin-top: 30vh;
+  }
+  #reservations h1 {
+    font-size: 1.8em;
+  }
+  #reservations p {
+    font-size: 0.9em;
+  }
+  #reservations #reserveButton {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #reservations {
+    padding: 0%;
+    width: 100%;
+  }
+  #reservations h1 {
+    font-size: 2em;
+  }
+  #reservations p {
+    font-size: 1em;
+  }
+  #reservations #reservationForm {
+    margin-top: 10vh;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  #reservations #reservationForm article {
+    width: 80%;
+  }
+  #reservations #reservationForm article h5 {
+    font-size: 0.9em;
+  }
+  #reservations #reservationForm article .inputReservationForm {
+    padding: 2%;
+  }
+  #reservations #reserveButton {
+    margin-top: 5%;
+    width: 10%;
+    font-size: 1em;
+    padding: 1% 2%;
+    cursor: pointer;
+  }
 }
 /*# sourceMappingURL=reservations.css.map */

@@ -91,6 +91,11 @@
                 line-height: 30px;
             }
         }
+
+        #pizzaItemCards {
+            @include gridCenter();
+            row-gap: 25px;
+        }
     
         .itemCard {
             display: grid;
@@ -177,6 +182,17 @@
             height: 100%;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
+            padding: 0% 5%;
+
+            #salePoster {
+                width: 80%;
+                font-size: 1.2em;
+            }
+
+            #pizzaItemCards {
+                width: 100%;
+                grid-template-columns: auto auto;
+            }
 
             .itemCard {
                 row-gap: 5px;

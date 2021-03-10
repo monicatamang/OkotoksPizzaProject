@@ -113,7 +113,7 @@
 
     #mobileTabletHeader {
         background: $primaryColor;
-        top: 6.9%;
+        top: 0;
         min-height: 7vh;
 
         >a {
@@ -168,8 +168,7 @@
         @include gridCenter();
         grid-template-columns: auto auto auto;
         position: fixed;
-        // top: 13.8%;
-        top: 7%;
+        top: 0;
         min-height: 10vh;
         width: 100%;
         padding: 1% 0%;

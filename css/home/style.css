@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -145,7 +148,7 @@ body {
 @media only screen and (min-width: 600px) {
   #mobileTabletHeader {
     background: #f7f7f7;
-    top: 6.9%;
+    top: 0;
     min-height: 7vh;
   }
   #mobileTabletHeader > a .logoOuterCircle {
@@ -188,7 +191,7 @@ body {
     -ms-grid-columns: auto auto auto;
         grid-template-columns: auto auto auto;
     position: fixed;
-    top: 7%;
+    top: 0;
     min-height: 10vh;
     width: 100%;
     padding: 1% 0%;
@@ -292,7 +295,7 @@ body {
 
 @media only screen and (min-width: 600px) {
   #callButton {
-    top: 0;
+    top: 12.8%;
     height: 5vh;
     padding: 1% 0%;
     -webkit-box-shadow: none;
@@ -301,7 +304,8 @@ body {
   }
   #callButton p {
     color: white;
-    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 2px;
   }
   #callButton a {
     display: none;
@@ -313,11 +317,12 @@ body {
 
 @media only screen and (min-width: 1000px) {
   #callButton {
-    height: 4vh;
+    height: 3vh;
     padding: 1% 0%;
+    top: 13.4%;
   }
   #callButton p {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 }
 
@@ -571,10 +576,10 @@ main #heroPizzaImage {
 
 @media only screen and (min-width: 600px) {
   .infoBanner {
-    top: 20%;
+    top: 19.5%;
   }
   .infoBanner p {
-    font-size: 1.1em;
+    font-size: 0.8em;
   }
   main {
     margin-top: 40vh;
@@ -604,11 +609,12 @@ main #heroPizzaImage {
 
 @media only screen and (min-width: 1000px) {
   .infoBanner {
-    top: 20%;
+    top: 19.7%;
     padding: 0.5% 0%;
+    background: #eeeeee;
   }
   .infoBanner p {
-    font-size: 0.8em;
+    font-size: 0.7em;
     margin: 0%;
   }
   main {
