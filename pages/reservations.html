@@ -25,13 +25,29 @@
                 <span id="mobileBarThree" class="navBars"></span>
             </div>
             <nav id="mobileNavPages">
-                <a href="../index.html">Home</a>
+                <a id="#currentReservationsPage" href="../index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="menu.html">Menu</a>
-                <a id="currentPage" href="reservations.html">Reservations</a>
+                <a href="reservations.html">Reservations</a>
                 <a href="contact.html">Contact</a>
             </nav>
         </div>
+    </header>
+    <header id="desktopHeader">
+        <a href="../index.html">
+            <div class="logoOuterCircle">
+                <div class="logoInnerCircle">OP</div>
+            </div>
+            <h1>Okotoks Pizza</h1>
+        </a>
+        <div id="desktopHeaderSpacer"></div>
+        <nav id="desktopNavPages">
+            <a href="../index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
     <section>
         <h1>Reservations</h1>
@@ -66,13 +82,16 @@
         <a href="tel:4035555555">
             <p>Call <i class="fas fa-phone-alt"></i> (403) 555-5555 to Order</p>
         </a>
+        <p id="tabletDesktopPhoneNumber">Call <i class="fas fa-phone-alt"></i> (403) 555-5555 to Order</p>
     </article>
     <footer>
         <article id="subscriptionForm">
             <h1><i class="far fa-envelope"></i> Subscribe to our Newsletter</h1>
             <p>Stay updated with new items and sales!</p>
-            <input type="text" name="firstName" id="firstName" placeholder="First Name*" class="inputSubscriptionForm">
-            <input type="email" name="email" placeholder="Email*" id="email" class="inputSubscriptionForm">
+            <div id="subscriptionInputs">
+                <input type="text" name="firstName" id="firstName" placeholder="First Name*" class="inputSubscriptionForm">
+                <input type="email" name="email" placeholder="Email*" id="email" class="inputSubscriptionForm">
+            </div>
             <p id="subscribeButton">Subscribe</p>
         </article>
         <article id="socialLinksAndCopyright">

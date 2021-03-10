@@ -134,6 +134,10 @@ body {
   font-size: 0.9em;
 }
 
+#mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentHomePage, #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentAboutPage, #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentMenuPage, #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentReservationsPage, #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentContactPage {
+  background: #eeeeee;
+}
+
 #desktopHeader {
   display: none;
 }
@@ -141,7 +145,7 @@ body {
 @media only screen and (min-width: 600px) {
   #mobileTabletHeader {
     background: #f7f7f7;
-    top: 15%;
+    top: 6.9%;
     min-height: 7vh;
   }
   #mobileTabletHeader > a .logoOuterCircle {
@@ -184,7 +188,7 @@ body {
     -ms-grid-columns: auto auto auto;
         grid-template-columns: auto auto auto;
     position: fixed;
-    top: 13.8%;
+    top: 7%;
     min-height: 10vh;
     width: 100%;
     padding: 1% 0%;
@@ -490,10 +494,6 @@ footer #mobileFooterSpacer {
   }
 }
 
-#currentPage {
-  background: #eeeeee;
-}
-
 .infoBanner {
   display: -ms-grid;
   display: grid;
@@ -565,9 +565,13 @@ main section #heroSectionButtons .buttons {
   border-radius: 3px;
 }
 
+main #heroPizzaImage {
+  width: 60vw;
+}
+
 @media only screen and (min-width: 600px) {
   .infoBanner {
-    top: 6.8%;
+    top: 20%;
   }
   .infoBanner p {
     font-size: 1.1em;
@@ -596,14 +600,11 @@ main section #heroSectionButtons .buttons {
     color: white;
     font-size: 1.3em;
   }
-  main #heroPizzaImage {
-    width: 60vw;
-  }
 }
 
 @media only screen and (min-width: 1000px) {
   .infoBanner {
-    top: 7.3%;
+    top: 20%;
     padding: 0.5% 0%;
   }
   .infoBanner p {

@@ -3,10 +3,6 @@
 @import "../partials/callButton";
 @import "../partials/footer";
 
-#currentPage {
-    background: $secondaryColor;
-}
-
 section {
     @include gridCenter();
     row-gap: 30px;
@@ -26,6 +22,7 @@ section {
 
     #introVideo {
         width: 100%;
+        height: 180px;
     }
 
     .aboutContent {
@@ -39,79 +36,133 @@ section {
 
         #slideshow {
             @include gridCenter();
+            grid-template-columns: auto auto auto auto auto;
             position: relative;
             height: 40vh;
             margin-bottom: 5%;
 
-            .slideshowButton {
-                position: absolute;
-                top: 93%;
+            .slideshowRadioButton {
                 width: 20px;
                 height: 20px;
+                position: relative;
+                top: 148px;
                 opacity: 0;
                 z-index: 1;
             }
 
-            #buttonOne {
-                left: 15%;
-            }
-
-            #buttonTwo {
-                left: 31%;
-            }
-
-            #buttonThree {
-                left: 47%;
-            }
-
-            #buttonFour {
-                right: 31%;
-            }
-
-            #buttonFive {
-                right: 15%;
+            .circleNav {
+                align-self: end;
+                width: 15px;
+                height: 15px;
+                border: 2px solid $neutralColorOne;
+                border-radius: 100%;
             }
 
             #buttonOne:checked ~ #restaurantOne, #buttonTwo:checked ~ #restaurantTwo, #buttonThree:checked ~ #restaurantThree, #buttonFour:checked ~ #restaurantFour, #buttonFive:checked ~ #restaurantFive {
                 opacity: 1;
-                transform: scaleX(1);
+                transition: all 0.5s ease-in-out;
             }
 
-            #buttonOne:checked ~ #slideshowNavigation #circleOne, #buttonTwo:checked ~ #slideshowNavigation #circleTwo, #buttonThree:checked ~ #slideshowNavigation #circleThree, #buttonFour:checked ~ #slideshowNavigation #circleFour, #buttonFive:checked ~ #slideshowNavigation #circleFive {
+            #buttonOne:checked ~ #circleOne, #buttonTwo:checked ~ #circleTwo, #buttonThree:checked ~ #circleThree, #buttonFour:checked ~ #circleFour, #buttonFive:checked ~ #circleFive {
                 background: $neutralColorOne;
-            } 
+            }
 
             .restaurantImage {
+                width: 100%;
+                max-height: 170px;
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: 100%;
                 z-index: -1;
 
                 opacity: 0;
-                transform: scaleX(0.8);
+                transition: all 0.5s ease-in-out;
 
                 img {
                     width: 100%;
-                    max-height: 240px;
                     object-fit: cover;
                 }
             }
+        }
+    }
+}
 
-            #slideshowNavigation {
-                position: relative;
-                @include gridCenter();
-                grid-template-columns: auto auto auto auto auto;
-                width: 80%;
-                height: 100%;
-                z-index: -1;
-                
+@media only screen and (min-width: 600px) {
+    
+    section {
+        margin-top: 25vh;
+        row-gap: 50px;
+
+        #introVideo {
+            height: 300px;
+        }
+
+        h1 {
+            font-size: 1.8em;
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 35px;
+        }
+
+        .aboutContent {
+
+            #slideshow {
+                height: 60vh;
+
+                .slideshowRadioButton {
+                    top: 264px;
+                    width: 30px;
+                    height: 30px;
+                }
+
                 .circleNav {
-                    align-self: end;
-                    width: 15px;
-                    height: 15px;
-                    border: 2px solid $neutralColorOne;
-                    border-radius: 100%;
+                    width: 20px;
+                    height: 20px;
+                }
+    
+                .restaurantImage {
+                    max-height: 311px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    
+    section {
+        margin-top: 28vh;
+        // justify-items: start;
+        // align-items: start;
+
+        #introVideo {
+            width: 50%;
+        }
+
+        .aboutContent {
+
+            .lineDivider {
+                display: none;
+            }
+
+            #slideshow {
+                height: 100vh;
+
+                .restaurantImage {
+                    max-height: 100px;
+                }
+
+                .slideshowRadioButton {
+                    top: 440px;
+                    width: 40px;
+                    height: 40px;
+                }
+
+                .circleNav {
+                    width: 30px;
+                    height: 30px;
                 }
             }
         }

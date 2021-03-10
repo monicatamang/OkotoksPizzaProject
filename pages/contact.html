@@ -25,13 +25,29 @@
                 <span id="mobileBarThree" class="navBars"></span>
             </div>
             <nav id="mobileNavPages">
-                <a href="../index.html">Home</a>
+                <a id="#currentContactPage" href="../index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="menu.html">Menu</a>
                 <a href="reservations.html">Reservations</a>
-                <a id="currentPage" href="contact.html">Contact</a>
+                <a href="contact.html">Contact</a>
             </nav>
         </div>
+    </header>
+    <header id="desktopHeader">
+        <a href="../index.html">
+            <div class="logoOuterCircle">
+                <div class="logoInnerCircle">OP</div>
+            </div>
+            <h1>Okotoks Pizza</h1>
+        </a>
+        <div id="desktopHeaderSpacer"></div>
+        <nav id="desktopNavPages">
+            <a href="../index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
     <section>
         <h1>Contact</h1>
@@ -40,7 +56,7 @@
             <p><i class="fas fa-phone-alt"></i> (403) 555-5555</p>
             <a href="mailto:info@okotokspizza.ca"><i class="fas fa-envelope"></i> info@okotokspizza.ca</a>
         </article>
-        <img src="../images/dividers/line.svg" alt="A thin, dark grey line that is 26.66px in length used as a section divider">
+        <img src="../images/lineDivider.svg" alt="A thin, dark grey line that is 26.66px in length used as a section divider">
         <article class="contactPageSections">
             <h3>Hours of Operation</h3>
             <div class="restaurantHours">
@@ -72,7 +88,7 @@
                 <p>12PM - 1AM</p>
             </div>
         </article>
-        <img src="../images/dividers/line.svg" alt="A thin, dark grey line that is 26.66px in length used as a section divider">
+        <img src="../images/lineDivider.svg" alt="A thin, dark grey line that is 26.66px in length used as a section divider">
         <article class="contactPageSections">
             <h3>Location</h3>
             <iframe id="googleMaps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17528.986361230138!2d-113.99619076924097!3d50.72600306024479!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537199ef78b39207%3A0xa224df5fbe194cd0!2sOkotoks%20Pizza%20%26%20Donair!5e0!3m2!1sen!2sca!4v1615174067074!5m2!1sen!2sca" allowfullscreen="" loading="lazy"></iframe>
@@ -84,13 +100,16 @@
         <a href="tel:4035555555">
             <p>Call <i class="fas fa-phone-alt"></i> (403) 555-5555 to Order</p>
         </a>
+        <p id="tabletDesktopPhoneNumber">Call <i class="fas fa-phone-alt"></i> (403) 555-5555 to Order</p>
     </article>
     <footer>
         <article id="subscriptionForm">
             <h1><i class="far fa-envelope"></i> Subscribe to our Newsletter</h1>
             <p>Stay updated with new items and sales!</p>
-            <input type="text" name="firstName" id="firstName" placeholder="First Name*" class="inputSubscriptionForm">
-            <input type="email" name="email" placeholder="Email*" id="email" class="inputSubscriptionForm">
+            <div id="subscriptionInputs">
+                <input type="text" name="firstName" id="firstName" placeholder="First Name*" class="inputSubscriptionForm">
+                <input type="email" name="email" placeholder="Email*" id="email" class="inputSubscriptionForm">
+            </div>
             <p id="subscribeButton">Subscribe</p>
         </article>
         <article id="socialLinksAndCopyright">

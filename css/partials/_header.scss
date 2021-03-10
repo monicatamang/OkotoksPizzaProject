@@ -97,6 +97,10 @@
                 text-align: center;
                 @include linksStyle($neutralColorOne, 0.9em);
             }
+
+            #currentHomePage, #currentAboutPage, #currentMenuPage, #currentReservationsPage, #currentContactPage {
+                background: $secondaryColor;
+            }
         }
     }
 }
@@ -109,9 +113,7 @@
 
     #mobileTabletHeader {
         background: $primaryColor;
-        // background: pink;
-        // top: 6.9%;
-        top: 15%;
+        top: 6.9%;
         min-height: 7vh;
 
         >a {
@@ -166,7 +168,8 @@
         @include gridCenter();
         grid-template-columns: auto auto auto;
         position: fixed;
-        top: 13.8%;
+        // top: 13.8%;
+        top: 7%;
         min-height: 10vh;
         width: 100%;
         padding: 1% 0%;
@@ -214,11 +217,18 @@
 
             a {
                 @include linksStyle($neutralColorOne, 0.9em);
+                // height: 100%;
+                // width: 100%;
 
                 &:hover {
                     font-weight: bold;
                 }
             }
+
+            // .currentPage {
+            //     background: $secondaryColor;
+            //     height: 100%;
+            // }
         }
     }
 }

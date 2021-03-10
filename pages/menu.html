@@ -11,7 +11,7 @@
 </head>
 <body>
     <header id="mobileTabletHeader">
-        <a href="../index.html">
+        <a href="index.html">
             <div class="logoOuterCircle">
                 <div class="logoInnerCircle">OP</div>
             </div>
@@ -25,14 +25,36 @@
                 <span id="mobileBarThree" class="navBars"></span>
             </div>
             <nav id="mobileNavPages">
-                <a href="../index.html">Home</a>
+                <a id="#currentMenuPage" href="../index.html">Home</a>
                 <a href="about.html">About</a>
-                <a id="currentPage" href="menu.html">Menu</a>
+                <a href="menu.html">Menu</a>
                 <a href="reservations.html">Reservations</a>
                 <a href="contact.html">Contact</a>
             </nav>
         </div>
     </header>
+    <header id="desktopHeader">
+        <a href="../index.html">
+            <div class="logoOuterCircle">
+                <div class="logoInnerCircle">OP</div>
+            </div>
+            <h1>Okotoks Pizza</h1>
+        </a>
+        <div id="desktopHeaderSpacer"></div>
+        <nav id="desktopNavPages">
+            <a href="../index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <article id="callButton">
+        <a href="tel:4035555555">
+            <p>Call <i class="fas fa-phone-alt"></i> (403) 555-5555 to Order</p>
+        </a>
+        <p id="tabletDesktopPhoneNumber">Call <i class="fas fa-phone-alt"></i> (403) 555-5555 to Order</p>
+    </article>
     <section id="menuNav">
         <h1>Menu</h1>
         <input type="radio" name="menuCategory" id="categoryOne" class="menuRadioButtons" checked>
@@ -50,6 +72,9 @@
                 <h1>50% OFF ALL PIZZAS</h1>
                 <h1>SUN - THU AFTER 10PM</h1>
             </article>
+            <!-- <section id="pizzaItemCards">
+
+            </section> -->
             <article class="itemCard">
                 <h1>BBQ Chicken <i class="fas fa-pepper-hot"></i> | From $10</h1>
                 <p>Chedder Cheese, Chicken, Mozzarella Cheese, Spicy Barbeque Sauce</p>
@@ -468,15 +493,18 @@
     </section>
     <article id="callButton">
         <a href="tel:4035555555">
-            <p>Call <i class="fas fa-phone-alt"></i> (403) 555-555 to Order</p>
+            <p>Call <i class="fas fa-phone-alt"></i> (403) 555-5555 to Order</p>
         </a>
+        <p id="tabletDesktopPhoneNumber">Call <i class="fas fa-phone-alt"></i> (403) 555-5555 to Order</p>
     </article>
     <footer>
         <article id="subscriptionForm">
             <h1><i class="far fa-envelope"></i> Subscribe to our Newsletter</h1>
             <p>Stay updated with new items and sales!</p>
-            <input type="text" name="firstName" id="firstName" placeholder="First Name*" class="inputSubscriptionForm">
-            <input type="email" name="email" placeholder="Email*" id="email" class="inputSubscriptionForm">
+            <div id="subscriptionInputs">
+                <input type="text" name="firstName" id="firstName" placeholder="First Name*" class="inputSubscriptionForm">
+                <input type="email" name="email" placeholder="Email*" id="email" class="inputSubscriptionForm">
+            </div>
             <p id="subscribeButton">Subscribe</p>
         </article>
         <article id="socialLinksAndCopyright">

@@ -146,6 +146,10 @@ body {
   font-size: 0.9em;
 }
 
+#mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentHomePage, #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentAboutPage, #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentMenuPage, #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentReservationsPage, #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentContactPage {
+  background: #eeeeee;
+}
+
 #desktopHeader {
   display: none;
 }
@@ -153,7 +157,7 @@ body {
 @media only screen and (min-width: 600px) {
   #mobileTabletHeader {
     background: #f7f7f7;
-    top: 15%;
+    top: 6.9%;
     min-height: 7vh;
   }
   #mobileTabletHeader > a .logoOuterCircle {
@@ -196,7 +200,7 @@ body {
     -ms-grid-columns: auto auto auto;
         grid-template-columns: auto auto auto;
     position: fixed;
-    top: 13.8%;
+    top: 7%;
     min-height: 10vh;
     width: 100%;
     padding: 1% 0%;
@@ -588,7 +592,7 @@ footer #mobileFooterSpacer {
 
 #menuNav .menu #salePoster {
   width: 88%;
-  padding: 7%;
+  padding: 6% 7%;
   background: #393e46;
   border-radius: 3px;
   color: white;
@@ -597,8 +601,8 @@ footer #mobileFooterSpacer {
 #menuNav .menu #salePoster > h1 {
   font-size: 0.9em;
   text-align: center;
-  margin: 1% 0%;
   letter-spacing: 1px;
+  line-height: 30px;
 }
 
 #menuNav .menu .itemCard {
@@ -685,5 +689,24 @@ footer #mobileFooterSpacer {
 
 #menuNav #drinksMenu {
   width: 80%;
+}
+
+@media only screen and (min-width: 600px) {
+  #menuNav {
+    margin-top: 25vh;
+  }
+  #menuNav .menu {
+    width: 100%;
+    height: 100%;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  #menuNav .menu .itemCard {
+    row-gap: 5px;
+    width: 60%;
+    height: 80%;
+  }
 }
 /*# sourceMappingURL=menu.css.map */

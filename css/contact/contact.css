@@ -146,6 +146,10 @@ body {
   font-size: 0.9em;
 }
 
+#mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentHomePage, #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentAboutPage, #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentMenuPage, #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentReservationsPage, #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentContactPage {
+  background: #eeeeee;
+}
+
 #desktopHeader {
   display: none;
 }
@@ -153,7 +157,7 @@ body {
 @media only screen and (min-width: 600px) {
   #mobileTabletHeader {
     background: #f7f7f7;
-    top: 15%;
+    top: 6.9%;
     min-height: 7vh;
   }
   #mobileTabletHeader > a .logoOuterCircle {
@@ -196,7 +200,7 @@ body {
     -ms-grid-columns: auto auto auto;
         grid-template-columns: auto auto auto;
     position: fixed;
-    top: 13.8%;
+    top: 7%;
     min-height: 10vh;
     width: 100%;
     padding: 1% 0%;

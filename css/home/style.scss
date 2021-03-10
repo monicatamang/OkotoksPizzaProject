@@ -2,10 +2,6 @@
 @import "../partials/callButton";
 @import "../partials/footer";
 
-#currentPage {
-    background: $secondaryColor;
-}
-
 .infoBanner {
     @include gridCenter();
     grid-template-columns: 1fr auto 1fr;
@@ -64,13 +60,17 @@ main {
             }
         }
     }
+
+    #heroPizzaImage {
+        width: 60vw;
+    }
 }
 
 // TABLET
 @media only screen and (min-width: 600px) {
     .infoBanner {
-        // top: 19.7%;
-        top: 6.8%;
+        top: 20%;
+        // top: 6.8%;
 
         p {
             font-size: 1.1em;
@@ -104,17 +104,14 @@ main {
                 }
             }
         }
-
-        #heroPizzaImage {
-            width: 60vw;
-        }
     }
 }
 
 // DESKTOP
 @media only screen and (min-width: 1000px) {
     .infoBanner {
-        top: 7.3%;
+        // top: 7.3%;
+        top: 20%;
         padding: 0.5% 0%;
 
         p {
