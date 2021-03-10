@@ -37,10 +37,14 @@ section {
             font-size: 1.2em;
         }
 
+        .tomatoDivider {
+            justify-self: center;
+        }
+
         #slideshow {
             @include gridCenter();
             position: relative;
-            height: 38vh;
+            height: 40vh;
             margin-bottom: 5%;
 
             .slideshowButton {

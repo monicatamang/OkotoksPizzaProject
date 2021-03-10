@@ -25,16 +25,16 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
     #callButton {
         top: 0;
-        height: 4vh;
-        padding: 2% 0%;
+        height: 5vh;
+        padding: 1% 0%;
         box-shadow: none;
 
-        p {
-            font-size: 1.2em;
-        }
+        // p {
+        //     font-size: 0.em;
+        // }
 
         a {
             display: none;
@@ -42,6 +42,19 @@
 
         #tabletDesktopPhoneNumber {
             display: block;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #callButton {
+        top: 0;
+        height: 4vh;
+        padding: 1% 0%;
+        box-shadow: none;
+
+        p {
+            font-size: 1em;
         }
     }
 }

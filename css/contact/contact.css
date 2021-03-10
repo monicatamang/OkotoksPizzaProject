@@ -24,7 +24,7 @@ body {
   max-width: 100vw;
 }
 
-header {
+#mobileTabletHeader {
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -38,11 +38,11 @@ header {
   background: #f7f7f7;
 }
 
-header > a {
+#mobileTabletHeader > a {
   text-decoration: none;
 }
 
-header > a .logo {
+#mobileTabletHeader > a .logo {
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -50,12 +50,12 @@ header > a .logo {
   border-radius: 100%;
 }
 
-header > a #logoOuterCircle {
+#mobileTabletHeader > a #logoOuterCircle {
   width: 38px;
   height: 38px;
 }
 
-header > a #logoInnerCircle {
+#mobileTabletHeader > a #logoInnerCircle {
   width: 28px;
   height: 28px;
   border: 1.5px solid #f7f7f7;
@@ -65,7 +65,7 @@ header > a #logoInnerCircle {
   font-size: 0.85em;
 }
 
-header #mobileHamburgerMenu #mobileNavCheckbox {
+#mobileTabletHeader #mobileHamburgerMenu #mobileNavCheckbox {
   position: absolute;
   width: 28px;
   height: 28px;
@@ -73,13 +73,13 @@ header #mobileHamburgerMenu #mobileNavCheckbox {
   z-index: 5;
 }
 
-header #mobileHamburgerMenu #mobileNavCheckbox:checked ~ #navPages {
+#mobileTabletHeader #mobileHamburgerMenu #mobileNavCheckbox:checked ~ #mobileNavPages {
   top: 95%;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-header #mobileHamburgerMenu #mobileNavCheckbox:checked ~ #mobileHamburgerContainer #mobileBarOne {
+#mobileTabletHeader #mobileHamburgerMenu #mobileNavCheckbox:checked ~ #mobileHamburgerContainer #mobileBarOne {
   -webkit-transform-origin: top right;
           transform-origin: top right;
   -webkit-transform: rotate(-41deg);
@@ -88,11 +88,11 @@ header #mobileHamburgerMenu #mobileNavCheckbox:checked ~ #mobileHamburgerContain
   transition: all 0.4s ease-in-out;
 }
 
-header #mobileHamburgerMenu #mobileNavCheckbox:checked ~ #mobileHamburgerContainer #mobileBarTwo {
+#mobileTabletHeader #mobileHamburgerMenu #mobileNavCheckbox:checked ~ #mobileHamburgerContainer #mobileBarTwo {
   background: transparent;
 }
 
-header #mobileHamburgerMenu #mobileNavCheckbox:checked ~ #mobileHamburgerContainer #mobileBarThree {
+#mobileTabletHeader #mobileHamburgerMenu #mobileNavCheckbox:checked ~ #mobileHamburgerContainer #mobileBarThree {
   -webkit-transform-origin: bottom right;
           transform-origin: bottom right;
   -webkit-transform: rotate(41deg);
@@ -101,7 +101,7 @@ header #mobileHamburgerMenu #mobileNavCheckbox:checked ~ #mobileHamburgerContain
   transition: all 0.4s ease-in-out;
 }
 
-header #mobileHamburgerMenu #mobileHamburgerContainer {
+#mobileTabletHeader #mobileHamburgerMenu #mobileHamburgerContainer {
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -111,7 +111,7 @@ header #mobileHamburgerMenu #mobileHamburgerContainer {
   z-index: 4;
 }
 
-header #mobileHamburgerMenu #mobileHamburgerContainer .navBars {
+#mobileTabletHeader #mobileHamburgerMenu #mobileHamburgerContainer .navBars {
   width: 30px;
   height: 3px;
   background: #393e46;
@@ -122,7 +122,7 @@ header #mobileHamburgerMenu #mobileHamburgerContainer .navBars {
   transition: all 0.4s ease-in-out;
 }
 
-header #mobileHamburgerMenu #navPages {
+#mobileTabletHeader #mobileHamburgerMenu #mobileNavPages {
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -137,7 +137,7 @@ header #mobileHamburgerMenu #navPages {
   transition: all 0.5s ease-in-out;
 }
 
-header #mobileHamburgerMenu #navPages a {
+#mobileTabletHeader #mobileHamburgerMenu #mobileNavPages a {
   width: 100%;
   padding: 5% 0%;
   text-align: center;
@@ -146,38 +146,94 @@ header #mobileHamburgerMenu #navPages a {
   font-size: 0.9em;
 }
 
-@media only screen and (min-width: 768px) {
-  header {
-    background: #f7f7f7;
+#desktopHeader {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  #mobileTabletHeader {
+    background: pink;
     top: 6.9%;
     min-height: 7vh;
   }
-  header > a #logoOuterCircle {
+  #mobileTabletHeader > a #logoOuterCircle {
     width: 55px;
     height: 55px;
   }
-  header > a #logoInnerCircle {
+  #mobileTabletHeader > a #logoInnerCircle {
     width: 42px;
     height: 42px;
     font-size: 1.2em;
   }
-  header #mobileHamburgerMenu #mobileNavCheckbox {
+  #mobileTabletHeader #mobileHamburgerMenu #mobileNavCheckbox {
     width: 30px;
     height: 30px;
   }
-  header #mobileHamburgerMenu #mobileHamburgerContainer {
+  #mobileTabletHeader #mobileHamburgerMenu #mobileHamburgerContainer {
     width: 30px;
     height: 30px;
   }
-  header #mobileHamburgerMenu #mobileHamburgerContainer .navBars {
+  #mobileTabletHeader #mobileHamburgerMenu #mobileHamburgerContainer .navBars {
     width: 32px;
     height: 4px;
   }
-  header #mobileHamburgerMenu #navPages {
+  #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages {
     top: -100vh;
   }
-  header #mobileHamburgerMenu #navPages a {
-    font-size: 1.3em;
+  #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages a {
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #mobileTabletHeader {
+    display: none;
+  }
+  #desktopHeader {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    position: fixed;
+    top: 6.9%;
+    min-height: 10vh;
+    width: 100%;
+    background: pink;
+    color: #393e46;
+  }
+  #desktopHeader > a {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    text-decoration: none;
+    color: #393e46;
+    font-size: 1em;
+  }
+  #desktopHeader h1 {
+    font-family: "Lora", serif;
+  }
+  #desktopHeader .logo {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    background: #393e46;
+    border-radius: 100%;
+  }
+  #desktopHeader #logoOuterCircle {
+    width: 38px;
+    height: 38px;
+  }
+  #desktopHeader #logoInnerCircle {
+    width: 28px;
+    height: 28px;
+    border: 1.5px solid #f7f7f7;
+    color: #f7f7f7;
+    font-family: "Lora", serif;
+    font-weight: bold;
+    font-size: 0.85em;
   }
 }
 
@@ -220,22 +276,32 @@ body {
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
   #callButton {
     top: 0;
-    height: 4vh;
-    padding: 2% 0%;
+    height: 5vh;
+    padding: 1% 0%;
     -webkit-box-shadow: none;
             box-shadow: none;
-  }
-  #callButton p {
-    font-size: 1.2em;
   }
   #callButton a {
     display: none;
   }
   #callButton #tabletDesktopPhoneNumber {
     display: block;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #callButton {
+    top: 0;
+    height: 4vh;
+    padding: 1% 0%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  #callButton p {
+    font-size: 1em;
   }
 }
 
@@ -255,6 +321,7 @@ footer {
   display: grid;
   place-items: center;
   margin-top: 8vh;
+  width: 100%;
 }
 
 footer #subscriptionForm {
@@ -266,6 +333,7 @@ footer #subscriptionForm {
   background: #eeeeee;
   padding: 10%;
   min-height: 40vh;
+  width: 80%;
   color: #393e46;
 }
 
@@ -326,14 +394,12 @@ footer #mobileFooterSpacer {
   padding: 6% 0%;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
   footer {
     margin-top: 10vh;
-    width: 100vw;
   }
   footer #subscriptionForm {
     row-gap: 40px;
-    width: 80%;
   }
   footer #subscriptionForm h1 {
     font-size: 1.8em;
@@ -409,6 +475,5 @@ section .restaurantHours {
 section #googleMaps {
   border: none;
   width: 100%;
-  margin-top: 5%;
 }
 /*# sourceMappingURL=contact.css.map */

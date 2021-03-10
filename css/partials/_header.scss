@@ -1,6 +1,6 @@
 @import "_globals.scss";
 
-header {
+#mobileTabletHeader {
     @include gridCenter();
     grid-template-columns: 2fr 4fr 2fr;
     position: fixed;
@@ -45,7 +45,7 @@ header {
             z-index: 5;
         }
 
-        #mobileNavCheckbox:checked ~ #navPages {
+        #mobileNavCheckbox:checked ~ #mobileNavPages {
             top: 95%;
             transition: all 0.5s ease-in-out;
         }
@@ -80,7 +80,7 @@ header {
             }
         }
 
-        #navPages {
+        #mobileNavPages {
             @include gridCenter();
             position: absolute;
             top: -60vh;
@@ -101,9 +101,15 @@ header {
     }
 }
 
-@media only screen and (min-width: 768px) {
-    header {
-        background: $primaryColor;
+#desktopHeader {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+
+    #mobileTabletHeader {
+        // background: $primaryColor;
+        background: pink;
         top: 6.9%;
         min-height: 7vh;
 
@@ -138,13 +144,65 @@ header {
                 }
             }
 
-            #navPages {
+            #mobileNavPages {
                 top: -100vh;
                 
                 a {
-                    font-size: 1.3em;
+                    font-size: 1.4em;
                 }
             }
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    #mobileTabletHeader {
+        display: none;
+    }
+
+    #desktopHeader {
+        @include gridCenter();
+        grid-template-columns: auto auto;
+        position: fixed;
+        top: 6.9%;
+        min-height: 10vh;
+        width: 100%;
+        // background: $primaryColor;
+        background: pink;
+        color: $neutralColorOne;
+
+        >a {
+            @include gridCenter();
+            grid-template-columns: auto auto;
+            @include linksStyle($neutralColorOne, 1em);
+
+
+        }
+
+        h1 {
+            font-family: $titleFont;
+        }
+
+        .logo {
+            @include gridCenter();
+            background: $neutralColorOne;
+            border-radius: 100%;
+        }
+    
+        #logoOuterCircle {
+            width: 38px;
+            height: 38px;
+        }
+    
+        #logoInnerCircle {
+            width: 28px;
+            height: 28px;
+            border: 1.5px solid $primaryColor;
+            color: $primaryColor;
+            font-family: $titleFont;
+            font-weight: bold;
+            font-size: 0.85em;
         }
     }
 }

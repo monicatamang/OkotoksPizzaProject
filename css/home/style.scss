@@ -15,6 +15,7 @@
     min-height: 5vh;
     text-align: center;
     background: $secondaryColor;
+    z-index: -1;
 
     p {
         margin: 5%;
@@ -52,17 +53,17 @@ main {
         width: 100%;
 
         .buttons {
-            @include linksStyle($neutralColorTwo, 0.8em);
-            padding: 5% 10%;
+            @include linksStyle($neutralColorTwo, 0.7em);
+            padding: 3% 6%;
             background: $neutralColorOne;
             border-radius: 3px;
         }
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
     #infoBanner {
-        top: 16.8%;
+        top: 19.9%;
 
         p {
             font-size: 1.1em;
@@ -70,7 +71,7 @@ main {
     }
 
     main {
-        margin-top: 30vh;
+        margin-top: 40vh;
         row-gap: 70px;
 
         h1 {
@@ -90,7 +91,6 @@ main {
 
             .buttons {
                 @include linksStyle($neutralColorTwo, 1.3em);
-                padding: 4% 8%;
             }
         }
 
