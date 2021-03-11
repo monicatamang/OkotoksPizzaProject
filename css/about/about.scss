@@ -25,6 +25,11 @@ section {
         height: 180px;
     }
 
+    #videoAndDescription, #ourRestaurantSection, #ourRestaurantParagraphs {
+        display: grid;
+        row-gap: 20px;
+    }
+
     .aboutContent {
         display: grid;
         row-gap: 20px;
@@ -38,7 +43,7 @@ section {
             @include gridCenter();
             grid-template-columns: auto auto auto auto auto;
             position: relative;
-            height: 40vh; // give this a height that is taller than the image
+            height: 210px; // give this a height that is taller than the image
             margin-bottom: 5%;
 
             .slideshowRadioButton {
@@ -48,6 +53,7 @@ section {
                 top: 148px;
                 opacity: 0;
                 z-index: 1;
+                display: none;
             }
 
             .circleNav {
@@ -69,7 +75,7 @@ section {
 
             .restaurantImage {
                 width: 100%;
-                max-height: 170px;
+                height: 200px;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -81,7 +87,7 @@ section {
                 img {
                     width: 100%;
                     object-fit: cover;
-                    max-height: 30vh;
+                    max-height: 200px;
                 }
             }
         }
@@ -94,29 +100,39 @@ section {
         margin-top: 30vh;
         row-gap: 50px;
 
-        #introVideo {
-            height: 300px;
+        >h1 {
+            font-size: 1.8em;
         }
-
-        // h1 {
-        //     font-size: 1.8em;
-        // }
 
         p {
             font-size: 0.9em;
             line-height: 35px;
         }
 
+        #introVideo {
+            height: 50vh;
+        }
+
         .aboutContent {
 
-            #slideshow {
-                height: 60vh;
+            h2 {
+                font-size: 1.3em;
+            }
 
-                .slideshowRadioButton {
-                    top: 264px;
-                    width: 30px;
-                    height: 30px;
-                }
+            #ourRestaurantSection, #ourRestaurantParagraphs {
+                display: grid;
+                row-gap: 20px;
+            }
+
+            #slideshow {
+                height: 400px;
+
+                // .slideshowRadioButton {
+                //     // top: 264px;
+                //     // width: 30px;
+                //     // height: 30px;
+                //     // opacity: 1;
+                // }
 
                 .circleNav {
                     width: 20px;
@@ -124,7 +140,11 @@ section {
                 }
     
                 .restaurantImage {
-                    max-height: 311px;
+                    height: 350px;
+
+                    img {
+                        max-height: 350px;
+                    }
                 }
             }
         }
@@ -134,36 +154,67 @@ section {
 @media only screen and (min-width: 1000px) {
     
     section {
-        margin-top: 28vh;
-        // justify-items: start;
-        // align-items: start;
+        margin-top: 30vh;
 
-        #introVideo {
-            width: 50%;
+        >h1 {
+            font-size: 2em;
+        }
+
+        #videoAndDescription {
+            margin-top: 5vh;
+            place-items: center;
+            grid-template-columns: auto 1fr;
+            column-gap: 50px;
+            width: 100%;
+
+            #introVideo {
+                width: 40vw;
+                height: 40vh;
+            }
+
+            #description {
+                width: 100%;
+            }
         }
 
         .aboutContent {
+
+            #ourRestaurantSection {
+                display: grid;
+                grid-template-columns: auto 3fr;
+                width: 100%;
+                column-gap: 50px;
+
+                #ourRestaurantParagraphs {
+                    width: 100%;
+                }
+            }
 
             .lineDivider {
                 display: none;
             }
 
             #slideshow {
-                height: 100vh;
+                height: 250px;
+                column-gap: 50px;
 
                 .restaurantImage {
-                    max-height: 100px;
+                    height: 200px;
+
+                    img {
+                        max-height: 200px;
+                    }
                 }
 
-                .slideshowRadioButton {
-                    top: 440px;
-                    width: 40px;
-                    height: 40px;
-                }
+                // .slideshowRadioButton {
+                //     top: 440px;
+                //     width: 40px;
+                //     height: 40px;
+                // }
 
                 .circleNav {
-                    width: 30px;
-                    height: 30px;
+                    width: 15px;
+                    height: 15px;
                 }
             }
         }

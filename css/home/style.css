@@ -198,6 +198,7 @@ body {
     padding: 1% 0%;
     background: #f7f7f7;
     color: #393e46;
+    z-index: 10;
   }
   #desktopHeader > a {
     display: -ms-grid;

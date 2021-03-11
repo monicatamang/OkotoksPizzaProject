@@ -179,6 +179,7 @@
         padding: 1% 0%;
         background: $primaryColor;
         color: $neutralColorOne;
+        z-index: 10;
 
         >a {
             @include gridCenter();

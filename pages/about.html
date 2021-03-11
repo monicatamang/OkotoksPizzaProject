@@ -51,46 +51,48 @@
     </header>
     <section>
         <h1>About</h1>
-        <iframe id="introVideo" src="https://www.youtube.com/embed/kDtpVBzKhhE?end=58" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p>There are no short cuts when it comes to our passion. We pull out all the stops, giving you the ‘wow’ flavour, experience and consistency you not only want, but deserve. Our customers keep coming back, again, again, and again.</p>
+        <article id="videoAndDescription">
+            <iframe id="introVideo" src="https://www.youtube.com/embed/kDtpVBzKhhE?end=58" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div id="description">
+                <p>There are no short cuts when it comes to our passion. We pull out all the stops, giving you the ‘wow’ flavour, experience and consistency you not only want, but deserve. Our customers keep coming back, again, again, and again.</p>
+            </div>
+        </article>
         <article class="aboutContent">
             <h2>Our Restaurant</h2>
-            <p>We’re an Italian pizza restaurant located downtown in Okotoks, Alberta, committed to serving hardworking individuals, just like yourself. When we’re not scouring the globe (okay, the prairies) for the freshest, ripest and boldest ingredients, we’re crafting new additions to our menu for you and your colleagues to enjoy.</p>
-            <img class="lineDivider" src="../images/lineDivider.svg" alt="A thin, dark grey line that is 26.66px in length used as a section divider">
-            <p>From Margherita pizzas and Fettuccine Alfredos to Anipasto Skewers and Aperitivos, everything at Okotoks Pizza is made to provide you with an abundant amount of options to choose from – leaving you to think about what you’re going to try next!</p>
-            <div id="slideshow">
-                <input type="radio" name="slideshowButton" id="buttonOne" class="slideshowRadioButton" checked>
-                <input type="radio" name="slideshowButton" id="buttonTwo" class="slideshowRadioButton">
-                <input type="radio" name="slideshowButton" id="buttonThree" class="slideshowRadioButton">
-                <input type="radio" name="slideshowButton" id="buttonFour" class="slideshowRadioButton">
-                <input type="radio" name="slideshowButton" id="buttonFive" class="slideshowRadioButton">
-                <span class="circleNav" id="circleOne"></span>
-                <span class="circleNav" id="circleTwo"></span>
-                <span class="circleNav" id="circleThree"></span>
-                <span class="circleNav" id="circleFour"></span>
-                <span class="circleNav" id="circleFive"></span>
-                <div class="restaurantImage" id="restaurantOne">
-                    <img src="../images/restaurant/restaurantImage1.jpg" alt="Okotoks Pizza Restaurant's exterior design from a front view perspective. It has two large glass windows and a glass door leading to the entrance of restaurant. The two glass windows and the glass door have three black window hoods with the second glass window having a black window hood with the word 'Pizzeria' in a white, sans-seif font. In between the two glass windows and the second glass window and the glass door is a green ficus tree plant. There is also a light-brown, wooden bench at the front of the first glass window. Through the glass windows, there are incandescent light bulbs hanging from the ceiling and customers are eating and talking to the people seated at their table.">
+                <div id="ourRestaurantSection">
+                    <div id="ourRestaurantParagraphs">
+                        <p>We’re an Italian pizza restaurant located downtown in Okotoks, Alberta, committed to serving hardworking individuals, just like yourself. When we’re not scouring the globe (okay, the prairies) for the freshest, ripest and boldest ingredients, we’re crafting new additions to our menu for you and your colleagues to enjoy.</p>
+                        <img class="lineDivider" src="../images/lineDivider.svg" alt="A thin, dark grey line that is 26.66px in length used as a section divider">
+                        <p>From Margherita pizzas and Fettuccine Alfredos to Anipasto Skewers and Aperitivos, everything at Okotoks Pizza is made to provide you with an abundant amount of options to choose from – leaving you to think about what you’re going to try next!</p>
+                    </div>
+                    <div id="slideshow">
+                        <input type="radio" name="slideshowButton" id="buttonOne" class="slideshowRadioButton" checked>
+                        <input type="radio" name="slideshowButton" id="buttonTwo" class="slideshowRadioButton">
+                        <input type="radio" name="slideshowButton" id="buttonThree" class="slideshowRadioButton">
+                        <input type="radio" name="slideshowButton" id="buttonFour" class="slideshowRadioButton">
+                        <input type="radio" name="slideshowButton" id="buttonFive" class="slideshowRadioButton">
+                        <label for="buttonOne" class="circleNav" id="circleOne"></label>
+                        <label for="buttonTwo" class="circleNav" id="circleTwo"></label>
+                        <label for="buttonThree" class="circleNav" id="circleThree"></label>
+                        <label for="buttonFour" class="circleNav" id="circleFour"></label>
+                        <label for="buttonFive" class="circleNav" id="circleFive"></label>
+                        <div class="restaurantImage" id="restaurantOne">
+                            <img src="../images/restaurant/restaurantImage1.jpg" alt="Okotoks Pizza Restaurant's exterior design from a front view perspective. It has two large glass windows and a glass door leading to the entrance of restaurant. The two glass windows and the glass door have three black window hoods with the second glass window having a black window hood with the word 'Pizzeria' in a white, sans-seif font. In between the two glass windows and the second glass window and the glass door is a green ficus tree plant. There is also a light-brown, wooden bench at the front of the first glass window. Through the glass windows, there are incandescent light bulbs hanging from the ceiling and customers are eating and talking to the people seated at their table.">
+                        </div>
+                        <div class="restaurantImage" id="restaurantTwo">
+                            <img src="../images/restaurant/restaurantImage2.jpg" alt="Okotoks Pizza Restaurant's exterior design from a side-angled view perspective where the photograph of the restaurant was taken in the evening. The restaurant has large glass windows divided by a dark brown, wooden coloured border. The restaurant's roof interior is wooden with small flat ceiling lights mounted onto it. There is also outdoor dining with two chairs per table where there are two people seated at two different tables. On the left hand-side of the photograph is a tall, green ficus tree.">
+                        </div>
+                        <div class="restaurantImage" id="restaurantThree">
+                            <img src="../images/restaurant/restaurantImage3.jpg" alt="Okotoks Pizza Restaurant's interior design from a front view perspective. This is the bar area where behind the counter, there is a black wood-fired oven on the left-hand side and a wall mounted wine racks with green glass bottles on the left-hand side. Ceramic plates are also placed and stacked underneath the wall mounted wine rack. At the front of the bar area, there is a wall divider near the right-side and both the wall divider and counter have a grey, grantite texture. Three incandescent light bulb are hanging from the ceiling near the left-hand side and the chairs at the bar area are five dark red and have a leather texture.">
+                        </div>
+                        <div class="restaurantImage" id="restaurantFour">
+                            <img src="../images/restaurant/restaurantImage4.jpg" alt="Okotoks Pizza Restaurant's interior design from a rear-view perspective. This is a photograph of the whole dining area where the bar area is located in the front area with modern paintings displayed on the left-hand side of the wall. There are three chandliers where each chandlier has six small incandescent light bulbs hanging from the ceiling. In the dining area, there are a total of eight tables with four grey, leather chairs at each table. On each table, there are four small plates, four wine glasses, two small beer glasses, one olive oil dispenser in the center of the table and four light blue cloth napkins with two different sized forks on the left side of the napkin and a butter knife on the right side of the napkin. There are also three pillars aligned in the center of the dining room.">
+                        </div>
+                        <div class="restaurantImage" id="restaurantFive">
+                            <img src="../images/restaurant/restaurantImage5.jpg" alt="Okotoks Pizza's black wood-fired oven where the wood fire is lit in the back of the oven and an Italian sausage pizza is being taken out of the oven with a metal pizza paddle.">
+                        </div>
+                    </div>
                 </div>
-                <div class="restaurantImage" id="restaurantTwo">
-                    <img src="../images/restaurant/restaurantImage2.jpg" alt="Okotoks Pizza Restaurant's exterior design from a side-angled view perspective where the photograph of the restaurant was taken in the evening. The restaurant has large glass windows divided by a dark brown, wooden coloured border. The restaurant's roof interior is wooden with small flat ceiling lights mounted onto it. There is also outdoor dining with two chairs per table where there are two people seated at two different tables. On the left hand-side of the photograph is a tall, green ficus tree.">
-                </div>
-                <div class="restaurantImage" id="restaurantThree">
-                    <img src="../images/restaurant/restaurantImage3.jpg" alt="Okotoks Pizza Restaurant's interior design from a front view perspective. This is the bar area where behind the counter, there is a black wood-fired oven on the left-hand side and a wall mounted wine racks with green glass bottles on the left-hand side. Ceramic plates are also placed and stacked underneath the wall mounted wine rack. At the front of the bar area, there is a wall divider near the right-side and both the wall divider and counter have a grey, grantite texture. Three incandescent light bulb are hanging from the ceiling near the left-hand side and the chairs at the bar area are five dark red and have a leather texture.">
-                </div>
-                <div class="restaurantImage" id="restaurantFour">
-                    <img src="../images/restaurant/restaurantImage4.jpg" alt="Okotoks Pizza Restaurant's interior design from a rear-view perspective. This is a photograph of the whole dining area where the bar area is located in the front area with modern paintings displayed on the left-hand side of the wall. There are three chandliers where each chandlier has six small incandescent light bulbs hanging from the ceiling. In the dining area, there are a total of eight tables with four grey, leather chairs at each table. On each table, there are four small plates, four wine glasses, two small beer glasses, one olive oil dispenser in the center of the table and four light blue cloth napkins with two different sized forks on the left side of the napkin and a butter knife on the right side of the napkin. There are also three pillars aligned in the center of the dining room.">
-                </div>
-                <div class="restaurantImage" id="restaurantFive">
-                    <img src="../images/restaurant/restaurantImage5.jpg" alt="Okotoks Pizza's black wood-fired oven where the wood fire is lit in the back of the oven and an Italian sausage pizza is being taken out of the oven with a metal pizza paddle.">
-                </div>
-                <!-- <div id="slideshowNavigation">
-                    <span class="circleNav" id="circleOne"></span>
-                    <span class="circleNav" id="circleTwo"></span>
-                    <span class="circleNav" id="circleThree"></span>
-                    <span class="circleNav" id="circleFour"></span>
-                    <span class="circleNav" id="circleFive"></span>
-                </div> -->
         </article>
         <article class="aboutContent">
             <h2>The Story of Okotoks Pizza</h2>
