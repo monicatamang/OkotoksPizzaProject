@@ -611,6 +611,14 @@ footer #mobileFooterSpacer {
   row-gap: 25px;
 }
 
+#menuNav .menu #pizzaItemCards img {
+  width: 60%;
+}
+
+#menuNav .menu #drinksMenu article {
+  width: 100%;
+}
+
 #menuNav .menu .itemCard {
   display: -ms-grid;
   display: grid;
@@ -632,16 +640,17 @@ footer #mobileFooterSpacer {
 }
 
 #menuNav .menu .itemCard > h1 {
-  font-size: 0.8em;
-  font-weight: 600;
+  font-size: 0.9em;
+  font-weight: bold;
 }
 
 #menuNav .menu .itemCard p {
   font-size: 0.7em;
 }
 
-#menuNav .menu .itemCard p + p {
+#menuNav .menu .itemCard .itemDescription + p {
   font-size: 0.8em;
+  font-weight: 600;
 }
 
 #menuNav .menu .itemCard:hover .sidePanel {
@@ -668,6 +677,10 @@ footer #mobileFooterSpacer {
           transform: translateX(101%);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+
+#menuNav .menu .itemCard .sidePanel img {
+  width: 70%;
 }
 
 #menuNav .menu .itemCard .sidePanel p {
@@ -699,6 +712,10 @@ footer #mobileFooterSpacer {
   font-weight: bold;
 }
 
+#menuNav .menu .itemCard .desktopSizesAndPrice {
+  display: none;
+}
+
 @media only screen and (min-width: 600px) {
   #menuNav {
     margin-top: 30vh;
@@ -714,10 +731,8 @@ footer #mobileFooterSpacer {
   }
   #menuNav .menu #pizzaItemCards {
     width: 90%;
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
-    -ms-grid-rows: auto auto auto auto;
-        grid-template-rows: auto auto auto auto;
+    -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
   #menuNav .menu .itemCard {
     place-items: center;
@@ -726,11 +741,89 @@ footer #mobileFooterSpacer {
     width: 75%;
     padding: 10% 5%;
   }
-  #menuNav .menu .itemCard > h1 {
-    font-size: 0.8em;
-  }
   #menuNav .menu .itemCard p {
     font-size: 0.6em;
+    padding: 0%;
+  }
+  #menuNav .menu .itemCard .sidePanel {
+    height: 85%;
+    row-gap: 20px;
+  }
+  #menuNav .menu .itemCard .sidePanel > h1 {
+    font-size: 1.2em;
+  }
+  #menuNav .menu .itemCard .sidePanel p {
+    font-size: 0.8em;
+    padding: 0% 5%;
+  }
+  #menuNav #pastaMenu, #menuNav #appetizersMenu, #menuNav #drinksMenu {
+    width: 90%;
+    -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #menuNav #navMenuPages label {
+    cursor: pointer;
+  }
+  #menuNav .menu #salePoster {
+    padding: 3% 0%;
+    width: 80%;
+  }
+  #menuNav .menu .itemCard {
+    width: 60%;
+    -webkit-box-shadow: 1px 2px 4px rgba(128, 128, 128, 0.3);
+            box-shadow: 1px 2px 4px rgba(128, 128, 128, 0.3);
+  }
+  #menuNav .menu .itemCard .itemDescription + p, #menuNav .menu .itemCard .sidePanel {
+    display: none;
+  }
+  #menuNav .menu .itemCard .desktopSizesAndPrice {
+    display: -ms-grid;
+    display: grid;
+    row-gap: 20px;
+  }
+  #menuNav .menu .itemCard .desktopSizesAndPrice input {
+    display: none;
+  }
+  #menuNav .menu .itemCard .desktopSizesAndPrice .pizzaPrice {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+  #menuNav .menu .itemCard .desktopSizesAndPrice .pizzaPrice .price {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    background: #393e46;
+    color: white;
+    font-weight: 500;
+    font-size: 0.8em;
+    width: 25px;
+    height: 25px;
+    padding: 10%;
+    border-radius: 100%;
+    text-align: center;
+    cursor: pointer;
+  }
+  #menuNav .menu .itemCard .desktopSizesAndPrice #pizzaSmall:checked ~ .priceForSmall, #menuNav .menu .itemCard .desktopSizesAndPrice #pizzaMedium:checked ~ .priceForMedium, #menuNav .menu .itemCard .desktopSizesAndPrice #pizzaLarge:checked ~ .priceForLarge {
+    display: block;
+    opacity: 1;
+  }
+  #menuNav .menu .itemCard .desktopSizesAndPrice p {
+    font-weight: bold;
+    font-size: 1em;
+    opacity: 0;
+    display: none;
+  }
+  #menuNav .menu .itemCard:active {
+    -webkit-box-shadow: 1px 2px 4px rgba(128, 128, 128, 0.3);
+            box-shadow: 1px 2px 4px rgba(128, 128, 128, 0.3);
   }
 }
 /*# sourceMappingURL=menu.css.map */

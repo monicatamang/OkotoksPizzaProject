@@ -70,7 +70,6 @@
         }
     
         #salePoster {
-            // width: 88%;
             width: 70%;
             padding: 6% 7%;
             background: $neutralColorOne;
@@ -88,13 +87,23 @@
         #pizzaItemCards {
             @include gridCenter();
             row-gap: 25px;
+
+            img {
+                width: 60%;
+            }
+        }
+
+        #drinksMenu {
+
+            article {
+                width: 100%;
+            }
         }
     
         .itemCard {
             display: grid;
             align-items: center;
             row-gap: 14px;
-            // width: 85%;
             width: 67%;
             padding: 8%;
             background: $secondaryColor;
@@ -106,17 +115,17 @@
             }
     
             >h1 {
-                font-size: 0.8em;
-                font-weight: 600;
+                font-size: 0.9em;
+                font-weight: bold;
             }
             
             p {
                 font-size: 0.7em;
             }
 
-            p + p {
+            .itemDescription + p {
                 font-size: 0.8em;
-                // font-weight: 500;
+                font-weight: 600;
             }
     
             &:hover .sidePanel {
@@ -138,6 +147,10 @@
 
                 transform: translateX(101%);
                 transition: all 0.5s ease-in-out;
+
+                img {
+                    width: 70%;
+                }
     
                 p {
                     font-size: 0.7em;
@@ -165,6 +178,10 @@
                     font-weight: bold;
                 }
             }
+
+            .desktopSizesAndPrice {
+                display: none;
+            }
         }
     }
 }
@@ -178,8 +195,6 @@
         .menu {
             margin-top: 2vh;
             row-gap: 40px;
-            // height: 100%;
-            // padding: 0% 5%;
 
             #salePoster {
                 width: 68%;
@@ -188,27 +203,123 @@
 
             #pizzaItemCards {
                 width: 90%;
-                grid-template-columns: auto auto;
-                grid-template-rows: auto auto auto auto;
-                // row-gap: 50px;
-                // column-gap: 10px;
+                // grid-template-columns: 1fr 1fr;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                // grid-template-rows: repeat(4, 1fr);
             }
 
             .itemCard {
                 place-items: center;
                 text-align: center;
                 row-gap: 30px;
-                // column-gap: 10px;
                 width: 75%;
-                // height: 90%;
                 padding: 10% 5%;
-
-                >h1 {
-                    font-size: 0.8em;
-                }
                 
                 p {
                     font-size: 0.6em;
+                    padding: 0%;
+                }
+
+                .sidePanel {
+                    // height: 100%;
+                    height: 85%;
+                    row-gap: 20px;
+
+                    >h1 {
+                        font-size: 1.2em;
+                    }
+
+                    p {
+                        font-size: 0.8em;
+                        padding: 0% 5%;
+                    }
+                }
+            }
+        }
+
+        #pastaMenu, #appetizersMenu, #drinksMenu {
+            width: 90%;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            // grid-template-columns: 1fr 1fr;
+            // grid-template-rows: repeat(4, 1fr);
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #menuNav {
+
+        #navMenuPages {
+
+            label {
+                cursor: pointer;
+            }
+        }
+        
+        .menu {
+
+            #salePoster {
+                padding: 3% 0%;
+                width: 80%;
+            }
+
+            // #pizzaItemCards {
+            //     grid-template-columns: 1fr 1fr 1fr 1fr;
+            //     grid-template-rows: 1fr 1fr;
+            // }
+
+            .itemCard {
+                width: 60%;
+                box-shadow: 1px 2px 4px rgba(128, 128, 128, 0.3);
+                // row-gap: 0px;
+                
+                .itemDescription + p, .sidePanel {
+                    display: none;
+                }
+
+                .desktopSizesAndPrice {
+                    display: grid;
+                    row-gap: 20px;
+
+                    input {
+                        display: none;
+                    }
+
+                    .pizzaPrice {
+                        @include gridCenter();
+                        grid-template-columns: repeat(3, 1fr);
+                        column-gap: 10px;
+
+                        .price {
+                            @include gridCenter();
+                            background: $neutralColorOne;
+                            color: $neutralColorTwo;
+                            font-weight: 500;
+                            font-size: 0.8em;
+                            width: 25px;
+                            height: 25px;
+                            padding: 10%;
+                            border-radius: 100%;
+                            text-align: center;
+                            cursor: pointer;
+                        }
+                    }
+
+                    #pizzaSmall:checked ~ .priceForSmall, #pizzaMedium:checked ~ .priceForMedium, #pizzaLarge:checked ~ .priceForLarge {
+                        display: block;
+                        opacity: 1;
+                    }
+
+                    p {
+                        font-weight: bold;
+                        font-size: 1em;
+                        opacity: 0;
+                        display: none;
+                    }
+                }
+
+                &:active {
+                    box-shadow: 1px 2px 4px rgba(128, 128, 128, 0.3);
                 }
             }
         }
