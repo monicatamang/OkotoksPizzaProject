@@ -25,11 +25,11 @@
                 <span id="mobileBarThree" class="navBars"></span>
             </div>
             <nav id="mobileNavPages">
-                <a id="#currentContactPage" href="../index.html">Home</a>
+                <a href="../index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="menu.html">Menu</a>
                 <a href="reservations.html">Reservations</a>
-                <a href="contact.html">Contact</a>
+                <a id="currentPage" href="contact.html">Contact</a>
             </nav>
         </div>
     </header>
@@ -49,52 +49,56 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <section>
+    <section id="contactPage">
         <h1>Contact</h1>
-        <article class="contactPageSections">
-            <h3>Contact Information</h3>
-            <p><i class="fas fa-phone-alt"></i> (403) 555-5555</p>
-            <a href="mailto:info@okotokspizza.ca"><i class="fas fa-envelope"></i> info@okotokspizza.ca</a>
-        </article>
-        <img src="../images/lineDivider.svg" alt="A thin, dark grey line that is 26.66px in length used as a section divider">
-        <article class="contactPageSections">
-            <h3>Hours of Operation</h3>
-            <div class="restaurantHours">
-                <p>Sun</p>
-                <p>12PM - 11PM</p>
+        <div id="contactPageSections">
+            <div id="infoAndHoursSections">
+                <article class="contactSection">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-phone-alt"></i> (403) 555-5555</p>
+                    <a href="mailto:info@okotokspizza.ca"><i class="fas fa-envelope"></i> info@okotokspizza.ca</a>
+                </article>
+                <img class="lineDividers" src="../images/lineDivider.svg" alt="A thin, dark grey line that is 26.66px in length used as a section divider">
+                <article class="contactSection">
+                    <h3>Hours of Operation</h3>
+                    <div class="restaurantHours">
+                        <p>Sun</p>
+                        <p>12PM - 11PM</p>
+                    </div>
+                    <div class="restaurantHours">
+                        <p>Mon</p>
+                        <p>12PM - 11PM</p>
+                    </div>
+                    <div class="restaurantHours">
+                        <p>Tue</p>
+                        <p>12PM - 11PM</p>
+                    </div>
+                    <div class="restaurantHours">
+                        <p>Wed</p>
+                        <p>12PM - 11PM</p>
+                    </div>
+                    <div class="restaurantHours">
+                        <p>Thu</p>
+                        <p>12PM - 11PM</p>
+                    </div>
+                    <div class="restaurantHours">
+                        <p>Fri</p>
+                        <p>12PM - 1AM</p>
+                    </div>
+                    <div class="restaurantHours">
+                        <p>Sat</p>
+                        <p>12PM - 1AM</p>
+                    </div>
+                </article>
             </div>
-            <div class="restaurantHours">
-                <p>Mon</p>
-                <p>12PM - 11PM</p>
-            </div>
-            <div class="restaurantHours">
-                <p>Tue</p>
-                <p>12PM - 11PM</p>
-            </div>
-            <div class="restaurantHours">
-                <p>Wed</p>
-                <p>12PM - 11PM</p>
-            </div>
-            <div class="restaurantHours">
-                <p>Thu</p>
-                <p>12PM - 11PM</p>
-            </div>
-            <div class="restaurantHours">
-                <p>Fri</p>
-                <p>12PM - 1AM</p>
-            </div>
-            <div class="restaurantHours">
-                <p>Sat</p>
-                <p>12PM - 1AM</p>
-            </div>
-        </article>
-        <img src="../images/lineDivider.svg" alt="A thin, dark grey line that is 26.66px in length used as a section divider">
-        <article class="contactPageSections">
-            <h3>Location</h3>
-            <iframe id="googleMaps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17528.986361230138!2d-113.99619076924097!3d50.72600306024479!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537199ef78b39207%3A0xa224df5fbe194cd0!2sOkotoks%20Pizza%20%26%20Donair!5e0!3m2!1sen!2sca!4v1615174067074!5m2!1sen!2sca" allowfullscreen="" loading="lazy"></iframe>
-            <p><i class="fas fa-map-marker-alt"></i> 5050 Pizza Palace SW</p>
-            <p>Okotoks, AB P1Z Z2A</p>
-        </article>
+            <img class="lineDividers" src="../images/lineDivider.svg" alt="A thin, dark grey line that is 26.66px in length used as a section divider">
+            <article class="contactSection">
+                <h3>Location</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 5050 Pizza Palace SW</p>
+                <p>Okotoks, AB P1Z Z2A</p>
+                <iframe id="googleMaps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17528.986361230138!2d-113.99619076924097!3d50.72600306024479!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537199ef78b39207%3A0xa224df5fbe194cd0!2sOkotoks%20Pizza%20%26%20Donair!5e0!3m2!1sen!2sca!4v1615174067074!5m2!1sen!2sca" allowfullscreen="" loading="lazy"></iframe>
+            </article>
+        </div>
     </section>
     <article id="callButton">
         <a href="tel:4035555555">

@@ -40,6 +40,7 @@ body {
   min-height: 10vh;
   padding: 2% 0%;
   background: #f7f7f7;
+  z-index: 10;
 }
 
 #mobileTabletHeader > a {
@@ -150,7 +151,7 @@ body {
   font-size: 0.9em;
 }
 
-#mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentHomePage, #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentAboutPage, #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentMenuPage, #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentReservationsPage, #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentContactPage {
+#mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentPage {
   background: #eeeeee;
 }
 
@@ -535,6 +536,7 @@ footer #mobileFooterSpacer {
   height: 40px;
   opacity: 0;
   z-index: 1;
+  display: none;
 }
 
 #menuNav #categoryOne {
@@ -564,7 +566,7 @@ footer #mobileFooterSpacer {
 
 #menuNav #navMenuPages {
   position: relative;
-  z-index: -1;
+  z-index: 1;
   display: -ms-grid;
   display: grid;
   place-items: center;

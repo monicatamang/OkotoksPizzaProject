@@ -38,7 +38,7 @@ section {
             @include gridCenter();
             grid-template-columns: auto auto auto auto auto;
             position: relative;
-            height: 40vh;
+            height: 40vh; // give this a height that is taller than the image
             margin-bottom: 5%;
 
             .slideshowRadioButton {
@@ -81,6 +81,7 @@ section {
                 img {
                     width: 100%;
                     object-fit: cover;
+                    max-height: 30vh;
                 }
             }
         }
@@ -90,7 +91,7 @@ section {
 @media only screen and (min-width: 600px) {
     
     section {
-        margin-top: 25vh;
+        margin-top: 30vh;
         row-gap: 50px;
 
         #introVideo {

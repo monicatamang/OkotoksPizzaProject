@@ -25,9 +25,9 @@
                 <span id="mobileBarThree" class="navBars"></span>
             </div>
             <nav id="mobileNavPages">
-                <a id="#currentMenuPage" href="../index.html">Home</a>
+                <a href="../index.html">Home</a>
                 <a href="about.html">About</a>
-                <a href="menu.html">Menu</a>
+                <a id="currentPage" href="menu.html">Menu</a>
                 <a href="reservations.html">Reservations</a>
                 <a href="contact.html">Contact</a>
             </nav>
@@ -57,16 +57,20 @@
     </article>
     <section id="menuNav">
         <h1>Menu</h1>
+        <div id="navMenuPages">
+            <label for="categoryOne" id="pizza">Pizza</label>
+            <label for="categoryTwo" id="pasta">Pasta</label>
+            <label for="categoryThree" id="appetizers">Appetizers</label>
+            <label for="categoryFour" id="drinks">Drinks</label>
+        </div>
         <input type="radio" name="menuCategory" id="categoryOne" class="menuRadioButtons" checked>
         <input type="radio" name="menuCategory" id="categoryTwo" class="menuRadioButtons">
         <input type="radio" name="menuCategory" id="categoryThree" class="menuRadioButtons">
         <input type="radio" name="menuCategory" id="categoryFour" class="menuRadioButtons">
-        <div id="navMenuPages">
-            <p id="pizza">Pizza</p>
-            <p id="pasta">Pasta</p>
-            <p id="appetizers">Appetizers</p>
-            <p id="drinks">Drinks</p>
-        </div>
+        <!-- <label for="categoryOne" id="pizza">Pizza</label>
+        <label for="categoryTwo" id="pasta">Pasta</label>
+        <label for="categoryThree" id="appetizers">Appetizers</label>
+        <label for="categoryFour" id="drinks">Drinks</label> -->
         <section class="menu" id="pizzaMenu">
             <article id="salePoster">
                 <h1>50% OFF ALL PIZZAS</h1>

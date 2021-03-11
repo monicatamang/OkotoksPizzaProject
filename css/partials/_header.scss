@@ -9,6 +9,7 @@
     min-height: 10vh;
     padding: 2% 0%;
     background: $primaryColor;
+    z-index: 10;
 
     >a {
         text-decoration: none;
@@ -98,7 +99,11 @@
                 @include linksStyle($neutralColorOne, 0.9em);
             }
 
-            #currentHomePage, #currentAboutPage, #currentMenuPage, #currentReservationsPage, #currentContactPage {
+            // #currentHomePage, #currentAboutPage, #currentMenuPage, #currentReservationsPage, #currentContactPage {
+            //     background: $secondaryColor;
+            // }
+
+            #currentPage {
                 background: $secondaryColor;
             }
         }

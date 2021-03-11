@@ -24,6 +24,7 @@
         height: 40px;
         opacity: 0;
         z-index: 1;
+        display: none;
     }
 
     #categoryOne {
@@ -52,7 +53,7 @@
 
     #navMenuPages {
         position: relative;
-        z-index: -1;
+        z-index: 1;
         @include gridCenter();
         grid-template-columns: auto auto auto auto;
         width: 80%;

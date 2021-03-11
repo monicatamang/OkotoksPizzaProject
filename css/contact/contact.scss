@@ -3,11 +3,7 @@
 @import "../partials/callButton";
 @import "../partials/footer";
 
-#currentPage {
-    background: $secondaryColor;
-}
-
-section {
+#contactPage {
     display: grid;
     row-gap: 30px;
     margin-top: 15vh;
@@ -20,30 +16,95 @@ section {
         text-align: center;
     }
 
-    .contactPageSections {
+    #contactPageSections {
         display: grid;
-        row-gap: 15px;
-        font-size: 0.8em;
+        row-gap: 25px;
 
-        h3 {
-            font-family: $titleFont;
+        #infoAndHoursSections {
+            display: grid;
+            row-gap: 25px;
         }
 
-        a {
-            text-decoration: none;
-            color: $neutralColorOne;
-            width: 70%;
+        .contactSection {
+            display: grid;
+            row-gap: 15px;
+            font-size: 0.8em;
+    
+            h3 {
+                font-family: $titleFont;
+            }
+    
+            a {
+                text-decoration: none;
+                color: $neutralColorOne;
+                width: 70%;
+            }
+
+            .restaurantHours {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                width: 70%;
+            }
+
+            #googleMaps {
+                border: none;
+                width: 100%;
+            }
         }
     }
+}
 
-    .restaurantHours {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        width: 70%;
+@media only screen and (min-width: 600px) {
+    
+    #contactPage {
+        margin-top: 30vh;
+        row-gap: 45px;
+
+        >h1 {
+            font-size: 1.8em;
+        }
+
+        #contactPageSections {
+
+            .contactSection {
+                font-size: 0.9em;
+                row-gap: 30px;
+            }
+
+            #googleMaps {
+                height: 50vh;
+            }
+        }
     }
+}
 
-    #googleMaps {
-        border: none;
-        width: 100%;
+@media only screen and (min-width: 1000px) {
+    #contactPage {
+        
+        >h1 {
+            font-size: 2em;
+        }
+
+        #contactPageSections {
+            margin-top: 5vh;
+            display: grid;
+            grid-template-columns: auto auto;
+
+            #infoAndHoursSections {
+                row-gap: 50px;
+            }
+
+            .contactSection {
+                font-size: 1em;
+            }
+
+            #googleMaps {
+                height: 70vh;
+            }
+
+            .lineDividers {
+                display: none;
+            }
+        }
     }
 }

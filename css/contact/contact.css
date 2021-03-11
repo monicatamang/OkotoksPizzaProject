@@ -40,6 +40,7 @@ body {
   min-height: 10vh;
   padding: 2% 0%;
   background: #f7f7f7;
+  z-index: 10;
 }
 
 #mobileTabletHeader > a {
@@ -150,7 +151,7 @@ body {
   font-size: 0.9em;
 }
 
-#mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentHomePage, #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentAboutPage, #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentMenuPage, #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentReservationsPage, #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentContactPage {
+#mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentPage {
   background: #eeeeee;
 }
 
@@ -511,11 +512,7 @@ footer #mobileFooterSpacer {
   }
 }
 
-#currentPage {
-  background: #eeeeee;
-}
-
-section {
+#contactPage {
   display: -ms-grid;
   display: grid;
   row-gap: 30px;
@@ -525,29 +522,41 @@ section {
   color: #393e46;
 }
 
-section > h1 {
+#contactPage > h1 {
   font-family: "Lora", serif;
   text-align: center;
 }
 
-section .contactPageSections {
+#contactPage #contactPageSections {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 25px;
+}
+
+#contactPage #contactPageSections #infoAndHoursSections {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 25px;
+}
+
+#contactPage #contactPageSections .contactSection {
   display: -ms-grid;
   display: grid;
   row-gap: 15px;
   font-size: 0.8em;
 }
 
-section .contactPageSections h3 {
+#contactPage #contactPageSections .contactSection h3 {
   font-family: "Lora", serif;
 }
 
-section .contactPageSections a {
+#contactPage #contactPageSections .contactSection a {
   text-decoration: none;
   color: #393e46;
   width: 70%;
 }
 
-section .restaurantHours {
+#contactPage #contactPageSections .contactSection .restaurantHours {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -555,8 +564,50 @@ section .restaurantHours {
   width: 70%;
 }
 
-section #googleMaps {
+#contactPage #contactPageSections .contactSection #googleMaps {
   border: none;
   width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  #contactPage {
+    margin-top: 30vh;
+    row-gap: 45px;
+  }
+  #contactPage > h1 {
+    font-size: 1.8em;
+  }
+  #contactPage #contactPageSections .contactSection {
+    font-size: 0.9em;
+    row-gap: 30px;
+  }
+  #contactPage #contactPageSections #googleMaps {
+    height: 50vh;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #contactPage > h1 {
+    font-size: 2em;
+  }
+  #contactPage #contactPageSections {
+    margin-top: 5vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  #contactPage #contactPageSections #infoAndHoursSections {
+    row-gap: 50px;
+  }
+  #contactPage #contactPageSections .contactSection {
+    font-size: 1em;
+  }
+  #contactPage #contactPageSections #googleMaps {
+    height: 70vh;
+  }
+  #contactPage #contactPageSections .lineDividers {
+    display: none;
+  }
 }
 /*# sourceMappingURL=contact.css.map */

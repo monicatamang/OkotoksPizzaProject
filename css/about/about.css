@@ -40,6 +40,7 @@ body {
   min-height: 10vh;
   padding: 2% 0%;
   background: #f7f7f7;
+  z-index: 10;
 }
 
 #mobileTabletHeader > a {
@@ -150,7 +151,7 @@ body {
   font-size: 0.9em;
 }
 
-#mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentHomePage, #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentAboutPage, #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentMenuPage, #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentReservationsPage, #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentContactPage {
+#mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentPage {
   background: #eeeeee;
 }
 
@@ -603,11 +604,12 @@ section .aboutContent #slideshow .restaurantImage img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  max-height: 30vh;
 }
 
 @media only screen and (min-width: 600px) {
   section {
-    margin-top: 25vh;
+    margin-top: 30vh;
     row-gap: 50px;
   }
   section #introVideo {
