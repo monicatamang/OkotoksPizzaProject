@@ -190,7 +190,7 @@ body {
     top: -200vh;
   }
   #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages a {
-    font-size: 1.4em;
+    font-size: 1em;
   }
 }
 
@@ -290,6 +290,7 @@ body {
   background: white;
   -webkit-box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.4);
           box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.4);
+  z-index: 2;
 }
 
 #callButton a {
@@ -656,12 +657,12 @@ section .aboutContent #slideshow .restaurantImage img {
 @media only screen and (min-width: 1000px) {
   section {
     margin-top: 30vh;
+    row-gap: 70px;
   }
   section > h1 {
     font-size: 2em;
   }
   section #videoAndDescription {
-    margin-top: 5vh;
     place-items: center;
     -ms-grid-columns: auto 1fr;
         grid-template-columns: auto 1fr;
@@ -670,17 +671,20 @@ section .aboutContent #slideshow .restaurantImage img {
     width: 100%;
   }
   section #videoAndDescription #introVideo {
-    width: 40vw;
-    height: 40vh;
+    width: 35vw;
+    height: 50vh;
   }
   section #videoAndDescription #description {
     width: 100%;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
   }
   section .aboutContent #ourRestaurantSection {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto 3fr;
-        grid-template-columns: auto 3fr;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
     width: 100%;
     -webkit-column-gap: 50px;
             column-gap: 50px;
@@ -695,6 +699,7 @@ section .aboutContent #slideshow .restaurantImage img {
     height: 250px;
     -webkit-column-gap: 50px;
             column-gap: 50px;
+    margin-bottom: 0%;
   }
   section .aboutContent #slideshow .restaurantImage {
     height: 200px;

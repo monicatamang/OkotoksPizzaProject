@@ -155,25 +155,27 @@ section {
     
     section {
         margin-top: 30vh;
+        row-gap: 70px;
 
         >h1 {
             font-size: 2em;
         }
 
         #videoAndDescription {
-            margin-top: 5vh;
+            // margin-top: 5vh;
             place-items: center;
             grid-template-columns: auto 1fr;
             column-gap: 50px;
             width: 100%;
 
             #introVideo {
-                width: 40vw;
-                height: 40vh;
+                width: 35vw;
+                height: 50vh;
             }
 
             #description {
                 width: 100%;
+                align-self: start;
             }
         }
 
@@ -181,7 +183,7 @@ section {
 
             #ourRestaurantSection {
                 display: grid;
-                grid-template-columns: auto 3fr;
+                grid-template-columns: auto auto;
                 width: 100%;
                 column-gap: 50px;
 
@@ -197,6 +199,7 @@ section {
             #slideshow {
                 height: 250px;
                 column-gap: 50px;
+                margin-bottom: 0%;
 
                 .restaurantImage {
                     height: 200px;

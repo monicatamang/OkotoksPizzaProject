@@ -190,7 +190,7 @@ body {
     top: -200vh;
   }
   #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages a {
-    font-size: 1.4em;
+    font-size: 1em;
   }
 }
 
@@ -290,6 +290,7 @@ body {
   background: white;
   -webkit-box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.4);
           box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.4);
+  z-index: 2;
 }
 
 #callButton a {

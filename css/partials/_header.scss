@@ -99,10 +99,6 @@
                 @include linksStyle($neutralColorOne, 0.9em);
             }
 
-            // #currentHomePage, #currentAboutPage, #currentMenuPage, #currentReservationsPage, #currentContactPage {
-            //     background: $secondaryColor;
-            // }
-
             #currentPage {
                 background: $secondaryColor;
             }
@@ -156,7 +152,7 @@
                 top: -200vh;
                 
                 a {
-                    font-size: 1.4em;
+                    font-size: 1em;
                 }
             }
         }

@@ -190,7 +190,7 @@ body {
     top: -200vh;
   }
   #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages a {
-    font-size: 1.4em;
+    font-size: 1em;
   }
 }
 
@@ -290,6 +290,7 @@ body {
   background: white;
   -webkit-box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.4);
           box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.4);
+  z-index: 2;
 }
 
 #callButton a {
@@ -540,22 +541,6 @@ footer #mobileFooterSpacer {
   display: none;
 }
 
-#menuNav #categoryOne {
-  left: 12%;
-}
-
-#menuNav #categoryTwo {
-  left: 28%;
-}
-
-#menuNav #categoryThree {
-  left: 50%;
-}
-
-#menuNav #categoryFour {
-  left: 74%;
-}
-
 #menuNav #categoryOne:checked ~ #pizzaMenu, #menuNav #categoryTwo:checked ~ #pastaMenu, #menuNav #categoryThree:checked ~ #appetizersMenu, #menuNav #categoryFour:checked ~ #drinksMenu {
   display: -ms-grid;
   display: grid;
@@ -574,13 +559,18 @@ footer #mobileFooterSpacer {
   -ms-grid-columns: auto auto auto auto;
       grid-template-columns: auto auto auto auto;
   width: 80%;
+  margin-top: 2vh;
   border-radius: 5px;
   text-align: center;
   color: #393e46;
 }
 
-#menuNav #navMenuPages p {
+#menuNav #navMenuPages label {
   font-size: 0.9em;
+}
+
+#menuNav #drinksMenu {
+  width: 80%;
 }
 
 #menuNav .menu {
@@ -589,7 +579,8 @@ footer #mobileFooterSpacer {
   place-items: center;
   row-gap: 20px;
   min-height: 90vh;
-  padding: 0% 10%;
+  margin-top: 2vh;
+  width: 100%;
   color: #393e46;
   display: none;
 }
@@ -599,7 +590,7 @@ footer #mobileFooterSpacer {
 }
 
 #menuNav .menu #salePoster {
-  width: 88%;
+  width: 70%;
   padding: 6% 7%;
   background: #393e46;
   border-radius: 3px;
@@ -627,7 +618,7 @@ footer #mobileFooterSpacer {
       -ms-flex-align: center;
           align-items: center;
   row-gap: 14px;
-  width: 85%;
+  width: 67%;
   padding: 8%;
   background: #eeeeee;
   border-radius: 3px;
@@ -641,11 +632,16 @@ footer #mobileFooterSpacer {
 }
 
 #menuNav .menu .itemCard > h1 {
-  font-size: 0.9em;
+  font-size: 0.8em;
+  font-weight: 600;
 }
 
 #menuNav .menu .itemCard p {
-  font-size: 0.68em;
+  font-size: 0.7em;
+}
+
+#menuNav .menu .itemCard p + p {
+  font-size: 0.8em;
 }
 
 #menuNav .menu .itemCard:hover .sidePanel {
@@ -667,6 +663,7 @@ footer #mobileFooterSpacer {
   padding: 10%;
   background: #eeeeee;
   text-align: center;
+  z-index: 11;
   -webkit-transform: translateX(101%);
           transform: translateX(101%);
   -webkit-transition: all 0.5s ease-in-out;
@@ -702,36 +699,38 @@ footer #mobileFooterSpacer {
   font-weight: bold;
 }
 
-#menuNav #drinksMenu {
-  width: 80%;
-}
-
 @media only screen and (min-width: 600px) {
   #menuNav {
-    margin-top: 25vh;
+    margin-top: 30vh;
+    row-gap: 30px;
   }
   #menuNav .menu {
-    width: 100%;
-    height: 100%;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    padding: 0% 5%;
+    margin-top: 2vh;
+    row-gap: 40px;
   }
   #menuNav .menu #salePoster {
-    width: 80%;
-    font-size: 1.2em;
+    width: 68%;
+    font-size: 1.1em;
   }
   #menuNav .menu #pizzaItemCards {
-    width: 100%;
+    width: 90%;
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
   }
   #menuNav .menu .itemCard {
-    row-gap: 5px;
-    width: 60%;
-    height: 80%;
+    place-items: center;
+    text-align: center;
+    row-gap: 30px;
+    width: 75%;
+    padding: 10% 5%;
+  }
+  #menuNav .menu .itemCard > h1 {
+    font-size: 0.8em;
+  }
+  #menuNav .menu .itemCard p {
+    font-size: 0.6em;
   }
 }
 /*# sourceMappingURL=menu.css.map */
