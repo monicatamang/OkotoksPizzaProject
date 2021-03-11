@@ -218,18 +218,11 @@
 
             a {
                 @include linksStyle($neutralColorOne, 0.9em);
-                // height: 100%;
-                // width: 100%;
 
                 &:hover {
                     font-weight: bold;
                 }
             }
-
-            // .currentPage {
-            //     background: $secondaryColor;
-            //     height: 100%;
-            // }
         }
     }
 }

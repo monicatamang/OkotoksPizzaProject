@@ -335,7 +335,7 @@ body {
   #callButton {
     height: 3vh;
     padding: 1% 0%;
-    top: 13.4%;
+    top: 13%;
   }
   #callButton p {
     font-size: 0.8em;
@@ -514,10 +514,6 @@ footer #mobileFooterSpacer {
   }
 }
 
-#currentPage {
-  background: #eeeeee;
-}
-
 #menuNav {
   display: -ms-grid;
   display: grid;
@@ -567,10 +563,6 @@ footer #mobileFooterSpacer {
 
 #menuNav #navMenuPages label {
   font-size: 0.9em;
-}
-
-#menuNav #drinksMenu {
-  width: 80%;
 }
 
 #menuNav .menuContainer {

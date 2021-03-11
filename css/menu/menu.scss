@@ -3,10 +3,6 @@
 @import "../partials/callButton";
 @import "../partials/footer";
 
-#currentPage {
-    background: $secondaryColor;
-}
-
 #menuNav {
     @include gridCenter();
     row-gap: 20px;
@@ -51,17 +47,12 @@
         }
     }
 
-    #drinksMenu {
-        width: 80%;
-    }
-
     .menuContainer {
         @include gridCenter();
         row-gap: 20px;
         min-height: 90vh;
         margin-top: 2vh;
         width: 100%;
-        // padding: 0% 10%;
         color: $neutralColorOne;
         display: none;
     
