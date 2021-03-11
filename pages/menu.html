@@ -67,7 +67,7 @@
             <label for="categoryThree" id="appetizers">Appetizers</label>
             <label for="categoryFour" id="drinks">Drinks</label>
         </div>
-        <section class="menu" id="pizzaMenu">
+        <section class="menuContainer" id="pizzaMenu">
             <article id="salePoster">
                 <h1>50% OFF ALL PIZZAS</h1>
                 <h1>SUN - THU AFTER 10PM</h1>
@@ -95,17 +95,20 @@
                         </div>
                     </div>
                     <div class="desktopSizesAndPrice">
-                        <input type="radio" name="pizzaSizes" id="pizzaSmall" checked>
-                        <input type="radio" name="pizzaSizes" id="pizzaMedium">
-                        <input type="radio" name="pizzaSizes" id="pizzaLarge">
+                        <input type="radio" name="BBQChicken" id="pizzaSmallBBQChicken" checked>
+                        <input type="radio" name="BBQChicken" id="pizzaMediumBBQChicken">
+                        <input type="radio" name="BBQChicken" id="pizzaLargeBBQChicken">
                         <div class="pizzaPrice">
-                            <label for="pizzaSmall" id="small" class="price">S</label>
-                            <label for="pizzaMedium" id="medium" class="price">M</label>
-                            <label for="pizzaLarge" id="large" class="price">L</label>
+                            <label for="pizzaSmallBBQChicken" id="smallSize" class="desktopPizzaSize">10''</label>
+                            <label for="pizzaMediumBBQChicken" id="mediumSize" class="desktopPizzaSize">12''</label>
+                            <label for="pizzaLargeBBQChicken" id="largeSize" class="desktopPizzaSize">14''</label>
                         </div>
-                        <p class="priceForSmall">$10</p>
-                        <p class="priceForMedium">$14</p>
-                        <p class="priceForLarge">$20</p>
+                        <p class="priceFor10inches">$10</p>
+                        <p class="priceFor12inches">$14</p>
+                        <p class="priceFor14inches">$20</p>
+                    </div>
+                    <div class="menuItemHover">
+                        <img src="../images/pizza/bbqChicken.jpg" alt="A BBQ Chicken pizza made with chopped boneless chicken breast, mozzarella cheese, freshly-grated chedder cheese, and spicy barbeque sauce.">
                     </div>
                 </article>
                 <article class="itemCard">
@@ -130,20 +133,23 @@
                         </div>
                     </div>
                     <div class="desktopSizesAndPrice">
-                        <input type="radio" name="pizzaSizes" id="pizzaSmall" checked>
-                        <input type="radio" name="pizzaSizes" id="pizzaMedium">
-                        <input type="radio" name="pizzaSizes" id="pizzaLarge">
+                        <input type="radio" name="chickenBru" id="pizzaSmallChickenBru" checked>
+                        <input type="radio" name="chickenBru" id="pizzaMediumChickenBru">
+                        <input type="radio" name="chickenBru" id="pizzaLargeChickenBru">
                         <div class="pizzaPrice">
-                            <label for="pizzaSmall" id="small" class="price">S</label>
-                            <label for="pizzaMedium" id="medium" class="price">M</label>
-                            <label for="pizzaLarge" id="large" class="price">L</label>
+                            <label for="pizzaSmallChickenBru" id="smallSize" class="desktopPizzaSize">10''</label>
+                            <label for="pizzaMediumChickenBru" id="mediumSize" class="desktopPizzaSize">12''</label>
+                            <label for="pizzaLargeChickenBru" id="largeSize" class="desktopPizzaSize">14''</label>
                         </div>
-                        <p class="priceForSmall">$10</p>
-                        <p class="priceForMedium">$14</p>
-                        <p class="priceForLarge">$20</p>
+                        <p class="priceFor10inches">$10</p>
+                        <p class="priceFor12inches">$14</p>
+                        <p class="priceFor14inches">$20</p>
+                    </div>
+                    <div class="menuItemHover">
+                        <img src="../images/pizza/chickenBruchetta.jpg" alt="A Chicken Bruchetta pizza made with chopped boneless chicken breast, mozzarella cheese, freshly-grated parmesan cheese and diced tomatos.">
                     </div>
                 </article>
-                <article class="itemCard" class="menu">
+                <article class="itemCard">
                     <h1>Deluxe</h1>
                     <p class="itemDescription">Black Olives, Green Peppers, Mozzarella Cheese, Mushrooms, Pepperoni</p>
                     <p>Starting at $8</p>
@@ -165,17 +171,20 @@
                         </div>
                     </div>
                     <div class="desktopSizesAndPrice">
-                        <input type="radio" name="pizzaSizes" id="pizzaSmall" checked>
-                        <input type="radio" name="pizzaSizes" id="pizzaMedium">
-                        <input type="radio" name="pizzaSizes" id="pizzaLarge">
+                        <input type="radio" name="deluxe" id="pizzaSmallDeluxe" checked>
+                        <input type="radio" name="deluxe" id="pizzaMediumDeluxe">
+                        <input type="radio" name="deluxe" id="pizzaLargeDeluxe">
                         <div class="pizzaPrice">
-                            <label for="pizzaSmall" id="small" class="price">S</label>
-                            <label for="pizzaMedium" id="medium" class="price">M</label>
-                            <label for="pizzaLarge" id="large" class="price">L</label>
+                            <label for="pizzaSmallDeluxe" id="smallSize" class="desktopPizzaSize">10''</label>
+                            <label for="pizzaMediumDeluxe" id="mediumSize" class="desktopPizzaSize">12''</label>
+                            <label for="pizzaLargeDeluxe" id="largeSize" class="desktopPizzaSize">14''</label>
                         </div>
-                        <p class="priceForSmall">$10</p>
-                        <p class="priceForMedium">$14</p>
-                        <p class="priceForLarge">$20</p>
+                        <p class="priceFor10inches">$8</p>
+                        <p class="priceFor12inches">$12</p>
+                        <p class="priceFor14inches">$28</p>
+                    </div>
+                    <div class="menuItemHover">
+                        <img src="../images/pizza/deluxe.jpg" alt="A Deluxe pizza made with mozzarella cheese, pepperoni, black olives, sliced green peppers, garnsished with additional freshly-grated mozzarella cheese and sliced white mushrooms.">
                     </div>
                 </article>
                 <article class="itemCard">
@@ -200,17 +209,20 @@
                         </div>
                     </div>
                     <div class="desktopSizesAndPrice">
-                        <input type="radio" name="pizzaSizes" id="pizzaSmall" checked>
-                        <input type="radio" name="pizzaSizes" id="pizzaMedium">
-                        <input type="radio" name="pizzaSizes" id="pizzaLarge">
+                        <input type="radio" name="hawaiianPep" id="pizzaSmallHawaiianPep" checked>
+                        <input type="radio" name="hawaiianPep" id="pizzaMediumHawaiianPep">
+                        <input type="radio" name="hawaiianPep" id="pizzaLargeHawaiianPep">
                         <div class="pizzaPrice">
-                            <label for="pizzaSmall" id="small" class="price">S</label>
-                            <label for="pizzaMedium" id="medium" class="price">M</label>
-                            <label for="pizzaLarge" id="large" class="price">L</label>
+                            <label for="pizzaSmallHawaiianPep" id="smallSize" class="desktopPizzaSize">10''</label>
+                            <label for="pizzaMediumHawaiianPep" id="mediumSize" class="desktopPizzaSize">12''</label>
+                            <label for="pizzaLargeHawaiianPep" id="largeSize" class="desktopPizzaSize">14''</label>
                         </div>
-                        <p class="priceForSmall">$10</p>
-                        <p class="priceForMedium">$14</p>
-                        <p class="priceForLarge">$20</p>
+                        <p class="priceFor10inches">$8</p>
+                        <p class="priceFor12inches">$12</p>
+                        <p class="priceFor14inches">$18</p>
+                    </div>
+                    <div class="menuItemHover">
+                        <img src="../images/pizza/hawaiianPepperoni.jpg" alt="A Pepperoni pizza made with pinapple chunks underneath the melted mozzarella cheese, topped with pepperoni and dried parsley.">
                     </div>
                 </article>
                 <article class="itemCard">
@@ -235,18 +247,22 @@
                         </div>
                     </div>
                     <div class="desktopSizesAndPrice">
-                        <input type="radio" name="pizzaSizes" id="pizzaSmall" checked>
-                        <input type="radio" name="pizzaSizes" id="pizzaMedium">
-                        <input type="radio" name="pizzaSizes" id="pizzaLarge">
+                        <input type="radio" name="italianSausage" id="pizzaSmallItalianSausage" checked>
+                        <input type="radio" name="italianSausage" id="pizzaMediumItalianSausage">
+                        <input type="radio" name="italianSausage" id="pizzaLargeItalianSausage">
                         <div class="pizzaPrice">
-                            <label for="pizzaSmall" id="small" class="price">S</label>
-                            <label for="pizzaMedium" id="medium" class="price">M</label>
-                            <label for="pizzaLarge" id="large" class="price">L</label>
+                            <label for="pizzaSmallItalianSausage" id="smallSize" class="desktopPizzaSize">10''</label>
+                            <label for="pizzaMediumItalianSausage" id="mediumSize" class="desktopPizzaSize">12''</label>
+                            <label for="pizzaLargeItalianSausage" id="largeSize" class="desktopPizzaSize">14''</label>
                         </div>
-                        <p class="priceForSmall">$10</p>
-                        <p class="priceForMedium">$14</p>
-                        <p class="priceForLarge">$20</p>
+                        <p class="priceFor10inches">$10</p>
+                        <p class="priceFor12inches">$14</p>
+                        <p class="priceFor14inches">$20</p>
                     </div>
+                    <div class="menuItemHover">
+                        <img src="../images/pizza/italianSausage.jpg" alt="An Italian Sausage pizza made with mozzarella cheese, pepperoni, crumbled Italian sausage, and chopped parsley.">
+                    </div>
+                </article>
                 </article>
                 <article class="itemCard">
                     <h1>Margherita</h1>
@@ -270,17 +286,20 @@
                         </div>
                     </div>
                     <div class="desktopSizesAndPrice">
-                        <input type="radio" name="pizzaSizes" id="pizzaSmall" checked>
-                        <input type="radio" name="pizzaSizes" id="pizzaMedium">
-                        <input type="radio" name="pizzaSizes" id="pizzaLarge">
+                        <input type="radio" name="margherita" id="pizzaSmallMargherita" checked>
+                        <input type="radio" name="margherita" id="pizzaMediumMargherita">
+                        <input type="radio" name="margherita" id="pizzaLargeMargherita">
                         <div class="pizzaPrice">
-                            <label for="pizzaSmall" id="small" class="price">S</label>
-                            <label for="pizzaMedium" id="medium" class="price">M</label>
-                            <label for="pizzaLarge" id="large" class="price">L</label>
+                            <label for="pizzaSmallMargherita" id="smallSize" class="desktopPizzaSize">10''</label>
+                            <label for="pizzaMediumMargherita" id="mediumSize" class="desktopPizzaSize">12''</label>
+                            <label for="pizzaLargeMargherita" id="largeSize" class="desktopPizzaSize">14''</label>
                         </div>
-                        <p class="priceForSmall">$10</p>
-                        <p class="priceForMedium">$14</p>
-                        <p class="priceForLarge">$20</p>
+                        <p class="priceFor10inches">$10</p>
+                        <p class="priceFor12inches">$14</p>
+                        <p class="priceFor14inches">$20</p>
+                    </div>
+                    <div class="menuItemHover">
+                        <img src="../images/pizza/margherita.jpg" alt="A Margherita pizza made with tomato sauce and melted mozzarella cheese slices on top, garnished with fresh whole leaf basil.">
                     </div>
                 </article>
                 <article class="itemCard">
@@ -305,17 +324,20 @@
                         </div>
                     </div>
                     <div class="desktopSizesAndPrice">
-                        <input type="radio" name="pizzaSizes" id="pizzaSmall" checked>
-                        <input type="radio" name="pizzaSizes" id="pizzaMedium">
-                        <input type="radio" name="pizzaSizes" id="pizzaLarge">
+                        <input type="radio" name="meatSupreme" id="pizzaSmallMeatSupreme" checked>
+                        <input type="radio" name="meatSupreme" id="pizzaMediumMeatSupreme">
+                        <input type="radio" name="meatSupreme" id="pizzaLargeMeatSupreme">
                         <div class="pizzaPrice">
-                            <label for="pizzaSmall" id="small" class="price">S</label>
-                            <label for="pizzaMedium" id="medium" class="price">M</label>
-                            <label for="pizzaLarge" id="large" class="price">L</label>
+                            <label for="pizzaSmallMeatSupreme" id="smallSize" class="desktopPizzaSize">10''</label>
+                            <label for="pizzaMediumMeatSupreme" id="mediumSize" class="desktopPizzaSize">12''</label>
+                            <label for="pizzaLargeMeatSupreme" id="largeSize" class="desktopPizzaSize">14''</label>
                         </div>
-                        <p class="priceForSmall">$10</p>
-                        <p class="priceForMedium">$14</p>
-                        <p class="priceForLarge">$20</p>
+                        <p class="priceFor10inches">$10</p>
+                        <p class="priceFor12inches">$14</p>
+                        <p class="priceFor14inches">$20</p>
+                    </div>
+                    <div class="menuItemHover">
+                        <img src="../images/pizza/meatSupreme.jpg" alt="A Meat Supreme pizza made with mozzarella cheese, pepperoni, sliced Italian sausages and diced Canadian bacon.">
                     </div>
                 </article>
                 <article class="itemCard">
@@ -340,22 +362,25 @@
                         </div>
                     </div>
                     <div class="desktopSizesAndPrice">
-                        <input type="radio" name="pizzaSizes" id="pizzaSmall" checked>
-                        <input type="radio" name="pizzaSizes" id="pizzaMedium">
-                        <input type="radio" name="pizzaSizes" id="pizzaLarge">
+                        <input type="radio" name="veggieLovers" id="pizzaSmallVeggieLovers" checked>
+                        <input type="radio" name="veggieLovers" id="pizzaMediumVeggieLovers">
+                        <input type="radio" name="veggieLovers" id="pizzaLargeVeggieLovers">
                         <div class="pizzaPrice">
-                            <label for="pizzaSmall" id="small" class="price">S</label>
-                            <label for="pizzaMedium" id="medium" class="price">M</label>
-                            <label for="pizzaLarge" id="large" class="price">L</label>
+                            <label for="pizzaSmallVeggieLovers" id="smallSize" class="desktopPizzaSize">10''</label>
+                            <label for="pizzaMediumVeggieLovers" id="mediumSize" class="desktopPizzaSize">12''</label>
+                            <label for="pizzaLargeVeggieLovers" id="largeSize" class="desktopPizzaSize">14''</label>
                         </div>
-                        <p class="priceForSmall">$10</p>
-                        <p class="priceForMedium">$14</p>
-                        <p class="priceForLarge">$20</p>
+                        <p class="priceFor10inches">$10</p>
+                        <p class="priceFor12inches">$14</p>
+                        <p class="priceFor14inches">$20</p>
+                    </div>
+                    <div class="menuItemHover">
+                        <img src="../images/pizza/veggieLovers.jpg" alt="A vegetarian pizza made with mozzarella cheese, thinly sliced green peppers and red onions, sliced white mushrooms and diced tomatos.">
                     </div>
                 </article>
             </div>
         </section>
-        <section class="menu" id="pastaMenu">
+        <section class="menuContainer" id="pastaMenu">
             <article class="itemCard">
                 <h1>Cacio e Pepe</h1>
                 <p class="itemDescription">Basil, Black Pepper, Butter, Parmesan Cheese</p>
@@ -365,6 +390,9 @@
                     <img src="../images/pasta/cacioEPepe.jpg" alt="A Cacio e Pepe pasta displayed on a white plate. It is made with butcantini pasta noodles and butter, and garnished with freshly-grated parmesan cheese, freshly-cracked black pepper and basil.">
                     <p>Basil, Black Pepper, Butter, Parmesan Cheese</p>
                     <p class="generalItemPrice">$12</p>
+                </div>
+                <div class="menuItemHover">
+                    <img src="../images/pasta/cacioEPepe.jpg" alt="A Cacio e Pepe pasta displayed on a white plate. It is made with butcantini pasta noodles and butter, and garnished with freshly-grated parmesan cheese, freshly-cracked black pepper and basil.">
                 </div>
             </article>
             <article class="itemCard">
@@ -377,6 +405,9 @@
                     <p>Butter, Cheese Tortellini, Heavy Cream, Broccoli</p>
                     <p class="generalItemPrice">$12</p>
                 </div>
+                <div class="menuItemHover">
+                    <img src="../images/pasta/cheeseTortellini.jpg" alt="A Cheese Tortellini pasta displayed on a white plate. It is made with cheese tortellini, heavy cream, butter and chopped broccoli.">
+                </div>
             </article>
             <article class="itemCard">
                 <h1>Chicken Orecchiette</h1>
@@ -387,6 +418,9 @@
                     <img src="../images/pasta/chickenOrecchiette.jpg" alt="A Chicken Orecchiette pasta displayed in a wooden bowl. It is made with orecchiette pasta noodles, boneless chicken breast and cooked spinach, and garnished with whole leaf basil and freshly-cracked black pepper.">
                     <p>Black Pepper, Chicken, Basil, Spinach, Parmesan Cheese</p>
                     <p class="generalItemPrice">$14</p>
+                </div>
+                <div class="menuItemHover">
+                    <img src="../images/pasta/chickenOrecchiette.jpg" alt="A Chicken Orecchiette pasta displayed in a wooden bowl. It is made with orecchiette pasta noodles, boneless chicken breast and cooked spinach, and garnished with whole leaf basil and freshly-cracked black pepper.">
                 </div>
             </article>
             <article class="itemCard">
@@ -399,6 +433,9 @@
                     <p>Canadian Bacon, Heavy Cream, Parmesan cheese</p>
                     <p class="generalItemPrice">$14</p>
                 </div>
+                <div class="menuItemHover">
+                    <img src="../images/pasta/creamyCarbonara.jpg" alt="A Creamy Carbonara pasta displayed in a white bowl. It is made with spaghetti pasta noodles, heavy cream, freshly-grated parmesan cheese and chopped Canadian bacon.">
+                </div>
             </article>
             <article class="itemCard">
                 <h1>Fettuccine Alfredo</h1>
@@ -409,6 +446,9 @@
                     <img src="../images/pasta/fettuccineAlfredo.jpg" alt="A Fettuccine Alfredo pasta displayed in a white bowl. It is made with fettuccine pasta noodles, heavy cream and butter, and garnished with freshly-grated parmesan cheese, freshly-cracked black pepper and chopped parsley.">
                     <p>Black Pepper, Butter, Heavy Cream, Parmesan Cheese, Parsley</p>
                     <p class="generalItemPrice">$12</p>
+                </div>
+                <div class="menuItemHover">
+                    <img src="../images/pasta/fettuccineAlfredo.jpg" alt="A Fettuccine Alfredo pasta displayed in a white bowl. It is made with fettuccine pasta noodles, heavy cream and butter, and garnished with freshly-grated parmesan cheese, freshly-cracked black pepper and chopped parsley.">
                 </div>
             </article>
             <article class="itemCard">
@@ -421,6 +461,9 @@
                     <p>Basil, Eggplant, Feta Cheese, Tomatos, Zucchini</p>
                     <p class="generalItemPrice">$10</p>
                 </div>
+                <div class="menuItemHover">
+                    <img src="../images/pasta/pastaSalad.jpg" alt="A vegetarian pasta salad displayed in a white bowl. It is made with penne pasta noodles and chopped eggplant, tomatos, and zucchini, and garnished with fresh basil and crumbled feta cheese.">
+                </div>
             </article>
             <article class="itemCard">
                 <h1>Penne alla Vodka</h1>
@@ -431,6 +474,9 @@
                     <img src="../images/pasta/penneAllaVodka.jpg" alt="A tomato-red coloured penne alla vodka pasta displayed in a black bowl. It is made with penne pasta noodles, butter, garlic, tomatos, heavy cream and vodka, garnished with chopped parsley.">
                     <p>Heavy Cream, Tomato, Parmesan Cheese, Parsley, Vodka</p>
                     <p class="generalItemPrice">$16</p>
+                </div>
+                <div class="menuItemHover">
+                    <img src="../images/pasta/penneAllaVodka.jpg" alt="A tomato-red coloured penne alla vodka pasta displayed in a black bowl. It is made with penne pasta noodles, butter, garlic, tomatos, heavy cream and vodka, garnished with chopped parsley.">
                 </div>
             </article>
             <article class="itemCard">
@@ -443,9 +489,12 @@
                     <p>Ground Beef, Parmesan Cheese, Parsley, Tomato Sauce</p>
                     <p class="generalItemPrice">$14</p>
                 </div>
+                <div class="menuItemHover">
+                    <img src="../images/pasta/spaghettiAndMeatballs.jpg" alt="An Italian Spaghetti & Meatball pasta displayed in a black, wooden bowl. It is made with spaghetti pasta noodles, ground beef meatballs and tomato sauce, and garnished with freshly-grated parmesan cheese and finely chopped parsley.">
+                </div>
             </article>
         </section>
-        <section class="menu" id="appetizersMenu">
+        <section class="menuContainer" id="appetizersMenu">
             <article class="itemCard">
                 <h1>Anipasto Skewers</h1>
                 <p class="itemDescription">Basil, Calabrese, Cheese Tortellini, Tomatos, Olives, Mozzarella Balls</p>
@@ -455,6 +504,9 @@
                     <img src="../images/appetizers/anipastoSkewers.jpg" alt="Six Antipasto Skewers displayed on a white plate. The first half of each skewer is made of a kalamata olive, grape tomato, basil, cheese tortellini and calabrese with a mozzarella ball in the middle, followed by a cheese tortellini, basil, calabrese, cheese tortellini, basil, grape tomato and kalamata olive on the other half the skewer.">
                     <p>Basil, Calabrese, Cheese Tortellini, Tomatos, Olives, Mozzarella Balls</p>
                     <p class="generalItemPrice">$14</p>
+                </div>
+                <div class="menuItemHover">
+                    <img src="../images/appetizers/anipastoSkewers.jpg" alt="Six Antipasto Skewers displayed on a white plate. The first half of each skewer is made of a kalamata olive, grape tomato, basil, cheese tortellini and calabrese with a mozzarella ball in the middle, followed by a cheese tortellini, basil, calabrese, cheese tortellini, basil, grape tomato and kalamata olive on the other half the skewer.">
                 </div>
             </article>
             <article class="itemCard">
@@ -467,6 +519,9 @@
                     <p>Butter, Canadian Bacon, Garlic Crostini, Olive Oil, Sugar, White Onion</p>
                     <p class="generalItemPrice">$7</p>
                 </div>
+                <div class="menuItemHover">
+                    <img src="../images/appetizers/baconCaramelCrostini.jpg" alt="Ten pieces of Bacon Caramel Crostinis displayed on a white plate. Each Bacon Caramel Crostini is made with garlic, butter, and olive oil, and is garnished with Canadian bacon and caramelized white onions.">
+                </div>
             </article>
             <article class="itemCard">
                 <h1>Balsamic Bean Salad</h1>
@@ -477,6 +532,9 @@
                     <img src="../images/appetizers/balsamicBeanSalad.jpg" alt="An Italian Balsamic Green Bean Salad displayed in a white bowl. It is made with long, trimmed green beans, chopped red shallots, sesame seeds and balsamic vinegar.">
                     <p>Balsamic Vinegar, Green Beans, Sesame Seeds, Red Shallots</p>
                     <p class="generalItemPrice">$4</p>
+                </div>
+                <div class="menuItemHover">
+                    <img src="../images/appetizers/balsamicBeanSalad.jpg" alt="An Italian Balsamic Green Bean Salad displayed in a white bowl. It is made with long, trimmed green beans, chopped red shallots, sesame seeds and balsamic vinegar.">
                 </div>
             </article>
             <article class="itemCard">
@@ -489,6 +547,9 @@
                     <p>Basil, Capers, Creamy Gorgonzola, Red Peppers, Yellow Peppers</p>
                     <p class="generalItemPrice">$7</p>
                 </div>
+                <div class="menuItemHover">
+                    <img src="../images/appetizers/bruchettaGorgonzola.jpg" alt="Eight pieces of Italian Bruchetta Gorgonzola displayed on a white plate. Each crostini is garnished with red and yellow bell peppers, creamy gorgonzola, fresh basil and capers.">
+                </div>
             </article>
             <article class="itemCard">
                 <h1>Italian Avocado Salad</h1>
@@ -499,6 +560,9 @@
                     <img src="../images/appetizers/italianAvocadoSalad.jpg" alt="An Italian Avocado Salad displayed on a white bowl. It is made with fresh, sliced avocado, whole leaf basil, sliced mozzarella cheese, sliced tomatos, salt, black pepper and balsamic Vinegar.">
                     <p>Avocado, Balsamic Vinegar, Basil, Black Pepper, Mozzarella Cheese, Tomatos</p>
                     <p class="generalItemPrice">$4</p>
+                </div>
+                <div class="menuItemHover">
+                    <img src="../images/appetizers/italianAvocadoSalad.jpg" alt="An Italian Avocado Salad displayed on a white bowl. It is made with fresh, sliced avocado, whole leaf basil, sliced mozzarella cheese, sliced tomatos, salt, black pepper and balsamic Vinegar.">
                 </div>
             </article>
             <article class="itemCard">
@@ -511,6 +575,9 @@
                     <p>Cream cheese, Cresent Rolls, Mozzarella Cheese, Pretzel Sticks</p>
                     <p class="generalItemPrice">$12</p>
                 </div>
+                <div class="menuItemHover">
+                    <img src="../images/appetizers/pumpkinPinwheel.jpg" alt="Fourteen Pumpkin Pinwheels displayed on a white plate that has a navy blue coloured border. Each Pumpkin Pinwheel is a cresent roll with a cream cheese and mozzarella cheese filling and one pretzel sticks, and is garnished with basil.">
+                </div>
             </article>
             <article class="itemCard">
                 <h1>Tomato & Basil Pinwheel</h1>
@@ -521,6 +588,9 @@
                     <img src="../images/appetizers/tomatoAndBasilPinwheel.jpg" alt="Nineteen Tomato & Basil Pnwheels displayed on a beige coloured plate. Each Basil Pinwheel is made of a torilla with cream cheese filling, spinach, dried tomatos and fresh basil.">
                     <p>Basil, Cream Cheese, Spinach, Dried Tomatos, Tortillas</p>
                     <p class="generalItemPrice">$12</p>
+                </div>
+                <div class="menuItemHover">
+                    <img src="../images/appetizers/tomatoAndBasilPinwheel.jpg" alt="Nineteen Tomato & Basil Pnwheels displayed on a beige coloured plate. Each Basil Pinwheel is made of a torilla with cream cheese filling, spinach, dried tomatos and fresh basil.">
                 </div>
             </article>
             <article class="itemCard">
@@ -533,9 +603,12 @@
                     <p>Bread Crumbs, Mushrooms, Parmesan Cheese, Parsley</p>
                     <p class="generalItemPrice">$10</p>
                 </div>
+                <div class="menuItemHover">
+                    <img src="../images/appetizers/stuffedMushrooms.jpg" alt="Eight Stuffed Mushrooms displayed on a white plate. Each Stuffed Mushroom is a brown mushroom filled with bread crumbs, freshly-grated parmesan cheese and choppped parsley.">
+                </div>
             </article>
         </section>
-        <section class="menu" id="drinksMenu">
+        <section class="menuContainer" id="drinksMenu">
             <article class="itemCard">
                 <h1>Americano</h1>
                 <p class="itemDescription">Dark Roasted Coffee Beans, 750mL</p>
@@ -545,6 +618,9 @@
                     <img src="../images/drinks/americano.jpg" alt="A 750mL wine glass bottle of Americano Coffee Vodka. The alcohol contained inside the bottle has a clear, light brown colour. The letter 'A' and word 'Americano' is written in cursive and the words 'coffee vodka' is written in a sans-serif font on the bottle in a golden font colour. The Americano bottle is labelled as a product of Canada and has an alcohol percentage of 40%.">
                     <p>Dark Roasted Coffee Beans, 750mL</p>
                     <p class="generalItemPrice">$6</p>
+                </div>
+                <div class="menuItemHover">
+                    <img src="../images/drinks/americano.jpg" alt="A 750mL wine glass bottle of Americano Coffee Vodka. The alcohol contained inside the bottle has a clear, light brown colour. The letter 'A' and word 'Americano' is written in cursive and the words 'coffee vodka' is written in a sans-serif font on the bottle in a golden font colour. The Americano bottle is labelled as a product of Canada and has an alcohol percentage of 40%.">
                 </div>
             </article>
             <article class="itemCard">
@@ -557,6 +633,9 @@
                     <p>Orange with Rosemary, 700mL</p>
                     <p class="generalItemPrice">$6</p>
                 </div>
+                <div class="menuItemHover">
+                    <img src="../images/drinks/aperitivo.jpg" alt="A 700mL wine glass bottle of Luxardo's Aperitivo. The alcohol contained inside the bottle has a dark red colour. An eagle is engraved on the top front of the bottle with a white label that has the word 'Aperitivo' with the producer's signature in a navy blue font colour while the other decorative symbols and the rest of the text saying 'Product of Italy', 'Italiano' and 'A Subtle Blend of Herbs, Roots and Bitter-Sweet Citrus, Ideal for Spritz' is written in a red-coloured, serif font.">
+                </div>
             </article>
             <article class="itemCard">
                 <h1>Aperol Spritz</h1>
@@ -567,6 +646,9 @@
                     <img src="../images/drinks/aperol.jpg" alt="A 750mL wine glass bottle of Aperol Spritz. The alcohol contained inside the bottle has an orange-red colour. There are two labels on the bottle: a navy blue label with the word 'Aperol' displayed in a yellow, sans-serif font and a white and green coloured label with the words 'Ricetta Originale Aperitive Dal 1919 FILLI BARBIERI' in a navy blue font colour.">
                     <p>Tangerine Zest with Herbs, 750mL</p>
                     <p class="generalItemPrice">$6</p>
+                </div>
+                <div class="menuItemHover">
+                    <img src="../images/drinks/aperol.jpg" alt="A 750mL wine glass bottle of Aperol Spritz. The alcohol contained inside the bottle has an orange-red colour. There are two labels on the bottle: a navy blue label with the word 'Aperol' displayed in a yellow, sans-serif font and a white and green coloured label with the words 'Ricetta Originale Aperitive Dal 1919 FILLI BARBIERI' in a navy blue font colour.">
                 </div>
             </article>
             <article class="itemCard">
@@ -579,6 +661,9 @@
                     <p>White Peach Juice & Raspberry, 750mL</p>
                     <p class="generalItemPrice">$6</p>
                 </div>
+                <div class="menuItemHover">
+                    <img src="../images/drinks/bellini.jpg" alt="A 750mL wine glass bottle of Bellini. The alcohol contained inside the bottle has a peach colour. There is a white label on the bottle that has the word 'Bellini' in a dark brown coloured, sans-serif font and the word 'Canella dal 1947' in a white, sans-serif font below the label.">
+                </div>
             </article>
             <article class="itemCard">
                 <h1>Campari</h1>
@@ -589,6 +674,9 @@
                     <img src="../images/drinks/campari.jpg" alt="A 750mL wine glass bottle of Campari. The alcohol contained inside the bottle has a crimson colour. There are two labels on the bottle: a navy blue label with the word 'CAMPARI' displayed in a white, sans-serif font and a light blue coloured label with the words 'Davide Campari' in a serif font and 'Milano' in a cursive font.">
                     <p>Aromatic Plants, Herbs and Fruit, 750mL</p>
                     <p class="generalItemPrice">$6</p>
+                </div>
+                <div class="menuItemHover">
+                    <img src="../images/drinks/campari.jpg" alt="A 750mL wine glass bottle of Campari. The alcohol contained inside the bottle has a crimson colour. There are two labels on the bottle: a navy blue label with the word 'CAMPARI' displayed in a white, sans-serif font and a light blue coloured label with the words 'Davide Campari' in a serif font and 'Milano' in a cursive font.">
                 </div>
             </article>
             <article class="itemCard">
@@ -601,6 +689,9 @@
                     <p>Baked Bread & Caramel, 330mL</p>
                     <p class="generalItemPrice">$4</p>
                 </div>
+                <div class="menuItemHover">
+                    <img src="../images/drinks/laRossa.jpg" alt="A 330mL beer glass bottle of La Rossa. The alcohol contained inside the bottle has a light copper colour. There is a dark red and tan coloured circular label on the bottle that has the words 'Birra Moretti' in a tan-coloured, sans-serif font, the words 'La Rossa' , 'Malto Brunito' and 'Imported from Italy' in a red-coloured, sans-serif font, a picture of the owner of La Rossa's Italian Beer Company and the owner's signture at the center bottom of the label. On the two rounded sides of the label has a curved 'wheat' symbol in a white colour.">
+                </div>
             </article>
             <article class="itemCard">
                 <h1>Negroni</h1>
@@ -612,6 +703,9 @@
                     <p>Herbal & Zesty Citrus Red Wine, 500mL</p>
                     <p class="generalItemPrice">$6</p>
                 </div>
+                <div class="menuItemHover">
+                    <img src="../images/drinks/negroni.jpg" alt="A 500mL glass bottle of Negroni. The alcohol contained inside the bottle has a tawny red colour. The label on the bottle has the words 'Campari Negroni' in tawny red colour with a decorative border around the label in a golden colour. The bottle of Negroni is labelled as a product of Italy and has an alcohol percentage of 26%.">
+                </div>
             </article>
             <article class="itemCard">
                 <h1>Peroni</h1>
@@ -622,6 +716,9 @@
                     <img src="../images/drinks/peroni.jpg" alt="A 330mL beer glass bottle of Peroni. The alcohol contained inside the bottle has a clear, coppery golden amber colour. In the center of the label has the word 'Peroni' in a white-coloured, sans-serif font. At the top center of the label is the picture of the owner of the Peroni beer company with his signture right below. Below the word 'Peroni' has the words 'Dal 1846' and 'Tradizione e Qualita'. On the two rounded sides of the label has a curved 'wheat' symbol in a white colour.">
                     <p>Caramel, Lemon & Pepper, 330mL</p>
                     <p class="generalItemPrice">$4</p>
+                </div>
+                <div class="menuItemHover">
+                    <img src="../images/drinks/peroni.jpg" alt="A 330mL beer glass bottle of Peroni. The alcohol contained inside the bottle has a clear, coppery golden amber colour. In the center of the label has the word 'Peroni' in a white-coloured, sans-serif font. At the top center of the label is the picture of the owner of the Peroni beer company with his signture right below. Below the word 'Peroni' has the words 'Dal 1846' and 'Tradizione e Qualita'. On the two rounded sides of the label has a curved 'wheat' symbol in a white colour.">
                 </div>
             </article>
         </section>

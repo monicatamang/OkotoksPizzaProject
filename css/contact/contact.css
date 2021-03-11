@@ -316,10 +316,10 @@ body {
     padding: 1% 0%;
     -webkit-box-shadow: none;
             box-shadow: none;
-    background: #393e46;
+    background: white;
   }
   #callButton p {
-    color: white;
+    color: #393e46;
     font-weight: 500;
     letter-spacing: 2px;
   }
