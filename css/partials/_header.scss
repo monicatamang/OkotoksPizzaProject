@@ -209,7 +209,8 @@ header {
                 @include linksStyle($neutralColorOne, 0.9em);
 
                 &:hover {
-                    text-decoration: underline;
+                    // text-decoration: underline;
+                    color: rgba(57, 62, 70, 0.5);
                 }
             }
 

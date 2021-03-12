@@ -230,7 +230,7 @@ header #desktopNavPages {
     font-size: 0.9em;
   }
   header #desktopNavPages a:hover {
-    text-decoration: underline;
+    color: rgba(57, 62, 70, 0.5);
   }
   header #desktopNavPages #currentDesktopPage {
     font-weight: bold;
@@ -298,12 +298,12 @@ body {
 
 @media only screen and (min-width: 1000px) {
   #callButton {
-    top: 13%;
-    height: 3vh;
+    top: 14vh;
+    height: 4vh;
     padding: 1% 0%;
   }
   #callButton p {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 }
 
@@ -370,6 +370,12 @@ footer #subscriptionForm #subscribeButton {
   text-align: center;
   width: 80px;
   padding: 3%;
+}
+
+footer #subscriptionForm #subscribeButton:hover {
+  color: #393e46;
+  border: 1px solid #393e46;
+  background: white;
 }
 
 footer #socialLinksAndCopyright {
@@ -479,6 +485,9 @@ footer #mobileFooterSpacer {
     row-gap: 20px;
     font-size: 0.8em;
     padding: 0%;
+  }
+  footer #socialLinksAndCopyright #socialMedia img {
+    width: 30px;
   }
 }
 
@@ -593,8 +602,7 @@ main #heroPizzaImage {
 
 @media only screen and (min-width: 1000px) {
   .infoBanner {
-    top: 19.3%;
-    padding: 0.5% 0%;
+    top: 21vh;
     background: #eeeeee;
   }
   .infoBanner p {
@@ -604,8 +612,7 @@ main #heroPizzaImage {
   main {
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
-    -webkit-column-gap: 80px;
-            column-gap: 80px;
+    padding: 0% 2%;
     margin-top: 25vh;
     text-align: left;
   }
@@ -613,13 +620,13 @@ main #heroPizzaImage {
     display: -ms-grid;
     display: grid;
     justify-items: start;
-    row-gap: 25px;
+    row-gap: 40px;
   }
   main article > h1 {
     font-size: 1.9em;
   }
   main article #openHours {
-    font-size: 0.8em;
+    font-size: 0.95em;
   }
   main article #heroSectionButtons {
     display: -ms-grid;
@@ -627,11 +634,15 @@ main #heroPizzaImage {
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
     justify-items: start;
-    margin-top: 5%;
   }
   main article #heroSectionButtons .buttons {
     font-size: 0.9em;
     padding: 5% 10%;
+  }
+  main article #heroSectionButtons .buttons:hover {
+    color: #393e46;
+    border: 1px solid #393e46;
+    background: white;
   }
   main #heroPizzaImage {
     width: 25vw;
