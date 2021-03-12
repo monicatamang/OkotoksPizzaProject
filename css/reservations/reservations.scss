@@ -8,8 +8,7 @@
 }
 
 #reservations {
-    @include gridCenter();
-    row-gap: 20px;
+    @include gridCenterRowAndColumnGap(20px, 0px);
     margin-top: 15vh;
     min-height: 90vh;
     padding: 0% 15%;
@@ -26,14 +25,12 @@
     }
 
     #reservationForm {
+        @include gridCenterRowAndColumnGap(40px, 0px);
         margin-top: 4vh;
-        @include gridCenter();
-        row-gap: 40px;
         width: 100%;
 
         article {
-            display: grid;
-            row-gap: 10px;
+            @include gridAndRowColumnGap(10px, 0px);
             width: 100%;
 
             h5 {

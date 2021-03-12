@@ -3,7 +3,7 @@
 @import "../partials/footer";
 
 .infoBanner {
-    @include gridCenter();
+    @include gridCenterRowAndColumnGap(0px, 0px);
     grid-template-columns: 1fr auto 1fr;
     position: fixed;
     top: 12%;
@@ -21,16 +21,14 @@
 }
 
 main {
-    @include gridCenter();
-    row-gap: 30px;
+    @include gridCenterRowAndColumnGap(30px, 0px);
     margin-top: 27vh;
     min-height: 80vh;
     padding: 0% 10%;
     text-align: center;
 
     article {
-        @include gridCenter();
-        row-gap: 30px;
+        @include gridCenterRowAndColumnGap(30px, 0px);
 
         >h1 {
             color: $neutralColorOne;
@@ -48,8 +46,7 @@ main {
         }
     
         #heroSectionButtons {
-            @include gridCenter();
-            row-gap: 20px;
+            @include gridCenterRowAndColumnGap(20px, 0px);
             width: 100%;
     
             .buttons {
@@ -124,9 +121,8 @@ main {
         text-align: left;
 
         article {
-            display: grid;
+            @include gridAndRowColumnGap(40px, 0px);
             justify-items: start;
-            row-gap: 40px;
 
             >h1 {
                 font-size: 1.9em;

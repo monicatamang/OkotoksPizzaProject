@@ -10,9 +10,17 @@ $titleFont: "Lora", serif;
 $bodyFont: "Montserrat", sans-serif;
 
 // MIXINS
-@mixin gridCenter() {
+@mixin gridCenterRowAndColumnGap($rowGap, $columnGap) {
     display: grid;
     place-items: center;
+    row-gap: $rowGap;
+    column-gap: $columnGap;
+}
+
+@mixin gridAndRowColumnGap($rowGap, $columnGap) {
+    display: grid;
+    row-gap: $rowGap;
+    column-gap: $columnGap;
 }
 
 @mixin linksStyle ($fontColor, $fontSize) {

@@ -4,8 +4,7 @@
 @import "../partials/footer";
 
 #contactPage {
-    display: grid;
-    row-gap: 30px;
+    @include gridAndRowColumnGap(30px, 0px);
     margin-top: 15vh;
     min-height: 90vh;
     padding: 0% 10%;
@@ -17,17 +16,14 @@
     }
 
     #contactPageSections {
-        display: grid;
-        row-gap: 25px;
+        @include gridAndRowColumnGap(25px, 0px);
 
         #infoAndHoursSections {
-            display: grid;
-            row-gap: 25px;
+            @include gridAndRowColumnGap(25px, 0px);
         }
 
         .contactSection {
-            display: grid;
-            row-gap: 15px;
+            @include gridAndRowColumnGap(15px, 0px);
             font-size: 0.8em;
     
             h3 {

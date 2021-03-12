@@ -28,6 +28,9 @@ header {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  row-gap: 0px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
   -ms-grid-columns: 2fr 4fr 2fr;
       grid-template-columns: 2fr 4fr 2fr;
   position: fixed;
@@ -47,6 +50,9 @@ header > a .logo {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  row-gap: 0px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
   background: #393e46;
   border-radius: 100%;
 }
@@ -110,6 +116,9 @@ header #mobileHamburgerMenu #mobileHamburgerContainer {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  row-gap: 0px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
   position: relative;
   width: 28px;
   height: 28px;
@@ -131,6 +140,9 @@ header #mobileHamburgerMenu #mobileTabletNavPages {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  row-gap: 0px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
   position: absolute;
   left: 0;
   width: 100%;
@@ -202,10 +214,11 @@ header #desktopNavPages {
     display: -ms-grid;
     display: grid;
     place-items: center;
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
+    row-gap: 0px;
     -webkit-column-gap: 15px;
             column-gap: 15px;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
   }
   header > a #logoOuterCircle {
     width: 45px;
@@ -231,10 +244,11 @@ header #desktopNavPages {
     display: -ms-grid;
     display: grid;
     place-items: center;
-    -ms-grid-columns: auto auto auto auto auto;
-        grid-template-columns: auto auto auto auto auto;
+    row-gap: 0px;
     -webkit-column-gap: 50px;
             column-gap: 50px;
+    -ms-grid-columns: auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto;
   }
   header #desktopNavPages a {
     text-decoration: none;
@@ -264,6 +278,9 @@ body {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  row-gap: 0px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
   position: fixed;
   bottom: 2%;
   width: 100%;
@@ -334,6 +351,9 @@ footer {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  row-gap: 0px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
   margin-top: 8vh;
   width: 100%;
   background: #eeeeee;
@@ -343,6 +363,8 @@ footer #subscriptionForm {
   display: -ms-grid;
   display: grid;
   row-gap: 15px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
   width: 80%;
   min-height: 30vh;
   padding: 10%;
@@ -365,6 +387,8 @@ footer #subscriptionForm #subscriptionInputs {
   display: -ms-grid;
   display: grid;
   row-gap: 15px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
 }
 
 footer #subscriptionForm #subscriptionInputs .inputSubscriptionForm {
@@ -394,6 +418,9 @@ footer #socialLinksAndCopyright {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  row-gap: 0px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
   -ms-grid-rows: auto auto auto;
       grid-template-rows: auto auto auto;
   background: #f7f7f7;
@@ -409,6 +436,9 @@ footer #socialLinksAndCopyright #socialMedia {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  row-gap: 0px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
   -ms-grid-columns: (auto)[4];
       grid-template-columns: repeat(4, auto);
   width: 70%;
@@ -503,154 +533,158 @@ footer #mobileFooterSpacer {
   }
 }
 
-#menuNav {
+#menuPage {
   display: -ms-grid;
   display: grid;
   place-items: center;
   row-gap: 20px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
   margin-top: 15vh;
 }
 
-#menuNav > h1 {
+#menuPage > h1 {
   font-family: "Lora", serif;
   color: #393e46;
 }
 
-#menuNav .menuRadioButtons {
-  position: absolute;
-  top: 22%;
-  width: 40px;
-  height: 40px;
-  opacity: 0;
-  z-index: 1;
+#menuPage .menuRadioButtons {
   display: none;
 }
 
-#menuNav #categoryOne:checked ~ #pizzaMenu, #menuNav #categoryTwo:checked ~ #pastaMenu, #menuNav #categoryThree:checked ~ #appetizersMenu, #menuNav #categoryFour:checked ~ #drinksMenu {
+#menuPage #categoryOne:checked ~ #pizzaMenu, #menuPage #categoryTwo:checked ~ #pastaMenu, #menuPage #categoryThree:checked ~ #appetizersMenu, #menuPage #categoryFour:checked ~ #drinksMenu {
   display: -ms-grid;
   display: grid;
 }
 
-#menuNav #categoryOne:checked ~ #navMenuPages #pizza, #menuNav #categoryTwo:checked ~ #navMenuPages #pasta, #menuNav #categoryThree:checked ~ #navMenuPages #appetizers, #menuNav #categoryFour:checked ~ #navMenuPages #drinks {
+#menuPage #categoryOne:checked ~ #navMenuCategories #pizza, #menuPage #categoryTwo:checked ~ #navMenuCategories #pasta, #menuPage #categoryThree:checked ~ #navMenuCategories #appetizers, #menuPage #categoryFour:checked ~ #navMenuCategories #drinks {
   font-weight: bold;
 }
 
-#menuNav #navMenuPages {
-  position: relative;
-  z-index: 1;
+#menuPage #navMenuCategories {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  row-gap: 0px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
   -ms-grid-columns: auto auto auto auto;
       grid-template-columns: auto auto auto auto;
+  position: relative;
+  z-index: 1;
   width: 80%;
   margin-top: 2vh;
   border-radius: 5px;
   text-align: center;
   color: #393e46;
+  font-size: 0.8em;
 }
 
-#menuNav #navMenuPages label {
-  font-size: 0.9em;
-}
-
-#menuNav .menuContainer {
+#menuPage .menuContainer {
   display: -ms-grid;
   display: grid;
   place-items: center;
   row-gap: 20px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
   min-height: 90vh;
   margin-top: 2vh;
-  width: 100%;
+  width: 75%;
   color: #393e46;
   display: none;
 }
 
-#menuNav .menuContainer h1 {
+#menuPage .menuContainer h1 {
   font-family: "Lora", serif;
 }
 
-#menuNav .menuContainer #salePoster {
-  width: 70%;
-  padding: 6% 7%;
+#menuPage .menuContainer #salePoster {
+  width: 100%;
+  padding: 5% 0%;
   background: #393e46;
   border-radius: 3px;
   color: white;
 }
 
-#menuNav .menuContainer #salePoster > h1 {
-  font-size: 0.9em;
+#menuPage .menuContainer #salePoster > h1 {
+  font-size: 0.85em;
   text-align: center;
   letter-spacing: 1px;
   line-height: 30px;
 }
 
-#menuNav .menuContainer #pizzaItemCards {
+#menuPage .menuContainer #pizzaItemCards {
   display: -ms-grid;
   display: grid;
   place-items: center;
   row-gap: 25px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
 }
 
-#menuNav .menuContainer #pizzaItemCards img {
-  width: 60%;
+#menuPage .menuContainer #pizzaItemCards img {
+  width: 50%;
 }
 
-#menuNav .menuContainer #drinksMenu article {
-  width: 100%;
-}
-
-#menuNav .menuContainer .itemCard {
+#menuPage .menuContainer .itemCard {
   display: -ms-grid;
   display: grid;
+  row-gap: 15px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  row-gap: 14px;
-  width: 67%;
-  padding: 8%;
+  width: 100%;
+  padding: 8% 0%;
   background: #eeeeee;
   border-radius: 3px;
   -webkit-box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.5);
           box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.5);
 }
 
-#menuNav .menuContainer .itemCard:active {
+#menuPage .menuContainer .itemCard .mobileItemName + h1, #menuPage .menuContainer .itemCard .itemDescription + p {
+  display: none;
+}
+
+#menuPage .menuContainer .itemCard > h1 {
+  font-size: 0.75em;
+  font-weight: bold;
+  padding: 0% 6%;
+}
+
+#menuPage .menuContainer .itemCard p {
+  font-size: 0.6em;
+  padding-left: 6%;
+  padding: 0% 6%;
+}
+
+#menuPage .menuContainer .itemCard:active {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-#menuNav .menuContainer .itemCard > h1 {
-  font-size: 0.9em;
-  font-weight: bold;
-}
-
-#menuNav .menuContainer .itemCard p {
-  font-size: 0.7em;
-}
-
-#menuNav .menuContainer .itemCard .itemDescription + p {
-  font-size: 0.8em;
-  font-weight: 600;
-}
-
-#menuNav .menuContainer .itemCard:hover .sidePanel {
+#menuPage .menuContainer .itemCard:hover .sidePanel {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-#menuNav .menuContainer .itemCard .sidePanel {
+#menuPage .menuContainer .itemCard .sidePanel {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  row-gap: 0px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
+  row-gap: 20px;
   position: fixed;
   top: 0;
   right: 0;
-  width: 55%;
-  height: 78%;
-  padding: 10%;
+  width: 75vw;
+  height: 78vh;
+  padding: 10% 0%;
   background: #eeeeee;
   text-align: center;
   z-index: 11;
@@ -660,144 +694,198 @@ footer #mobileFooterSpacer {
   transition: all 0.5s ease-in-out;
 }
 
-#menuNav .menuContainer .itemCard .sidePanel img {
-  width: 70%;
+#menuPage .menuContainer .itemCard .sidePanel img {
+  width: 50%;
 }
 
-#menuNav .menuContainer .itemCard .sidePanel p {
-  font-size: 0.7em;
+#menuPage .menuContainer .itemCard .sidePanel p {
+  font-size: 0.6em;
+  padding: 0% 20%;
 }
 
-#menuNav .menuContainer .itemCard .sidePanel .pizzaPrice {
+#menuPage .menuContainer .itemCard .sidePanel .pizzaPrice {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  row-gap: 0px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
-  width: 70%;
+  width: 50%;
   text-align: center;
   font-size: 1.3em;
   font-weight: bold;
+  font-family: "Lora", serif;
 }
 
-#menuNav .menuContainer .itemCard .sidePanel .pizzaPrice .pizzaSize {
-  background: #393e46;
-  color: white;
+#menuPage .menuContainer .itemCard .sidePanel .pizzaPrice .pizzaSize {
+  background: white;
+  color: #393e46;
   padding: 10%;
-  border-radius: 3px;
-  font-weight: normal;
+  font-weight: 500;
 }
 
-#menuNav .menuContainer .itemCard .sidePanel .generalItemPrice {
+#menuPage .menuContainer .itemCard .sidePanel .generalItemPrice {
   font-size: 1.2em;
   font-weight: bold;
+  font-family: "Lora", serif;
 }
 
-#menuNav .menuContainer .itemCard .desktopSizesAndPrice {
-  display: none;
-}
-
-#menuNav .menuContainer .itemCard .menuItemHover {
+#menuPage .menuContainer .itemCard .desktopSizesAndPrice, #menuPage .menuContainer .itemCard .menuItemHover {
   display: none;
 }
 
 @media only screen and (min-width: 600px) {
-  #menuNav {
+  #menuPage {
     margin-top: 30vh;
+    row-gap: 30px;
+  }
+  #menuPage #navMenuCategories {
+    font-size: 0.9em;
+  }
+  #menuPage .menuContainer {
+    width: 80%;
     row-gap: 40px;
   }
-  #menuNav .menuContainer {
-    margin-top: 2vh;
-    row-gap: 40px;
-  }
-  #menuNav .menuContainer #salePoster {
-    width: 68%;
+  #menuPage .menuContainer #salePoster {
     font-size: 1.1em;
   }
-  #menuNav .menuContainer #pizzaItemCards {
-    width: 90%;
-    -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  #menuPage .menuContainer #pizzaItemCards {
+    width: 100%;
+    row-gap: 30px;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
-  #menuNav .menuContainer .itemCard {
+  #menuPage .menuContainer #pizzaItemCards img {
+    width: 40%;
+  }
+  #menuPage .menuContainer .itemCard {
     place-items: center;
     text-align: center;
     row-gap: 30px;
-    width: 75%;
-    padding: 10% 5%;
+    height: 100%;
+    padding: 0%;
   }
-  #menuNav .menuContainer .itemCard p {
-    font-size: 0.6em;
-    padding: 0% 5%;
+  #menuPage .menuContainer .itemCard .mobileItemName + h1, #menuPage .menuContainer .itemCard .itemDescription + p {
+    display: block;
   }
-  #menuNav .menuContainer .itemCard .sidePanel {
-    height: 100vh;
+  #menuPage .menuContainer .itemCard .mobileItemName {
+    display: none;
+  }
+  #menuPage .menuContainer .itemCard > h1 {
+    font-size: 0.9em;
+    padding-top: 8%;
+  }
+  #menuPage .menuContainer .itemCard .itemDescription {
+    font-size: 0.65em;
     padding: 0% 10%;
   }
-  #menuNav .menuContainer .itemCard .sidePanel > h1 {
-    font-size: 1.2em;
+  #menuPage .menuContainer .itemCard .itemDescription + p {
+    font-size: 0.9em;
+    font-family: "Lora", serif;
+    font-weight: bold;
+    padding-bottom: 8%;
   }
-  #menuNav .menuContainer .itemCard .sidePanel p {
+  #menuPage .menuContainer .itemCard .sidePanel {
+    height: 100vh;
+    padding: 0%;
+    width: 75vw;
+  }
+  #menuPage .menuContainer .itemCard .sidePanel > h1 {
+    font-size: 1.3em;
+  }
+  #menuPage .menuContainer .itemCard .sidePanel p {
     font-size: 0.8em;
-    padding: 0% 5%;
   }
-  #menuNav #pastaMenu, #menuNav #appetizersMenu, #menuNav #drinksMenu {
-    width: 90%;
-    -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  #menuPage .menuContainer .itemCard .sidePanel p + p {
+    font-size: 1em;
+  }
+  #menuPage .menuContainer .itemCard .sidePanel img {
+    width: 45%;
+  }
+  #menuPage #pastaMenu, #menuPage #appetizersMenu, #menuPage #drinksMenu {
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    row-gap: 30px;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+    width: 80%;
   }
 }
 
 @media only screen and (min-width: 1000px) {
-  #menuNav > h1 {
+  #menuPage {
+    row-gap: 50px;
+  }
+  #menuPage > h1 {
     font-size: 2em;
   }
-  #menuNav #navMenuPages {
+  #menuPage #navMenuCategories {
     font-size: 1.2em;
   }
-  #menuNav #navMenuPages label {
+  #menuPage #navMenuCategories label {
     cursor: pointer;
   }
-  #menuNav .menuContainer #salePoster {
+  #menuPage #navMenuCategories label:hover {
+    color: rgba(57, 62, 70, 0.5);
+  }
+  #menuPage .menuContainer #salePoster {
     padding: 3% 0%;
-    width: 80%;
     font-size: 1.4em;
   }
-  #menuNav .menuContainer #salePoster h1 {
+  #menuPage .menuContainer #salePoster h1 {
     line-height: 50px;
   }
-  #menuNav .menuContainer .itemCard {
+  #menuPage .menuContainer #pizzaItemCards img {
+    width: 50%;
+  }
+  #menuPage .menuContainer .itemCard {
     position: relative;
-    width: 60%;
     -webkit-box-shadow: 1px 2px 4px rgba(128, 128, 128, 0.3);
             box-shadow: 1px 2px 4px rgba(128, 128, 128, 0.3);
     row-gap: 40px;
   }
-  #menuNav .menuContainer .itemCard .itemDescription + p, #menuNav .menuContainer .itemCard .sidePanel {
+  #menuPage .menuContainer .itemCard .itemDescription + p, #menuPage .menuContainer .itemCard .sidePanel {
     display: none;
   }
-  #menuNav .menuContainer .itemCard .desktopSizesAndPrice {
+  #menuPage .menuContainer .itemCard > h1 {
+    font-size: 1.1em;
+    padding-top: 15%;
+  }
+  #menuPage .menuContainer .itemCard .itemDescription {
+    padding: 0% 10%;
+  }
+  #menuPage .menuContainer .itemCard .desktopSizesAndPrice {
     display: -ms-grid;
     display: grid;
-    width: 80%;
-    row-gap: 30px;
+    row-gap: 40px;
+    -webkit-column-gap: 0px;
+            column-gap: 0px;
+    width: 60%;
   }
-  #menuNav .menuContainer .itemCard .desktopSizesAndPrice input {
+  #menuPage .menuContainer .itemCard .desktopSizesAndPrice input {
     display: none;
   }
-  #menuNav .menuContainer .itemCard .desktopSizesAndPrice .pizzaPrice {
+  #menuPage .menuContainer .itemCard .desktopSizesAndPrice .pizzaPrice {
     display: -ms-grid;
     display: grid;
     place-items: center;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    row-gap: 0px;
     -webkit-column-gap: 20px;
             column-gap: 20px;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
-  #menuNav .menuContainer .itemCard .desktopSizesAndPrice .pizzaPrice .desktopPizzaSize {
+  #menuPage .menuContainer .itemCard .desktopSizesAndPrice .pizzaPrice .desktopPizzaSize {
     display: -ms-grid;
     display: grid;
     place-items: center;
+    row-gap: 0px;
+    -webkit-column-gap: 0px;
+            column-gap: 0px;
     background: white;
     color: #393e46;
     font-weight: 500;
@@ -809,19 +897,21 @@ footer #mobileFooterSpacer {
     text-align: center;
     cursor: pointer;
   }
-  #menuNav .menuContainer .itemCard .desktopSizesAndPrice .pizzaSmallInput:checked ~ .priceFor10inches, #menuNav .menuContainer .itemCard .desktopSizesAndPrice .pizzaMediumInput:checked ~ .priceFor12inches, #menuNav .menuContainer .itemCard .desktopSizesAndPrice .pizzaLargeInput:checked ~ .priceFor14inches {
+  #menuPage .menuContainer .itemCard .desktopSizesAndPrice p {
+    font-family: "Lora", serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: none;
+    padding-bottom: 20%;
+  }
+  #menuPage .menuContainer .itemCard .desktopSizesAndPrice .pizzaSmallInput:checked ~ .priceFor10inches, #menuPage .menuContainer .itemCard .desktopSizesAndPrice .pizzaMediumInput:checked ~ .priceFor12inches, #menuPage .menuContainer .itemCard .desktopSizesAndPrice .pizzaLargeInput:checked ~ .priceFor14inches {
     display: block;
   }
-  #menuNav .menuContainer .itemCard .desktopSizesAndPrice .pizzaSmallInput:checked ~ .pizzaPrice #smallSize, #menuNav .menuContainer .itemCard .desktopSizesAndPrice .pizzaMediumInput:checked ~ .pizzaPrice #mediumSize, #menuNav .menuContainer .itemCard .desktopSizesAndPrice .pizzaLargeInput:checked ~ .pizzaPrice #largeSize {
+  #menuPage .menuContainer .itemCard .desktopSizesAndPrice .pizzaSmallInput:checked ~ .pizzaPrice #smallSize, #menuPage .menuContainer .itemCard .desktopSizesAndPrice .pizzaMediumInput:checked ~ .pizzaPrice #mediumSize, #menuPage .menuContainer .itemCard .desktopSizesAndPrice .pizzaLargeInput:checked ~ .pizzaPrice #largeSize {
     background: #393e46;
     color: white;
   }
-  #menuNav .menuContainer .itemCard .desktopSizesAndPrice p {
-    font-weight: bold;
-    font-size: 1em;
-    display: none;
-  }
-  #menuNav .menuContainer .itemCard .menuItemHover {
+  #menuPage .menuContainer .itemCard .menuItemHover {
     display: block;
     width: 100%;
     position: absolute;
@@ -830,29 +920,23 @@ footer #mobileFooterSpacer {
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
   }
-  #menuNav .menuContainer .itemCard .menuItemHover:hover {
+  #menuPage .menuContainer .itemCard .menuItemHover:hover {
     opacity: 1;
     top: 5%;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
   }
-  #menuNav .menuContainer .itemCard:active {
+  #menuPage .menuContainer .itemCard:active {
     -webkit-box-shadow: 1px 2px 4px rgba(128, 128, 128, 0.3);
             box-shadow: 1px 2px 4px rgba(128, 128, 128, 0.3);
   }
-  #menuNav #pastaMenu .itemCard, #menuNav #appetizersMenu .itemCard, #menuNav #drinksMenu .itemCard {
-    row-gap: 50px;
-  }
-  #menuNav #pastaMenu .itemCard h1, #menuNav #pastaMenu .itemCard p, #menuNav #appetizersMenu .itemCard h1, #menuNav #appetizersMenu .itemCard p, #menuNav #drinksMenu .itemCard h1, #menuNav #drinksMenu .itemCard p {
-    padding: 3%;
-  }
-  #menuNav #pastaMenu .itemCard .itemDescription + p, #menuNav #appetizersMenu .itemCard .itemDescription + p, #menuNav #drinksMenu .itemCard .itemDescription + p {
+  #menuPage #pastaMenu .itemCard .itemDescription + p, #menuPage #appetizersMenu .itemCard .itemDescription + p, #menuPage #drinksMenu .itemCard .itemDescription + p {
     display: block;
     font-size: 1em;
     font-weight: bold;
   }
-  #menuNav #pastaMenu img, #menuNav #appetizersMenu img, #menuNav #drinksMenu img {
-    width: 70%;
+  #menuPage #pastaMenu img, #menuPage #appetizersMenu img, #menuPage #drinksMenu img {
+    width: 60%;
     background: #eeeeee;
   }
 }

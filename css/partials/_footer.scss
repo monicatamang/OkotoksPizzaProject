@@ -1,14 +1,13 @@
 @import "_globals.scss";
 
 footer {
-    @include gridCenter();
+    @include gridCenterRowAndColumnGap(0px, 0px);
     margin-top: 8vh;
     width: 100%;
     background: $secondaryColor;
 
     #subscriptionForm {
-        display: grid;
-        row-gap: 15px;
+        @include gridAndRowColumnGap(15px, 0px);
         width: 80%;
         min-height: 30vh;
         padding: 10%;
@@ -25,8 +24,7 @@ footer {
         }
 
         #subscriptionInputs {
-            display: grid;
-            row-gap: 15px;
+            @include gridAndRowColumnGap(15px, 0px);
 
             .inputSubscriptionForm {
                 padding: 2%;
@@ -54,7 +52,7 @@ footer {
     }
 
     #socialLinksAndCopyright {
-        @include gridCenter();
+        @include gridCenterRowAndColumnGap(0px, 0px);
         grid-template-rows: auto auto auto;
         background: $primaryColor;
         color: $neutralColorOne;
@@ -65,7 +63,7 @@ footer {
         padding: 3% 0%;
 
         #socialMedia {
-            @include gridCenter();
+            @include gridCenterRowAndColumnGap(0px, 0px);
             grid-template-columns: repeat(4, auto);
             width: 70%;
 

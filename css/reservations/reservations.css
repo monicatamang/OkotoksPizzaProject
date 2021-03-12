@@ -28,6 +28,9 @@ header {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  row-gap: 0px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
   -ms-grid-columns: 2fr 4fr 2fr;
       grid-template-columns: 2fr 4fr 2fr;
   position: fixed;
@@ -47,6 +50,9 @@ header > a .logo {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  row-gap: 0px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
   background: #393e46;
   border-radius: 100%;
 }
@@ -110,6 +116,9 @@ header #mobileHamburgerMenu #mobileHamburgerContainer {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  row-gap: 0px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
   position: relative;
   width: 28px;
   height: 28px;
@@ -131,6 +140,9 @@ header #mobileHamburgerMenu #mobileTabletNavPages {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  row-gap: 0px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
   position: absolute;
   left: 0;
   width: 100%;
@@ -202,10 +214,11 @@ header #desktopNavPages {
     display: -ms-grid;
     display: grid;
     place-items: center;
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
+    row-gap: 0px;
     -webkit-column-gap: 15px;
             column-gap: 15px;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
   }
   header > a #logoOuterCircle {
     width: 45px;
@@ -231,10 +244,11 @@ header #desktopNavPages {
     display: -ms-grid;
     display: grid;
     place-items: center;
-    -ms-grid-columns: auto auto auto auto auto;
-        grid-template-columns: auto auto auto auto auto;
+    row-gap: 0px;
     -webkit-column-gap: 50px;
             column-gap: 50px;
+    -ms-grid-columns: auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto;
   }
   header #desktopNavPages a {
     text-decoration: none;
@@ -264,6 +278,9 @@ body {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  row-gap: 0px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
   position: fixed;
   bottom: 2%;
   width: 100%;
@@ -334,6 +351,9 @@ footer {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  row-gap: 0px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
   margin-top: 8vh;
   width: 100%;
   background: #eeeeee;
@@ -343,6 +363,8 @@ footer #subscriptionForm {
   display: -ms-grid;
   display: grid;
   row-gap: 15px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
   width: 80%;
   min-height: 30vh;
   padding: 10%;
@@ -365,6 +387,8 @@ footer #subscriptionForm #subscriptionInputs {
   display: -ms-grid;
   display: grid;
   row-gap: 15px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
 }
 
 footer #subscriptionForm #subscriptionInputs .inputSubscriptionForm {
@@ -394,6 +418,9 @@ footer #socialLinksAndCopyright {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  row-gap: 0px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
   -ms-grid-rows: auto auto auto;
       grid-template-rows: auto auto auto;
   background: #f7f7f7;
@@ -409,6 +436,9 @@ footer #socialLinksAndCopyright #socialMedia {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  row-gap: 0px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
   -ms-grid-columns: (auto)[4];
       grid-template-columns: repeat(4, auto);
   width: 70%;
@@ -512,6 +542,8 @@ footer #mobileFooterSpacer {
   display: grid;
   place-items: center;
   row-gap: 20px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
   margin-top: 15vh;
   min-height: 90vh;
   padding: 0% 15%;
@@ -529,11 +561,13 @@ footer #mobileFooterSpacer {
 }
 
 #reservations #reservationForm {
-  margin-top: 4vh;
   display: -ms-grid;
   display: grid;
   place-items: center;
   row-gap: 40px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
+  margin-top: 4vh;
   width: 100%;
 }
 
@@ -541,6 +575,8 @@ footer #mobileFooterSpacer {
   display: -ms-grid;
   display: grid;
   row-gap: 10px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
   width: 100%;
 }
 

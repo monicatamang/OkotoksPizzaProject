@@ -1,7 +1,7 @@
 @import "_globals.scss";
 
 header {
-    @include gridCenter();
+    @include gridCenterRowAndColumnGap(0px, 0px);
     grid-template-columns: 2fr 4fr 2fr;
     position: fixed;
     top: 0;
@@ -15,7 +15,7 @@ header {
         text-decoration: none;
 
         .logo {
-            @include gridCenter();
+            @include gridCenterRowAndColumnGap(0px, 0px);
             background: $neutralColorOne;
             border-radius: 100%;
         }
@@ -72,7 +72,7 @@ header {
         }
 
         #mobileHamburgerContainer {
-            @include gridCenter();
+            @include gridCenterRowAndColumnGap(0px, 0px);
             position: relative;
             width: 28px;
             height: 28px;
@@ -90,7 +90,7 @@ header {
         }
 
         #mobileTabletNavPages {
-            @include gridCenter();
+            @include gridCenterRowAndColumnGap(0px, 0px);
             position: absolute;
             left: 0;
             width: 100%;
@@ -173,9 +173,8 @@ header {
         grid-template-columns: auto auto auto;
 
         >a {
-            @include gridCenter();
+            @include gridCenterRowAndColumnGap(0px, 15px);
             grid-template-columns: auto auto;
-            column-gap: 15px;
 
             #logoOuterCircle {
                 width: 45px;
@@ -201,15 +200,13 @@ header {
         }
 
         #desktopNavPages {
-            @include gridCenter();
+            @include gridCenterRowAndColumnGap(0px, 50px);
             grid-template-columns: auto auto auto auto auto;
-            column-gap: 50px;
 
             a {
                 @include linksStyle($neutralColorOne, 0.9em);
 
                 &:hover {
-                    // text-decoration: underline;
                     color: rgba(57, 62, 70, 0.5);
                 }
             }
