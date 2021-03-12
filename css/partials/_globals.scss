@@ -1,11 +1,9 @@
 // FONTS
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:ital,wght@0,400;0,500;1,600;1,700&display=swap');
 
 // VARIABLES
 $primaryColor: #f7f7f7;
 $secondaryColor: #eeeeee;
-$accentColor: #929aab;
 $neutralColorOne: #393e46;
 $neutralColorTwo: white;
 $titleFont: "Lora", serif;
@@ -15,11 +13,6 @@ $bodyFont: "Montserrat", sans-serif;
 @mixin gridCenter() {
     display: grid;
     place-items: center;
-}
-
-@mixin animatedNavBars ($degree) {
-    transform: rotate($degree);
-    transition: all 0.4s ease-in-out;
 }
 
 @mixin linksStyle ($fontColor, $fontSize) {

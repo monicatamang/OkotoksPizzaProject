@@ -7,18 +7,13 @@
     width: 100%;
     background: $neutralColorTwo;
     box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.4);
-    z-index: 2;
+    z-index: 12;
 
     a {
-        color: $neutralColorOne;
-        text-decoration: none;
+        @include linksStyle($neutralColorOne, 0.85em);
+        text-align: center;
         padding: 5% 0%;
         width: 100%;
-        text-align: center;
-    }
-    
-    p {
-        font-size: 0.85em;
     }
 
     #tabletDesktopPhoneNumber {
@@ -28,20 +23,20 @@
 
 @media only screen and (min-width: 600px) {
     #callButton {
-        top: 12.8%;
+        top: 12vh;
         height: 5vh;
         padding: 1% 0%;
         box-shadow: none;
         background: $neutralColorTwo;
-
-        p {
-            color: $neutralColorOne;
-            font-weight: 500;
-            letter-spacing: 2px;
-        }
+        z-index: 9;
 
         a {
             display: none;
+        }
+
+        p {
+            color: $neutralColorOne;
+            letter-spacing: 2px;
         }
 
         #tabletDesktopPhoneNumber {
@@ -52,9 +47,9 @@
 
 @media only screen and (min-width: 1000px) {
     #callButton {
+        top: 13%;
         height: 3vh;
         padding: 1% 0%;
-        top: 13%;
 
         p {
             font-size: 0.8em;

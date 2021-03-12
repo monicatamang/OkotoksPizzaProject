@@ -8,7 +8,7 @@
     <!-- Home Page Meta Tags -->
     <meta name="description" content="Okotoks Pizza is a pick-up and dine-in Italian pizzeria serving hardworking people pizzas, pastas, appetizers, and drinks. Call 403-555-555 to order now!">
     <meta name="keywords" content="Italian pizza restaurant, wood fired pizza, downtown pizza restaurant, dine-in pizza restaurant, local pizza restaurant, local pizza business, Okotoks Pizza restaurant, takeout pizza restaurant">
-    <meta name="author" content="Alex Bymoen">
+    <meta name="author" content="Doug Glen">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
@@ -36,7 +36,7 @@
                 <div class="logoInnerCircle">OP</div>
             </div>
         </a>
-        <div id="mobileNavSpacer"></div>
+        <div class="HeaderSpacer"></div>
         <div id="mobileHamburgerMenu">
             <input type="checkbox" name="mobileNavCheckbox" id="mobileNavCheckbox">
             <div id="mobileHamburgerContainer">
@@ -44,13 +44,20 @@
                 <span id="mobileBarTwo" class="navBars"></span>
                 <span id="mobileBarThree" class="navBars"></span>
             </div>
-            <nav id="mobileNavPages">
+            <nav id="mobileTabletNavPages">
                 <a id="currentPage" href="index.html">Home</a>
                 <a href="pages/about.html">About</a>
                 <a href="pages/menu.html">Menu</a>
                 <a href="pages/reservations.html">Reservations</a>
                 <a href="pages/contact.html">Contact</a>
             </nav>
+            <!-- <nav id="desktopNavPages">
+                <a id="currentDesktopPage" href="index.html">Home</a>
+                <a href="pages/about.html">About</a>
+                <a href="pages/menu.html">Menu</a>
+                <a href="pages/reservations.html">Reservations</a>
+                <a href="pages/contact.html">Contact</a>
+            </nav> -->
         </div>
         <article class="infoBanner">
             <p>Pickup & Dine-in Only</p>
@@ -65,9 +72,9 @@
             </div>
             <h1>Okotoks Pizza</h1>
         </a>
-        <div id="desktopHeaderSpacer"></div>
+        <div class="HeaderSpacer"></div>
         <nav id="desktopNavPages">
-            <a href="index.html">Home</a>
+            <a id="currentDesktopPage" href="index.html">Home</a>
             <a href="pages/about.html">About</a>
             <a href="pages/menu.html">Menu</a>
             <a href="pages/reservations.html">Reservations</a>
@@ -80,17 +87,17 @@
         </article>
     </header>
     <main>
-        <section>
+        <article>
             <h1>Pizza by Any Other Name</h1>
-            <article id="openHours">
+            <div id="openHours">
                 <p>Sun to Thu from 12PM - 11PM</p>
                 <p>Fri & Sat from 12PM - 1AM</p>
-            </article>
-            <article id="heroSectionButtons">
+            </div>
+            <div id="heroSectionButtons">
                 <a class="buttons" href="pages/menu.html">View Our Menu</a>
                 <a class="buttons" href="pages/reservations.html">Reserve a Table</a>
-            </article>
-        </section>
+            </div>
+        </article>
         <img id="heroPizzaImage" src="images/heroPizzaImage.jpg" alt="A classic pepperoni pizza made with pepperoni, mozzarella cheese, black olives, and sliced tomatoes on top">
     </main>
     <article id="callButton">
@@ -124,7 +131,7 @@
                     <img src="../images/socialMedia/twitterLogo.svg" alt="A Twitter Logo where the 'bird' is a white colour and is inside of a black circle">
                 </a>
             </div>
-            <p id="copyright">&copy; 2021 Okotoks Pizza. All Rights Reserved.</p>
+            <p>&copy; 2021 Okotoks Pizza. All Rights Reserved.</p>
         </article>
         <div id="mobileFooterSpacer"></div>
     </footer>

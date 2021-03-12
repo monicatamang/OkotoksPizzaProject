@@ -14,7 +14,7 @@
     z-index: -1;
 
     p {
-        margin: 5%;
+        padding: 5%;
         color: $neutralColorOne;
         font-size: 0.75em;
     }
@@ -28,7 +28,7 @@ main {
     padding: 0% 10%;
     text-align: center;
 
-    section {
+    article {
         @include gridCenter();
         row-gap: 30px;
 
@@ -68,7 +68,8 @@ main {
 
 @media only screen and (min-width: 600px) {
     .infoBanner {
-        top: 19.5%;
+        top: 18.9vh;
+        max-height: 8vh;
 
         p {
             font-size: 0.8em;
@@ -76,21 +77,21 @@ main {
     }
 
     main {
-        margin-top: 40vh;
         row-gap: 70px;
+        margin-top: 40vh;
 
-        section {
+        article {
             row-gap: 60px;
 
             >h1 {
-                font-size: 2.3em;
+                font-size: 1.8em;
             }
     
             #openHours {
                 line-height: 40px;
     
                 p {
-                    font-size: 1.4em;
+                    font-size: 1.1em;
                 }
             }
     
@@ -98,7 +99,7 @@ main {
                 row-gap: 20px;
     
                 .buttons {
-                    @include linksStyle($neutralColorTwo, 1.3em);
+                    @include linksStyle($neutralColorTwo, 1em);
                 }
             }
         }
@@ -107,13 +108,13 @@ main {
 
 @media only screen and (min-width: 1000px) {
     .infoBanner {
-        top: 19.7%;
+        top: 19.3%;
         padding: 0.5% 0%;
         background: $secondaryColor;
 
         p {
+            padding: 0%;
             font-size: 0.8em;
-            margin: 0%;
         }
     }
 
@@ -123,7 +124,7 @@ main {
         margin-top: 25vh;
         text-align: left;
 
-        section {
+        article {
             display: grid;
             justify-items: start;
             row-gap: 25px;

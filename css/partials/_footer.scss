@@ -9,10 +9,10 @@ footer {
     #subscriptionForm {
         display: grid;
         row-gap: 15px;
-        align-items: center;
-        padding: 10%;
-        min-height: 30vh;
         width: 80%;
+        min-height: 30vh;
+        padding: 10%;
+        align-items: center;
         color: $neutralColorOne;
 
         h1 {
@@ -30,20 +30,25 @@ footer {
 
             .inputSubscriptionForm {
                 padding: 2%;
+                font-size: 0.7em;
                 font-family: $bodyFont;
                 border: 0.5px solid $neutralColorOne;
-                font-size: 0.7em;
             }
         }
 
         #subscribeButton {
-            font-size: 0.7em;
+            color: $neutralColorTwo;
             background: $neutralColorOne;
             border-radius: 3px;
-            color: $neutralColorTwo;
+            font-size: 0.7em;
+            text-align: center;
             width: 80px;
             padding: 3%;
-            text-align: center;
+
+            &:active {
+                color: $neutralColorOne;
+                background: $neutralColorTwo;
+            }
         }
     }
 
@@ -85,11 +90,11 @@ footer {
         
         #subscriptionForm {
             row-gap: 30px;
-            padding: 5% 0%;
             width: 85%;
+            padding: 5% 0%;
 
             h1 {
-                font-size: 1.4em;
+                font-size: 1.2em;
             }
     
             p {
@@ -99,8 +104,8 @@ footer {
             #subscriptionInputs {
 
                 .inputSubscriptionForm {
-                    font-size: 1.1em;
-                    padding: 1.5%;
+                    font-size: 1em;
+                    padding: 1%;
                 }
             }
 
@@ -112,11 +117,13 @@ footer {
         }
 
         #socialLinksAndCopyright {
-            font-size: 0.9em;
+            row-gap: 20px;
+            font-size: 0.8em;
+            padding: 2% 0%;
             
 
             #socialMedia {
-                padding: 4% 0%;
+                padding: 5% 0%;
 
                 img {
                     width: 25px;
@@ -158,6 +165,7 @@ footer {
                 font-size: 0.8em;
                 width: 80px;
                 padding: 1%;
+                cursor: pointer;
             }
         }
 
@@ -165,13 +173,6 @@ footer {
             row-gap: 20px;
             font-size: 0.8em;
             padding: 0%;
-
-            // #socialMedia {
-                
-            //     img {
-            //         width: 25px;
-            //     }
-            // }
         }
     }
 }

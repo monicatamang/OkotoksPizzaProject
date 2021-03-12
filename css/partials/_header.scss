@@ -46,14 +46,15 @@
             z-index: 5;
         }
 
-        #mobileNavCheckbox:checked ~ #mobileNavPages {
+        #mobileNavCheckbox:checked ~ #mobileTabletNavPages {
             top: 95%;
             transition: all 0.5s ease-in-out;
         }
 
         #mobileNavCheckbox:checked ~ #mobileHamburgerContainer #mobileBarOne {
             transform-origin: top right;
-            @include animatedNavBars (-41deg);
+            transform: rotate(-41deg);
+            transition: all 0.4s ease-in-out;
         }
 
         #mobileNavCheckbox:checked ~ #mobileHamburgerContainer #mobileBarTwo {
@@ -62,7 +63,8 @@
 
         #mobileNavCheckbox:checked ~ #mobileHamburgerContainer #mobileBarThree {
             transform-origin: bottom right;
-            @include animatedNavBars (41deg);
+            transform: rotate(41deg);
+            transition: all 0.4s ease-in-out;
         }
 
         #mobileHamburgerContainer {
@@ -77,26 +79,29 @@
                 height: 3px;
                 background: $neutralColorOne;
                 border-radius: 10px;
-                @include animatedNavBars (0deg);
+
+                transform: rotate(0deg);
+                transition: all 0.4s ease-in-out;
             }
         }
 
-        #mobileNavPages {
+        #mobileTabletNavPages {
             @include gridCenter();
             position: absolute;
-            top: -60vh;
             left: 0;
             width: 100%;
             min-height: 60vh;
             background: $primaryColor;
             z-index: 10;
+
+            top: -60vh;
             transition: all 0.5s ease-in-out;
 
             a {
+                @include linksStyle($neutralColorOne, 0.8em);
                 width: 100%;
                 padding: 5% 0%;
                 text-align: center;
-                @include linksStyle($neutralColorOne, 0.9em);
             }
 
             #currentPage {
@@ -113,20 +118,19 @@
 @media only screen and (min-width: 600px) {
 
     #mobileTabletHeader {
-        background: $primaryColor;
-        top: 0;
         min-height: 7vh;
+        background: $primaryColor;
 
         >a {
 
             .logoOuterCircle {
-                width: 55px;
-                height: 55px;
+                width: 50px;
+                height: 50px;
             }
 
             .logoInnerCircle {
-                width: 42px;
-                height: 42px;
+                width: 40px;
+                height: 40px;
                 font-size: 1.2em;
             }
         }
@@ -148,7 +152,7 @@
                 }
             }
 
-            #mobileNavPages {
+            #mobileTabletNavPages {
                 top: -200vh;
                 
                 a {
@@ -178,10 +182,10 @@
         z-index: 10;
 
         >a {
+            @include linksStyle($neutralColorOne, 1em);
             @include gridCenter();
             grid-template-columns: auto auto;
             column-gap: 20px;
-            @include linksStyle($neutralColorOne, 1em);
 
             h1 {
                 font-size: 1.1em;
@@ -220,8 +224,12 @@
                 @include linksStyle($neutralColorOne, 0.9em);
 
                 &:hover {
-                    font-weight: bold;
+                    text-decoration: underline;
                 }
+            }
+
+            #currentDesktopPage {
+                font-weight: bold;
             }
         }
     }

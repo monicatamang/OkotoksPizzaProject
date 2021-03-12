@@ -43,7 +43,7 @@ section {
             @include gridCenter();
             grid-template-columns: auto auto auto auto auto;
             position: relative;
-            height: 210px; // give this a height that is taller than the image
+            height: 210px;
             margin-bottom: 5%;
 
             .slideshowRadioButton {
@@ -156,20 +156,20 @@ section {
     section {
         margin-top: 30vh;
         row-gap: 70px;
+        padding: 0% 3%;
 
         >h1 {
             font-size: 2em;
         }
 
         #videoAndDescription {
-            // margin-top: 5vh;
             place-items: center;
-            grid-template-columns: auto 1fr;
+            grid-template-columns: auto auto;
             column-gap: 50px;
             width: 100%;
 
             #introVideo {
-                width: 35vw;
+                width: 60vw;
                 height: 50vh;
             }
 
@@ -197,6 +197,7 @@ section {
             }
 
             #slideshow {
+                width: 100%;
                 height: 250px;
                 column-gap: 50px;
                 margin-bottom: 0%;

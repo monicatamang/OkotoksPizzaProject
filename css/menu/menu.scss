@@ -214,9 +214,10 @@
                 }
 
                 .sidePanel {
-                    // height: 100%;
-                    height: 85%;
-                    row-gap: 20px;
+                    height: 100vh;
+                    padding: 0% 10%;
+                    // height: 85%;
+                    // row-gap: 20px;
 
                     >h1 {
                         font-size: 1.2em;
@@ -303,82 +304,11 @@
                         }
                     }
 
-                    // BBQ Chicken
-                    #pizzaSmallBBQChicken:checked ~ .priceFor10inches, #pizzaMediumBBQChicken:checked ~ .priceFor12inches, #pizzaLargeBBQChicken:checked ~ .priceFor14inches {
+                    .pizzaSmallInput:checked ~ .priceFor10inches, .pizzaMediumInput:checked ~ .priceFor12inches, .pizzaLargeInput:checked ~ .priceFor14inches {
                         display: block;
                     }
 
-                    #pizzaSmallBBQChicken:checked ~ .pizzaPrice #smallSize, #pizzaMediumBBQChicken:checked ~ .pizzaPrice #mediumSize, #pizzaLargeBBQChicken:checked ~ .pizzaPrice #largeSize {
-                        background: $neutralColorOne;
-                        color: $neutralColorTwo;
-                    }
-
-                    // Chicken Bruchetta
-                    #pizzaSmallChickenBru:checked ~ .priceFor10inches, #pizzaMediumChickenBru:checked ~ .priceFor12inches, #pizzaLargeChickenBru:checked ~ .priceFor14inches {
-                        display: block;
-                    }
-
-                    #pizzaSmallChickenBru:checked ~ .pizzaPrice #smallSize, #pizzaMediumChickenBru:checked ~ .pizzaPrice #mediumSize, #pizzaLargeChickenBru:checked ~ .pizzaPrice #largeSize {
-                        background: $neutralColorOne;
-                        color: $neutralColorTwo;
-                    }
-
-                    // Deluxe
-                    #pizzaSmallDeluxe:checked ~ .priceFor10inches, #pizzaMediumDeluxe:checked ~ .priceFor12inches, #pizzaLargeDeluxe:checked ~ .priceFor14inches {
-                        display: block;
-                    }
-
-                    #pizzaSmallDeluxe:checked ~ .pizzaPrice #smallSize, #pizzaMediumDeluxe:checked ~ .pizzaPrice #mediumSize, #pizzaLargeDeluxe:checked ~ .pizzaPrice #largeSize {
-                        background: $neutralColorOne;
-                        color: $neutralColorTwo;
-                    }
-
-                    // Hawaiian Pepperoni
-                    #pizzaSmallHawaiianPep:checked ~ .priceFor10inches, #pizzaMediumHawaiianPep:checked ~ .priceFor12inches, #pizzaLargeHawaiianPep:checked ~ .priceFor14inches {
-                        display: block;
-                    }
-
-                    #pizzaSmallHawaiianPep:checked ~ .pizzaPrice #smallSize, #pizzaMediumHawaiianPep:checked ~ .pizzaPrice #mediumSize, #pizzaLargeHawaiianPep:checked ~ .pizzaPrice #largeSize {
-                        background: $neutralColorOne;
-                        color: $neutralColorTwo;
-                    }
-
-                    // Italian Sausage
-                    #pizzaSmallItalianSausage:checked ~ .priceFor10inches, #pizzaMediumItalianSausage:checked ~ .priceFor12inches, #pizzaLargeItalianSausage:checked ~ .priceFor14inches {
-                        display: block;
-                    }
-
-                    #pizzaSmallItalianSausage:checked ~ .pizzaPrice #smallSize, #pizzaMediumItalianSausage:checked ~ .pizzaPrice #mediumSize, #pizzaLargeItalianSausage:checked ~ .pizzaPrice #largeSize {
-                        background: $neutralColorOne;
-                        color: $neutralColorTwo;
-                    }
-
-                    // Magherita
-                    #pizzaSmallMargherita:checked ~ .priceFor10inches, #pizzaMediumMargherita:checked ~ .priceFor12inches, #pizzaLargeMargherita:checked ~ .priceFor14inches {
-                        display: block;
-                    }
-
-                    #pizzaSmallMargherita:checked ~ .pizzaPrice #smallSize, #pizzaMediumMargherita:checked ~ .pizzaPrice #mediumSize, #pizzaLargeMargherita:checked ~ .pizzaPrice #largeSize {
-                        background: $neutralColorOne;
-                        color: $neutralColorTwo;
-                    }
-
-                    // Meat Supreme
-                    #pizzaSmallMeatSupreme:checked ~ .priceFor10inches, #pizzaMediumMeatSupreme:checked ~ .priceFor12inches, #pizzaLargeMeatSupreme:checked ~ .priceFor14inches {
-                        display: block;
-                    }
-
-                    #pizzaSmallMeatSupreme:checked ~ .pizzaPrice #smallSize, #pizzaMediumMeatSupreme:checked ~ .pizzaPrice #mediumSize, #pizzaLargeMeatSupreme:checked ~ .pizzaPrice #largeSize {
-                        background: $neutralColorOne;
-                        color: $neutralColorTwo;
-                    }
-
-                    // Veggie Lovers
-                    #pizzaSmallVeggieLovers:checked ~ .priceFor10inches, #pizzaMediumVeggieLovers:checked ~ .priceFor12inches, #pizzaLargeVeggieLovers:checked ~ .priceFor14inches {
-                        display: block;
-                    }
-
-                    #pizzaSmallVeggieLovers:checked ~ .pizzaPrice #smallSize, #pizzaMediumVeggieLovers:checked ~ .pizzaPrice #mediumSize, #pizzaLargeVeggieLovers:checked ~ .pizzaPrice #largeSize {
+                    .pizzaSmallInput:checked ~ .pizzaPrice #smallSize, .pizzaMediumInput:checked ~ .pizzaPrice #mediumSize, .pizzaLargeInput:checked ~ .pizzaPrice #largeSize {
                         background: $neutralColorOne;
                         color: $neutralColorTwo;
                     }

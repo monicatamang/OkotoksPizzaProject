@@ -1,11 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:ital,wght@0,400;0,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:ital,wght@0,400;0,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:ital,wght@0,400;0,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:ital,wght@0,400;0,500;1,600;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -78,7 +74,7 @@ body {
   z-index: 5;
 }
 
-#mobileTabletHeader #mobileHamburgerMenu #mobileNavCheckbox:checked ~ #mobileNavPages {
+#mobileTabletHeader #mobileHamburgerMenu #mobileNavCheckbox:checked ~ #mobileTabletNavPages {
   top: 95%;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -127,31 +123,31 @@ body {
   transition: all 0.4s ease-in-out;
 }
 
-#mobileTabletHeader #mobileHamburgerMenu #mobileNavPages {
+#mobileTabletHeader #mobileHamburgerMenu #mobileTabletNavPages {
   display: -ms-grid;
   display: grid;
   place-items: center;
   position: absolute;
-  top: -60vh;
   left: 0;
   width: 100%;
   min-height: 60vh;
   background: #f7f7f7;
   z-index: 10;
+  top: -60vh;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-#mobileTabletHeader #mobileHamburgerMenu #mobileNavPages a {
+#mobileTabletHeader #mobileHamburgerMenu #mobileTabletNavPages a {
+  text-decoration: none;
+  color: #393e46;
+  font-size: 0.8em;
   width: 100%;
   padding: 5% 0%;
   text-align: center;
-  text-decoration: none;
-  color: #393e46;
-  font-size: 0.9em;
 }
 
-#mobileTabletHeader #mobileHamburgerMenu #mobileNavPages #currentPage {
+#mobileTabletHeader #mobileHamburgerMenu #mobileTabletNavPages #currentPage {
   background: #eeeeee;
 }
 
@@ -161,17 +157,16 @@ body {
 
 @media only screen and (min-width: 600px) {
   #mobileTabletHeader {
-    background: #f7f7f7;
-    top: 0;
     min-height: 7vh;
+    background: #f7f7f7;
   }
   #mobileTabletHeader > a .logoOuterCircle {
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
   }
   #mobileTabletHeader > a .logoInnerCircle {
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
     font-size: 1.2em;
   }
   #mobileTabletHeader #mobileHamburgerMenu #mobileNavCheckbox {
@@ -186,10 +181,10 @@ body {
     width: 32px;
     height: 4px;
   }
-  #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages {
+  #mobileTabletHeader #mobileHamburgerMenu #mobileTabletNavPages {
     top: -200vh;
   }
-  #mobileTabletHeader #mobileHamburgerMenu #mobileNavPages a {
+  #mobileTabletHeader #mobileHamburgerMenu #mobileTabletNavPages a {
     font-size: 1em;
   }
 }
@@ -214,6 +209,9 @@ body {
     z-index: 10;
   }
   #desktopHeader > a {
+    text-decoration: none;
+    color: #393e46;
+    font-size: 1em;
     display: -ms-grid;
     display: grid;
     place-items: center;
@@ -221,9 +219,6 @@ body {
         grid-template-columns: auto auto;
     -webkit-column-gap: 20px;
             column-gap: 20px;
-    text-decoration: none;
-    color: #393e46;
-    font-size: 1em;
   }
   #desktopHeader > a h1 {
     font-size: 1.1em;
@@ -265,6 +260,9 @@ body {
     font-size: 0.9em;
   }
   #desktopHeader #desktopNavPages a:hover {
+    text-decoration: underline;
+  }
+  #desktopHeader #desktopNavPages #currentDesktopPage {
     font-weight: bold;
   }
 }
@@ -290,19 +288,16 @@ body {
   background: white;
   -webkit-box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.4);
           box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.4);
-  z-index: 2;
+  z-index: 12;
 }
 
 #callButton a {
-  color: #393e46;
   text-decoration: none;
+  color: #393e46;
+  font-size: 0.85em;
+  text-align: center;
   padding: 5% 0%;
   width: 100%;
-  text-align: center;
-}
-
-#callButton p {
-  font-size: 0.85em;
 }
 
 #callButton #tabletDesktopPhoneNumber {
@@ -311,20 +306,20 @@ body {
 
 @media only screen and (min-width: 600px) {
   #callButton {
-    top: 12.8%;
+    top: 12vh;
     height: 5vh;
     padding: 1% 0%;
     -webkit-box-shadow: none;
             box-shadow: none;
     background: white;
-  }
-  #callButton p {
-    color: #393e46;
-    font-weight: 500;
-    letter-spacing: 2px;
+    z-index: 9;
   }
   #callButton a {
     display: none;
+  }
+  #callButton p {
+    color: #393e46;
+    letter-spacing: 2px;
   }
   #callButton #tabletDesktopPhoneNumber {
     display: block;
@@ -333,9 +328,9 @@ body {
 
 @media only screen and (min-width: 1000px) {
   #callButton {
+    top: 13%;
     height: 3vh;
     padding: 1% 0%;
-    top: 13%;
   }
   #callButton p {
     font-size: 0.8em;
@@ -366,12 +361,12 @@ footer #subscriptionForm {
   display: -ms-grid;
   display: grid;
   row-gap: 15px;
+  width: 80%;
+  min-height: 30vh;
+  padding: 10%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10%;
-  min-height: 30vh;
-  width: 80%;
   color: #393e46;
 }
 
@@ -392,19 +387,24 @@ footer #subscriptionForm #subscriptionInputs {
 
 footer #subscriptionForm #subscriptionInputs .inputSubscriptionForm {
   padding: 2%;
+  font-size: 0.7em;
   font-family: "Montserrat", sans-serif;
   border: 0.5px solid #393e46;
-  font-size: 0.7em;
 }
 
 footer #subscriptionForm #subscribeButton {
-  font-size: 0.7em;
+  color: white;
   background: #393e46;
   border-radius: 3px;
-  color: white;
+  font-size: 0.7em;
+  text-align: center;
   width: 80px;
   padding: 3%;
-  text-align: center;
+}
+
+footer #subscriptionForm #subscribeButton:active {
+  color: #393e46;
+  background: white;
 }
 
 footer #socialLinksAndCopyright {
@@ -450,18 +450,18 @@ footer #mobileFooterSpacer {
   }
   footer #subscriptionForm {
     row-gap: 30px;
-    padding: 5% 0%;
     width: 85%;
+    padding: 5% 0%;
   }
   footer #subscriptionForm h1 {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
   footer #subscriptionForm p {
     font-size: 1em;
   }
   footer #subscriptionForm #subscriptionInputs .inputSubscriptionForm {
-    font-size: 1.1em;
-    padding: 1.5%;
+    font-size: 1em;
+    padding: 1%;
   }
   footer #subscriptionForm #subscribeButton {
     font-size: 1em;
@@ -469,10 +469,12 @@ footer #mobileFooterSpacer {
     padding: 2%;
   }
   footer #socialLinksAndCopyright {
-    font-size: 0.9em;
+    row-gap: 20px;
+    font-size: 0.8em;
+    padding: 2% 0%;
   }
   footer #socialLinksAndCopyright #socialMedia {
-    padding: 4% 0%;
+    padding: 5% 0%;
   }
   footer #socialLinksAndCopyright #socialMedia img {
     width: 25px;
@@ -506,6 +508,7 @@ footer #mobileFooterSpacer {
     font-size: 0.8em;
     width: 80px;
     padding: 1%;
+    cursor: pointer;
   }
   footer #socialLinksAndCopyright {
     row-gap: 20px;

@@ -8,7 +8,7 @@
     <!-- "Menu" Page Meta Tags -->
     <meta name="description" content="Okotoks Pizza offers everything from marghertia pizzas to fettuccine alfredos to anitpasto skewers to uniquely crafted Italian drinks. Order today!">
     <meta name="keywords" content="Italian pizza, Italian pasta, Italian appetizers, Italian drinks, vegetarian pizza, deluxe pizza, spicy chicken pizza, margherita pizza, chicken bruchetta pizza, meat supreme pizza, pizza restaurant discounts, pizza restaurantsales, pizza side dishes, Okotoks Pizza restaurant menu">
-    <meta name="author" content="Alex Bymoen">
+    <meta name="author" content="Doug Glen">
 
     <!-- Meta Tags for Twitter -->
     <meta name="twitter:card" content="summary_large_image">
@@ -43,7 +43,7 @@
                 <span id="mobileBarTwo" class="navBars"></span>
                 <span id="mobileBarThree" class="navBars"></span>
             </div>
-            <nav id="mobileNavPages">
+            <nav id="mobileTabletNavPages">
                 <a href="../index.html">Home</a>
                 <a href="about.html">About</a>
                 <a id="currentPage" href="menu.html">Menu</a>
@@ -63,7 +63,7 @@
         <nav id="desktopNavPages">
             <a href="../index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="menu.html">Menu</a>
+            <a id="currentDesktopPage" href="menu.html">Menu</a>
             <a href="reservations.html">Reservations</a>
             <a href="contact.html">Contact</a>
         </nav>
@@ -114,9 +114,9 @@
                         </div>
                     </div>
                     <div class="desktopSizesAndPrice">
-                        <input type="radio" name="BBQChicken" id="pizzaSmallBBQChicken" checked>
-                        <input type="radio" name="BBQChicken" id="pizzaMediumBBQChicken">
-                        <input type="radio" name="BBQChicken" id="pizzaLargeBBQChicken">
+                        <input type="radio" name="BBQChicken" id="pizzaSmallBBQChicken" class="pizzaSmallInput" checked>
+                        <input type="radio" name="BBQChicken" id="pizzaMediumBBQChicken" class="pizzaMediumInput">
+                        <input type="radio" name="BBQChicken" id="pizzaLargeBBQChicken" class="pizzaLargeInput">
                         <div class="pizzaPrice">
                             <label for="pizzaSmallBBQChicken" id="smallSize" class="desktopPizzaSize">10''</label>
                             <label for="pizzaMediumBBQChicken" id="mediumSize" class="desktopPizzaSize">12''</label>
@@ -152,9 +152,9 @@
                         </div>
                     </div>
                     <div class="desktopSizesAndPrice">
-                        <input type="radio" name="chickenBru" id="pizzaSmallChickenBru" checked>
-                        <input type="radio" name="chickenBru" id="pizzaMediumChickenBru">
-                        <input type="radio" name="chickenBru" id="pizzaLargeChickenBru">
+                        <input type="radio" name="chickenBru" id="pizzaSmallChickenBru" class="pizzaSmallInput" checked>
+                        <input type="radio" name="chickenBru" id="pizzaMediumChickenBru" class="pizzaMediumInput">
+                        <input type="radio" name="chickenBru" id="pizzaLargeChickenBru" class="pizzaLargeInput">
                         <div class="pizzaPrice">
                             <label for="pizzaSmallChickenBru" id="smallSize" class="desktopPizzaSize">10''</label>
                             <label for="pizzaMediumChickenBru" id="mediumSize" class="desktopPizzaSize">12''</label>
@@ -190,9 +190,9 @@
                         </div>
                     </div>
                     <div class="desktopSizesAndPrice">
-                        <input type="radio" name="deluxe" id="pizzaSmallDeluxe" checked>
-                        <input type="radio" name="deluxe" id="pizzaMediumDeluxe">
-                        <input type="radio" name="deluxe" id="pizzaLargeDeluxe">
+                        <input type="radio" name="deluxe" id="pizzaSmallDeluxe" class="pizzaSmallInput" checked>
+                        <input type="radio" name="deluxe" id="pizzaMediumDeluxe" class="pizzaMediumInput">
+                        <input type="radio" name="deluxe" id="pizzaLargeDeluxe" class="pizzaLargeInput">
                         <div class="pizzaPrice">
                             <label for="pizzaSmallDeluxe" id="smallSize" class="desktopPizzaSize">10''</label>
                             <label for="pizzaMediumDeluxe" id="mediumSize" class="desktopPizzaSize">12''</label>
@@ -228,9 +228,9 @@
                         </div>
                     </div>
                     <div class="desktopSizesAndPrice">
-                        <input type="radio" name="hawaiianPep" id="pizzaSmallHawaiianPep" checked>
-                        <input type="radio" name="hawaiianPep" id="pizzaMediumHawaiianPep">
-                        <input type="radio" name="hawaiianPep" id="pizzaLargeHawaiianPep">
+                        <input type="radio" name="hawaiianPep" id="pizzaSmallHawaiianPep" class="pizzaSmallInput" checked>
+                        <input type="radio" name="hawaiianPep" id="pizzaMediumHawaiianPep" class="pizzaMediumInput">
+                        <input type="radio" name="hawaiianPep" id="pizzaLargeHawaiianPep" class="pizzaLargeInput">
                         <div class="pizzaPrice">
                             <label for="pizzaSmallHawaiianPep" id="smallSize" class="desktopPizzaSize">10''</label>
                             <label for="pizzaMediumHawaiianPep" id="mediumSize" class="desktopPizzaSize">12''</label>
@@ -266,9 +266,9 @@
                         </div>
                     </div>
                     <div class="desktopSizesAndPrice">
-                        <input type="radio" name="italianSausage" id="pizzaSmallItalianSausage" checked>
-                        <input type="radio" name="italianSausage" id="pizzaMediumItalianSausage">
-                        <input type="radio" name="italianSausage" id="pizzaLargeItalianSausage">
+                        <input type="radio" name="italianSausage" id="pizzaSmallItalianSausage" class="pizzaSmallInput" checked>
+                        <input type="radio" name="italianSausage" id="pizzaMediumItalianSausage" class="pizzaMediumInput">
+                        <input type="radio" name="italianSausage" id="pizzaLargeItalianSausage" class="pizzaLargeInput">
                         <div class="pizzaPrice">
                             <label for="pizzaSmallItalianSausage" id="smallSize" class="desktopPizzaSize">10''</label>
                             <label for="pizzaMediumItalianSausage" id="mediumSize" class="desktopPizzaSize">12''</label>
@@ -305,9 +305,9 @@
                         </div>
                     </div>
                     <div class="desktopSizesAndPrice">
-                        <input type="radio" name="margherita" id="pizzaSmallMargherita" checked>
-                        <input type="radio" name="margherita" id="pizzaMediumMargherita">
-                        <input type="radio" name="margherita" id="pizzaLargeMargherita">
+                        <input type="radio" name="margherita" id="pizzaSmallMargherita" class="pizzaSmallInput" checked>
+                        <input type="radio" name="margherita" id="pizzaMediumMargherita" class="pizzaMediumInput">
+                        <input type="radio" name="margherita" id="pizzaLargeMargherita" class="pizzaLargeInput">
                         <div class="pizzaPrice">
                             <label for="pizzaSmallMargherita" id="smallSize" class="desktopPizzaSize">10''</label>
                             <label for="pizzaMediumMargherita" id="mediumSize" class="desktopPizzaSize">12''</label>
@@ -343,9 +343,9 @@
                         </div>
                     </div>
                     <div class="desktopSizesAndPrice">
-                        <input type="radio" name="meatSupreme" id="pizzaSmallMeatSupreme" checked>
-                        <input type="radio" name="meatSupreme" id="pizzaMediumMeatSupreme">
-                        <input type="radio" name="meatSupreme" id="pizzaLargeMeatSupreme">
+                        <input type="radio" name="meatSupreme" id="pizzaSmallMeatSupreme" class="pizzaSmallInput" checked>
+                        <input type="radio" name="meatSupreme" id="pizzaMediumMeatSupreme" class="pizzaMediumInput">
+                        <input type="radio" name="meatSupreme" id="pizzaLargeMeatSupreme" class="pizzaLargeInput">
                         <div class="pizzaPrice">
                             <label for="pizzaSmallMeatSupreme" id="smallSize" class="desktopPizzaSize">10''</label>
                             <label for="pizzaMediumMeatSupreme" id="mediumSize" class="desktopPizzaSize">12''</label>
@@ -381,9 +381,9 @@
                         </div>
                     </div>
                     <div class="desktopSizesAndPrice">
-                        <input type="radio" name="veggieLovers" id="pizzaSmallVeggieLovers" checked>
-                        <input type="radio" name="veggieLovers" id="pizzaMediumVeggieLovers">
-                        <input type="radio" name="veggieLovers" id="pizzaLargeVeggieLovers">
+                        <input type="radio" name="veggieLovers" id="pizzaSmallVeggieLovers" class="pizzaSmallInput" checked>
+                        <input type="radio" name="veggieLovers" id="pizzaMediumVeggieLovers" class="pizzaMediumInput">
+                        <input type="radio" name="veggieLovers" id="pizzaLargeVeggieLovers" class="pizzaLargeInput">
                         <div class="pizzaPrice">
                             <label for="pizzaSmallVeggieLovers" id="smallSize" class="desktopPizzaSize">10''</label>
                             <label for="pizzaMediumVeggieLovers" id="mediumSize" class="desktopPizzaSize">12''</label>
