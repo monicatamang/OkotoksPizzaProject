@@ -1,6 +1,6 @@
 @import "_globals.scss";
 
-#mobileTabletHeader {
+header {
     @include gridCenter();
     grid-template-columns: 2fr 4fr 2fr;
     position: fixed;
@@ -14,18 +14,18 @@
     >a {
         text-decoration: none;
 
-        .logoOuterCircle, .logoInnerCircle {
+        .logo {
             @include gridCenter();
             background: $neutralColorOne;
             border-radius: 100%;
         }
     
-        .logoOuterCircle {
+        #logoOuterCircle {
             width: 38px;
             height: 38px;
         }
     
-        .logoInnerCircle {
+        #logoInnerCircle {
             width: 28px;
             height: 28px;
             border: 1.5px solid $primaryColor;
@@ -33,6 +33,10 @@
             font-family: $titleFont;
             font-weight: bold;
             font-size: 0.85em;
+        }
+
+        #okotoksPizzaName {
+            display: none;
         }
     }
 
@@ -109,26 +113,26 @@
             }
         }
     }
-}
 
-#desktopHeader {
-    display: none;
+    #desktopNavPages {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 600px) {
 
-    #mobileTabletHeader {
+    header {
         min-height: 7vh;
         background: $primaryColor;
 
         >a {
 
-            .logoOuterCircle {
+            #logoOuterCircle {
                 width: 50px;
                 height: 50px;
             }
 
-            .logoInnerCircle {
+            #logoInnerCircle {
                 width: 40px;
                 height: 40px;
                 font-size: 1.2em;
@@ -165,54 +169,35 @@
 
 @media only screen and (min-width: 1000px) {
 
-    #mobileTabletHeader {
-        display: none;
-    }
-
-    #desktopHeader {
-        @include gridCenter();
+    header {
         grid-template-columns: auto auto auto;
-        position: fixed;
-        top: 0;
-        min-height: 10vh;
-        width: 100%;
-        padding: 1% 0%;
-        background: $primaryColor;
-        color: $neutralColorOne;
-        z-index: 10;
 
         >a {
-            @include linksStyle($neutralColorOne, 1em);
             @include gridCenter();
             grid-template-columns: auto auto;
-            column-gap: 20px;
+            column-gap: 15px;
 
-            h1 {
+            #logoOuterCircle {
+                width: 45px;
+                height: 45px;
+            }
+
+            #logoInnerCircle {
+                width: 35px;
+                height: 35px;
                 font-size: 1.1em;
+            }
+
+            #okotoksPizzaName {
+                display: block;
+                @include linksStyle($neutralColorOne, 1.3em);
+                font-family: $titleFont;
                 font-weight: 600;
-                font-family: $titleFont;
             }
-    
-            .logoOuterCircle, .logoInnerCircle {
-                @include gridCenter();
-                background: $neutralColorOne;
-                border-radius: 100%;
-            }
-        
-            .logoOuterCircle {
-                width: 38px;
-                height: 38px;
-            }
-        
-            .logoInnerCircle {
-                width: 28px;
-                height: 28px;
-                border: 1.5px solid $primaryColor;
-                color: $primaryColor;
-                font-family: $titleFont;
-                font-weight: bold;
-                font-size: 0.85em;
-            }
+        }
+
+        #mobileHamburgerMenu {
+            display: none;
         }
 
         #desktopNavPages {
