@@ -3,11 +3,7 @@
 @import "../partials/callButton";
 @import "../partials/footer";
 
-#currentPage {
-    background: $secondaryColor;
-}
-
-#reservations {
+section {
     @include gridCenterRowAndColumnGap(20px, 0px);
     margin-top: 15vh;
     min-height: 90vh;
@@ -24,20 +20,21 @@
         text-align: center;
     }
 
-    #reservationForm {
+    article {
         @include gridCenterRowAndColumnGap(40px, 0px);
         margin-top: 4vh;
         width: 100%;
 
-        article {
+        .reservationFields {
             @include gridAndRowColumnGap(10px, 0px);
             width: 100%;
 
-            h5 {
+            label {
                 font-family: $titleFont;
+                font-weight: 600;
             }
         
-            .inputReservationForm {
+            input, select {
                 padding: 3% 2%;
                 border: 0.1px solid $neutralColorOne;
                 font-family: $bodyFont;
@@ -59,7 +56,7 @@
 
 @media only screen and (min-width: 600px) {
     
-    #reservations {
+    section {
         margin-top: 30vh;
 
         h1 {
@@ -78,30 +75,32 @@
 
 @media only screen and (min-width: 1000px) {
     
-    #reservations {
+    section {
         padding: 0%;
-        width: 100%;
 
         h1 {
             font-size: 2em;
         }
 
         p {
-            font-size: 1em;
+            font-size: 0.95em;
         }
 
-        #reservationForm {
+        article {
             margin-top: 10vh;
             grid-template-columns: auto auto;
+            column-gap: 30px;
+            width: 90%;
 
-            article {
-                width: 80%;
+            .reservationFields {
+                width: 100%;
 
-                h5 {
+                label {
                     font-size: 0.9em;
+                    font-weight: 600;
                 }
 
-                .inputReservationForm {
+                input, select {
                     padding: 2%;
                 }
             }
@@ -113,6 +112,12 @@
             font-size: 1em;
             padding: 1% 2%;
             cursor: pointer;
+
+            &:hover {
+                color: $neutralColorOne;
+                border: 1px solid $neutralColorOne;
+                background: $neutralColorTwo;
+            }
         }
     }
 }

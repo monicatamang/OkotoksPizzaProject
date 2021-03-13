@@ -408,12 +408,6 @@ footer #subscriptionForm #subscribeButton {
   padding: 3%;
 }
 
-footer #subscriptionForm #subscribeButton:hover {
-  color: #393e46;
-  border: 1px solid #393e46;
-  background: white;
-}
-
 footer #socialLinksAndCopyright {
   display: -ms-grid;
   display: grid;
@@ -498,6 +492,9 @@ footer #mobileFooterSpacer {
 }
 
 @media only screen and (min-width: 1000px) {
+  footer {
+    margin-top: 15vh;
+  }
   footer #subscriptionForm {
     row-gap: 20px;
   }
@@ -523,17 +520,25 @@ footer #mobileFooterSpacer {
     padding: 1%;
     cursor: pointer;
   }
+  footer #subscriptionForm #subscribeButton:hover {
+    color: #393e46;
+    border: 1px solid #393e46;
+    background: white;
+  }
   footer #socialLinksAndCopyright {
     row-gap: 20px;
     font-size: 0.8em;
     padding: 0%;
+  }
+  footer #socialLinksAndCopyright #socialMedia {
+    width: 50%;
   }
   footer #socialLinksAndCopyright #socialMedia img {
     width: 30px;
   }
 }
 
-#contactPage {
+section {
   display: -ms-grid;
   display: grid;
   row-gap: 30px;
@@ -545,12 +550,12 @@ footer #mobileFooterSpacer {
   color: #393e46;
 }
 
-#contactPage > h1 {
+section > h1 {
   font-family: "Lora", serif;
   text-align: center;
 }
 
-#contactPage #contactPageSections {
+section #contactPageSections {
   display: -ms-grid;
   display: grid;
   row-gap: 25px;
@@ -558,7 +563,7 @@ footer #mobileFooterSpacer {
           column-gap: 0px;
 }
 
-#contactPage #contactPageSections #infoAndHoursSections {
+section #contactPageSections #infoAndHoursSections {
   display: -ms-grid;
   display: grid;
   row-gap: 25px;
@@ -566,7 +571,7 @@ footer #mobileFooterSpacer {
           column-gap: 0px;
 }
 
-#contactPage #contactPageSections .contactSection {
+section #contactPageSections .contactSection {
   display: -ms-grid;
   display: grid;
   row-gap: 15px;
@@ -575,17 +580,17 @@ footer #mobileFooterSpacer {
   font-size: 0.8em;
 }
 
-#contactPage #contactPageSections .contactSection h3 {
+section #contactPageSections .contactSection h3 {
   font-family: "Lora", serif;
 }
 
-#contactPage #contactPageSections .contactSection a {
+section #contactPageSections .contactSection a {
   text-decoration: none;
   color: #393e46;
   width: 70%;
 }
 
-#contactPage #contactPageSections .contactSection .restaurantHours {
+section #contactPageSections .contactSection .restaurantHours {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -593,50 +598,50 @@ footer #mobileFooterSpacer {
   width: 70%;
 }
 
-#contactPage #contactPageSections .contactSection #googleMaps {
+section #contactPageSections .contactSection #googleMaps {
   border: none;
   width: 100%;
 }
 
 @media only screen and (min-width: 600px) {
-  #contactPage {
+  section {
     margin-top: 30vh;
     row-gap: 45px;
   }
-  #contactPage > h1 {
+  section > h1 {
     font-size: 1.8em;
   }
-  #contactPage #contactPageSections .contactSection {
+  section #contactPageSections .contactSection {
     font-size: 0.9em;
     row-gap: 30px;
   }
-  #contactPage #contactPageSections #googleMaps {
+  section #contactPageSections #googleMaps {
     height: 50vh;
   }
 }
 
 @media only screen and (min-width: 1000px) {
-  #contactPage > h1 {
+  section > h1 {
     font-size: 2em;
   }
-  #contactPage #contactPageSections {
+  section #contactPageSections {
     margin-top: 5vh;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
   }
-  #contactPage #contactPageSections #infoAndHoursSections {
+  section #contactPageSections .lineDividers {
+    display: none;
+  }
+  section #contactPageSections #infoAndHoursSections {
     row-gap: 50px;
   }
-  #contactPage #contactPageSections .contactSection {
+  section #contactPageSections .contactSection {
     font-size: 1em;
   }
-  #contactPage #contactPageSections #googleMaps {
+  section #contactPageSections #googleMaps {
     height: 70vh;
-  }
-  #contactPage #contactPageSections .lineDividers {
-    display: none;
   }
 }
 /*# sourceMappingURL=contact.css.map */

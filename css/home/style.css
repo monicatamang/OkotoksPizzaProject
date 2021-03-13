@@ -396,12 +396,6 @@ footer #subscriptionForm #subscribeButton {
   padding: 3%;
 }
 
-footer #subscriptionForm #subscribeButton:hover {
-  color: #393e46;
-  border: 1px solid #393e46;
-  background: white;
-}
-
 footer #socialLinksAndCopyright {
   display: -ms-grid;
   display: grid;
@@ -486,6 +480,9 @@ footer #mobileFooterSpacer {
 }
 
 @media only screen and (min-width: 1000px) {
+  footer {
+    margin-top: 15vh;
+  }
   footer #subscriptionForm {
     row-gap: 20px;
   }
@@ -511,10 +508,18 @@ footer #mobileFooterSpacer {
     padding: 1%;
     cursor: pointer;
   }
+  footer #subscriptionForm #subscribeButton:hover {
+    color: #393e46;
+    border: 1px solid #393e46;
+    background: white;
+  }
   footer #socialLinksAndCopyright {
     row-gap: 20px;
     font-size: 0.8em;
     padding: 0%;
+  }
+  footer #socialLinksAndCopyright #socialMedia {
+    width: 50%;
   }
   footer #socialLinksAndCopyright #socialMedia img {
     width: 30px;

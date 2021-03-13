@@ -42,12 +42,6 @@ footer {
             text-align: center;
             width: 80px;
             padding: 3%;
-
-            &:hover {
-                color: $neutralColorOne;
-                border: 1px solid $neutralColorOne;
-                background: $neutralColorTwo;
-            }
         }
     }
 
@@ -84,6 +78,7 @@ footer {
 }
 
 @media only screen and (min-width: 600px) {
+    
     footer {
         margin-top: 10vh;
         
@@ -137,7 +132,9 @@ footer {
 }
 
 @media only screen and (min-width: 1000px) {
+    
     footer {
+        margin-top: 15vh;
 
         #subscriptionForm {
             row-gap: 20px;
@@ -165,6 +162,12 @@ footer {
                 width: 80px;
                 padding: 1%;
                 cursor: pointer;
+
+                &:hover {
+                    color: $neutralColorOne;
+                    border: 1px solid $neutralColorOne;
+                    background: $neutralColorTwo;
+                }
             }
         }
 
@@ -174,6 +177,7 @@ footer {
             padding: 0%;
 
             #socialMedia {
+                width: 50%;
 
                 img {
                     width: 30px;

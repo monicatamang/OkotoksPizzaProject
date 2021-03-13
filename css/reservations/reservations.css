@@ -408,12 +408,6 @@ footer #subscriptionForm #subscribeButton {
   padding: 3%;
 }
 
-footer #subscriptionForm #subscribeButton:hover {
-  color: #393e46;
-  border: 1px solid #393e46;
-  background: white;
-}
-
 footer #socialLinksAndCopyright {
   display: -ms-grid;
   display: grid;
@@ -498,6 +492,9 @@ footer #mobileFooterSpacer {
 }
 
 @media only screen and (min-width: 1000px) {
+  footer {
+    margin-top: 15vh;
+  }
   footer #subscriptionForm {
     row-gap: 20px;
   }
@@ -523,21 +520,25 @@ footer #mobileFooterSpacer {
     padding: 1%;
     cursor: pointer;
   }
+  footer #subscriptionForm #subscribeButton:hover {
+    color: #393e46;
+    border: 1px solid #393e46;
+    background: white;
+  }
   footer #socialLinksAndCopyright {
     row-gap: 20px;
     font-size: 0.8em;
     padding: 0%;
+  }
+  footer #socialLinksAndCopyright #socialMedia {
+    width: 50%;
   }
   footer #socialLinksAndCopyright #socialMedia img {
     width: 30px;
   }
 }
 
-#currentPage {
-  background: #eeeeee;
-}
-
-#reservations {
+section {
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -550,17 +551,17 @@ footer #mobileFooterSpacer {
   color: #393e46;
 }
 
-#reservations h1 {
+section h1 {
   font-family: "Lora", serif;
   text-align: center;
 }
 
-#reservations p {
+section p {
   font-size: 0.8em;
   text-align: center;
 }
 
-#reservations #reservationForm {
+section article {
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -571,7 +572,7 @@ footer #mobileFooterSpacer {
   width: 100%;
 }
 
-#reservations #reservationForm article {
+section article .reservationFields {
   display: -ms-grid;
   display: grid;
   row-gap: 10px;
@@ -580,17 +581,18 @@ footer #mobileFooterSpacer {
   width: 100%;
 }
 
-#reservations #reservationForm article h5 {
+section article .reservationFields label {
   font-family: "Lora", serif;
+  font-weight: 600;
 }
 
-#reservations #reservationForm article .inputReservationForm {
+section article .reservationFields input, section article .reservationFields select {
   padding: 3% 2%;
   border: 0.1px solid #393e46;
   font-family: "Montserrat", sans-serif;
 }
 
-#reservations #reserveButton {
+section #reserveButton {
   -ms-grid-column-align: center;
       justify-self: center;
   width: 40%;
@@ -603,51 +605,59 @@ footer #mobileFooterSpacer {
 }
 
 @media only screen and (min-width: 600px) {
-  #reservations {
+  section {
     margin-top: 30vh;
   }
-  #reservations h1 {
+  section h1 {
     font-size: 1.8em;
   }
-  #reservations p {
+  section p {
     font-size: 0.9em;
   }
-  #reservations #reserveButton {
+  section #reserveButton {
     width: 30%;
   }
 }
 
 @media only screen and (min-width: 1000px) {
-  #reservations {
+  section {
     padding: 0%;
-    width: 100%;
   }
-  #reservations h1 {
+  section h1 {
     font-size: 2em;
   }
-  #reservations p {
-    font-size: 1em;
+  section p {
+    font-size: 0.95em;
   }
-  #reservations #reservationForm {
+  section article {
     margin-top: 10vh;
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+    width: 90%;
   }
-  #reservations #reservationForm article {
-    width: 80%;
+  section article .reservationFields {
+    width: 100%;
   }
-  #reservations #reservationForm article h5 {
+  section article .reservationFields label {
     font-size: 0.9em;
+    font-weight: 600;
   }
-  #reservations #reservationForm article .inputReservationForm {
+  section article .reservationFields input, section article .reservationFields select {
     padding: 2%;
   }
-  #reservations #reserveButton {
+  section #reserveButton {
     margin-top: 5%;
     width: 10%;
     font-size: 1em;
     padding: 1% 2%;
     cursor: pointer;
+  }
+  section #reserveButton:hover {
+    color: #393e46;
+    border: 1px solid #393e46;
+    background: white;
   }
 }
 /*# sourceMappingURL=reservations.css.map */
