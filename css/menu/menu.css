@@ -720,8 +720,9 @@ footer #mobileFooterSpacer {
 }
 
 #menuPage .menuContainer .itemCard .sidePanel .pizzaPrice .pizzaSize {
-  background: white;
   color: #393e46;
+  background: white;
+  border-radius: 5px;
   padding: 10%;
   font-weight: 500;
 }
@@ -832,6 +833,9 @@ footer #mobileFooterSpacer {
   #menuPage #navMenuCategories label:hover {
     color: rgba(57, 62, 70, 0.5);
   }
+  #menuPage .menuContainer {
+    width: 90%;
+  }
   #menuPage .menuContainer #salePoster {
     padding: 3% 0%;
     font-size: 1.4em;
@@ -839,37 +843,23 @@ footer #mobileFooterSpacer {
   #menuPage .menuContainer #salePoster h1 {
     line-height: 50px;
   }
-  #menuPage .menuContainer #pizzaItemCards img {
-    width: 50%;
-  }
-  #menuPage .menuContainer .itemCard {
-    position: relative;
-    -webkit-box-shadow: 1px 2px 4px rgba(128, 128, 128, 0.3);
-            box-shadow: 1px 2px 4px rgba(128, 128, 128, 0.3);
-    row-gap: 40px;
-  }
-  #menuPage .menuContainer .itemCard .itemDescription + p, #menuPage .menuContainer .itemCard .sidePanel {
+  #menuPage .menuContainer #pizzaItemCards .itemDescription + p, #menuPage .menuContainer #pizzaItemCards .sidePanel {
     display: none;
   }
-  #menuPage .menuContainer .itemCard > h1 {
-    font-size: 1.1em;
-    padding-top: 15%;
+  #menuPage .menuContainer #pizzaItemCards img {
+    width: 65%;
   }
-  #menuPage .menuContainer .itemCard .itemDescription {
-    padding: 0% 10%;
-  }
-  #menuPage .menuContainer .itemCard .desktopSizesAndPrice {
+  #menuPage .menuContainer #pizzaItemCards .desktopSizesAndPrice {
     display: -ms-grid;
     display: grid;
     row-gap: 40px;
     -webkit-column-gap: 0px;
             column-gap: 0px;
-    width: 60%;
   }
-  #menuPage .menuContainer .itemCard .desktopSizesAndPrice input {
+  #menuPage .menuContainer #pizzaItemCards .desktopSizesAndPrice input {
     display: none;
   }
-  #menuPage .menuContainer .itemCard .desktopSizesAndPrice .pizzaPrice {
+  #menuPage .menuContainer #pizzaItemCards .desktopSizesAndPrice .pizzaPrice {
     display: -ms-grid;
     display: grid;
     place-items: center;
@@ -879,7 +869,7 @@ footer #mobileFooterSpacer {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
-  #menuPage .menuContainer .itemCard .desktopSizesAndPrice .pizzaPrice .desktopPizzaSize {
+  #menuPage .menuContainer #pizzaItemCards .desktopSizesAndPrice .pizzaPrice .desktopPizzaSize {
     display: -ms-grid;
     display: grid;
     place-items: center;
@@ -897,47 +887,86 @@ footer #mobileFooterSpacer {
     text-align: center;
     cursor: pointer;
   }
-  #menuPage .menuContainer .itemCard .desktopSizesAndPrice p {
+  #menuPage .menuContainer #pizzaItemCards .desktopSizesAndPrice p {
     font-family: "Lora", serif;
     font-weight: bold;
     font-size: 1.2em;
     display: none;
-    padding-bottom: 20%;
+    padding-bottom: 0%;
   }
-  #menuPage .menuContainer .itemCard .desktopSizesAndPrice .pizzaSmallInput:checked ~ .priceFor10inches, #menuPage .menuContainer .itemCard .desktopSizesAndPrice .pizzaMediumInput:checked ~ .priceFor12inches, #menuPage .menuContainer .itemCard .desktopSizesAndPrice .pizzaLargeInput:checked ~ .priceFor14inches {
+  #menuPage .menuContainer #pizzaItemCards .desktopSizesAndPrice .pizzaSmallInput:checked ~ .priceFor10inches, #menuPage .menuContainer #pizzaItemCards .desktopSizesAndPrice .pizzaMediumInput:checked ~ .priceFor12inches, #menuPage .menuContainer #pizzaItemCards .desktopSizesAndPrice .pizzaLargeInput:checked ~ .priceFor14inches {
     display: block;
   }
-  #menuPage .menuContainer .itemCard .desktopSizesAndPrice .pizzaSmallInput:checked ~ .pizzaPrice #smallSize, #menuPage .menuContainer .itemCard .desktopSizesAndPrice .pizzaMediumInput:checked ~ .pizzaPrice #mediumSize, #menuPage .menuContainer .itemCard .desktopSizesAndPrice .pizzaLargeInput:checked ~ .pizzaPrice #largeSize {
+  #menuPage .menuContainer #pizzaItemCards .desktopSizesAndPrice .pizzaSmallInput:checked ~ .pizzaPrice #smallSize, #menuPage .menuContainer #pizzaItemCards .desktopSizesAndPrice .pizzaMediumInput:checked ~ .pizzaPrice #mediumSize, #menuPage .menuContainer #pizzaItemCards .desktopSizesAndPrice .pizzaLargeInput:checked ~ .pizzaPrice #largeSize {
     background: #393e46;
     color: white;
   }
+  #menuPage .menuContainer .itemCard {
+    position: relative;
+    -webkit-box-shadow: 1px 2px 4px rgba(128, 128, 128, 0.3);
+            box-shadow: 1px 2px 4px rgba(128, 128, 128, 0.3);
+    row-gap: 40px;
+  }
+  #menuPage .menuContainer .itemCard > h1 {
+    font-size: 1.1em;
+    padding-top: 15%;
+  }
+  #menuPage .menuContainer .itemCard p {
+    padding: 0%;
+  }
+  #menuPage .menuContainer .itemCard .itemDescription {
+    padding: 0% 8%;
+  }
+  #menuPage .menuContainer .itemCard .itemDescription + p {
+    font-size: 1.1em;
+    padding-bottom: 0%;
+  }
+  #menuPage .menuContainer .itemCard .sidePanel {
+    display: none;
+  }
   #menuPage .menuContainer .itemCard .menuItemHover {
     display: block;
-    width: 100%;
+  }
+  #menuPage .menuContainer .itemCard .menuItemHover #backgroundCover {
     position: absolute;
-    top: -5%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: #eeeeee;
     opacity: 0;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
   }
-  #menuPage .menuContainer .itemCard .menuItemHover:hover {
+  #menuPage .menuContainer .itemCard .menuItemHover img {
+    position: absolute;
+    top: 0;
+    left: 16%;
+    right: 16%;
+    width: 70%;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  #menuPage .menuContainer .itemCard .menuItemHover:hover #backgroundCover {
     opacity: 1;
     top: 5%;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
   }
+  #menuPage .menuContainer .itemCard .menuItemHover:hover img {
+    opacity: 1;
+    top: 6%;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+  }
   #menuPage .menuContainer .itemCard:active {
     -webkit-box-shadow: 1px 2px 4px rgba(128, 128, 128, 0.3);
             box-shadow: 1px 2px 4px rgba(128, 128, 128, 0.3);
   }
-  #menuPage #pastaMenu .itemCard .itemDescription + p, #menuPage #appetizersMenu .itemCard .itemDescription + p, #menuPage #drinksMenu .itemCard .itemDescription + p {
-    display: block;
-    font-size: 1em;
-    font-weight: bold;
-  }
-  #menuPage #pastaMenu img, #menuPage #appetizersMenu img, #menuPage #drinksMenu img {
-    width: 60%;
-    background: #eeeeee;
+  #menuPage #pastaMenu, #menuPage #appetizersMenu, #menuPage #drinksMenu {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=menu.css.map */

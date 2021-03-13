@@ -141,8 +141,9 @@
                     font-family: $titleFont;
     
                     .pizzaSize {
-                        background: $neutralColorTwo;
                         color: $neutralColorOne;
+                        background: $neutralColorTwo;
+                        border-radius: 5px;
                         padding: 10%;
                         font-weight: 500;
                     }
@@ -278,6 +279,7 @@
         }
         
         .menuContainer {
+            width: 90%;
 
             #salePoster {
                 padding: 3% 0%;
@@ -290,33 +292,16 @@
 
             #pizzaItemCards {
 
-                img {
-                    width: 50%;
-                }
-            }
-
-            .itemCard {
-                position: relative;
-                box-shadow: 1px 2px 4px rgba(128, 128, 128, 0.3);
-                row-gap: 40px;
-                
                 .itemDescription + p, .sidePanel {
                     display: none;
                 }
 
-                >h1 {
-                    font-size: 1.1em;
-                    padding-top: 15%;
-                }
-
-                // use this for covering the text when the image appears
-                .itemDescription {
-                    padding: 0% 10%;
+                img {
+                    width: 65%;
                 }
 
                 .desktopSizesAndPrice {
                     @include gridAndRowColumnGap(40px, 0px);
-                    width: 60%;
 
                     input {
                         display: none;
@@ -346,7 +331,7 @@
                         font-weight: bold;
                         font-size: 1.2em;
                         display: none;
-                        padding-bottom: 20%;
+                        padding-bottom: 0%;
                     }
 
                     .pizzaSmallInput:checked ~ .priceFor10inches, .pizzaMediumInput:checked ~ .priceFor12inches, .pizzaLargeInput:checked ~ .priceFor14inches {
@@ -358,23 +343,70 @@
                         color: $neutralColorTwo;
                     }
                 }
+            }
+
+            .itemCard {
+                position: relative;
+                box-shadow: 1px 2px 4px rgba(128, 128, 128, 0.3);
+                row-gap: 40px;
+                
+                >h1 {
+                    font-size: 1.1em;
+                    padding-top: 15%;
+                }
+
+                p {
+                    padding: 0%;
+                }
+
+                .itemDescription {
+                    padding: 0% 8%;
+                }
+
+                .itemDescription + p {
+                    font-size: 1.1em;
+                    padding-bottom: 0%;
+                }
+
+                .sidePanel {
+                    display: none;
+                }
 
                 .menuItemHover {
                     display: block;
-                    width: 100%;
-                    position: absolute;
-                    top: -5%;
-                    opacity: 0;
-                    transition: all 0.4s ease-in-out;
 
-                    // img {
-                    //     width: 
-                    // }
+                    #backgroundCover {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 150px;
+                        background: $secondaryColor;
+                        opacity: 0;
+                        transition: all 0.4s ease-in-out;
+                    }
 
-                    &:hover {
+                    img {
+                        position: absolute;
+                        top: 0;
+                        left: 16%;
+                        right: 16%;
+                        width: 70%;
+                        opacity: 0;
+                        z-index: 1;
+                        transition: all 0.4s ease-in-out;
+                    }
+
+                    &:hover #backgroundCover {
                         opacity: 1;
                         top: 5%;
                         transition: all 0.4s ease-in-out;
+                    }
+
+                    &:hover img {
+                        opacity: 1;
+                        top: 6%;
+                        transition: all 0.4s ease-in;
                     }
                 }
 
@@ -385,20 +417,7 @@
         }
 
         #pastaMenu, #appetizersMenu, #drinksMenu {
-
-            .itemCard {
-
-                .itemDescription + p {
-                    display: block;
-                    font-size: 1em;
-                    font-weight: bold;
-                }
-            }
-
-            img {
-                width: 60%;
-                background: $secondaryColor;
-            }
+            width: 90%;
         }
     }
 }
