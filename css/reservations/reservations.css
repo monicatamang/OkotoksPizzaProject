@@ -412,12 +412,12 @@ footer #subscriptionForm #subscribeLabel {
   padding: 3%;
 }
 
-footer #subscriptionForm #messageLabel, footer #subscriptionForm .subscribeRadioButtons:checked ~ #subscribeLabel {
+footer #subscriptionForm #subscribeMessageLabel, footer #subscriptionForm .subscribeRadioButtons:checked ~ #subscribeLabel {
   display: none;
   font-size: 0.75em;
 }
 
-footer #subscriptionForm .subscribeRadioButtons:checked ~ #messageLabel {
+footer #subscriptionForm .subscribeRadioButtons:checked ~ #subscribeMessageLabel {
   display: block;
 }
 
@@ -483,10 +483,14 @@ footer #mobileFooterSpacer {
     font-size: 1em;
     padding: 1%;
   }
-  footer #subscriptionForm #subscribeButton {
+  footer #subscriptionForm #subscribeLabel {
     font-size: 1em;
     width: 20%;
     padding: 2%;
+  }
+  footer #subscriptionForm #subscribeMessageLabel, footer #subscriptionForm .subscribeRadioButtons:checked ~ #subscribeLabel {
+    font-size: 0.9em;
+    line-height: 25px;
   }
   footer #socialLinksAndCopyright {
     row-gap: 20px;
@@ -510,12 +514,13 @@ footer #mobileFooterSpacer {
   }
   footer #subscriptionForm {
     row-gap: 20px;
+    width: 90%;
   }
   footer #subscriptionForm h1 {
-    font-size: 1em;
+    font-size: 1.1em;
   }
   footer #subscriptionForm p {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
   footer #subscriptionForm #subscriptionInputs {
     -ms-grid-columns: auto auto;
@@ -527,16 +532,19 @@ footer #mobileFooterSpacer {
     font-size: 0.8em;
     padding: 2%;
   }
-  footer #subscriptionForm #subscribeButton {
+  footer #subscriptionForm #subscribeLabel {
     font-size: 0.8em;
     width: 80px;
     padding: 1%;
     cursor: pointer;
   }
-  footer #subscriptionForm #subscribeButton:hover {
+  footer #subscriptionForm #subscribeLabel:hover {
     color: #393e46;
     border: 1px solid #393e46;
     background: white;
+  }
+  footer #subscriptionForm #subscribeMessageLabel, footer #subscriptionForm .subscribeRadioButtons:checked ~ #subscribeLabel {
+    font-size: 1em;
   }
   footer #socialLinksAndCopyright {
     row-gap: 20px;
@@ -605,7 +613,7 @@ section article .reservationFields input, section article .reservationFields sel
   font-family: "Montserrat", sans-serif;
 }
 
-section #reserveButton {
+section #reserveLabel {
   -ms-grid-column-align: center;
       justify-self: center;
   width: 40%;
@@ -613,8 +621,24 @@ section #reserveButton {
   padding: 3% 0%;
   background: #393e46;
   border-radius: 3px;
+  text-align: center;
   color: white;
   font-size: 0.9em;
+}
+
+section .reserveRadioButtons {
+  display: none;
+}
+
+section #reserveMessageLabel, section .reserveRadioButtons:checked ~ #reserveLabel {
+  display: none;
+}
+
+section .reserveRadioButtons:checked ~ #reserveMessageLabel {
+  display: block;
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 5%;
 }
 
 @media only screen and (min-width: 600px) {
@@ -627,8 +651,13 @@ section #reserveButton {
   section p {
     font-size: 0.9em;
   }
-  section #reserveButton {
+  section #reserveLabel {
     width: 30%;
+    font-size: 1em;
+  }
+  section .reserveRadioButtons:checked ~ #reserveMessageLabel {
+    font-size: 1em;
+    line-height: 25px;
   }
 }
 
@@ -660,17 +689,20 @@ section #reserveButton {
   section article .reservationFields input, section article .reservationFields select {
     padding: 2%;
   }
-  section #reserveButton {
+  section #reserveLabel {
     margin-top: 5%;
     width: 10%;
     font-size: 1em;
     padding: 1% 2%;
     cursor: pointer;
   }
-  section #reserveButton:hover {
+  section #reserveLabel:hover {
     color: #393e46;
     border: 1px solid #393e46;
     background: white;
+  }
+  section .reserveRadioButtons:checked ~ #reserveMessageLabel {
+    font-size: 1.1em;
   }
 }
 /*# sourceMappingURL=reservations.css.map */

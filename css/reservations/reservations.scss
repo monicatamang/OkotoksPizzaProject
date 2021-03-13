@@ -42,15 +42,31 @@ section {
         }
     }
 
-    #reserveButton {
+    #reserveLabel {
         justify-self: center;
         width: 40%;
         margin-top: 10%;
         padding: 3% 0%;
         background: $neutralColorOne;
         border-radius: 3px;
+        text-align: center;
         color: $neutralColorTwo;
         font-size: 0.9em;
+    }
+
+    .reserveRadioButtons {
+        display: none;
+    }
+
+    #reserveMessageLabel, .reserveRadioButtons:checked ~ #reserveLabel {
+        display: none;
+    }
+
+    .reserveRadioButtons:checked ~ #reserveMessageLabel {
+        display: block;
+        font-size: 0.8em;
+        text-align: center;
+        margin-top: 5%;
     }
 }
 
@@ -67,8 +83,14 @@ section {
             font-size: 0.9em;
         }
 
-        #reserveButton {
+        #reserveLabel {
             width: 30%;
+            font-size: 1em;
+        }
+
+        .reserveRadioButtons:checked ~ #reserveMessageLabel {
+            font-size: 1em;
+            line-height: 25px;
         }
     }
 }
@@ -106,7 +128,7 @@ section {
             }
         }
 
-        #reserveButton {
+        #reserveLabel {
             margin-top: 5%;
             width: 10%;
             font-size: 1em;
@@ -118,6 +140,10 @@ section {
                 border: 1px solid $neutralColorOne;
                 background: $neutralColorTwo;
             }
+        }
+
+        .reserveRadioButtons:checked ~ #reserveMessageLabel {
+            font-size: 1.1em;
         }
     }
 }
