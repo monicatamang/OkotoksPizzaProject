@@ -159,7 +159,7 @@ footer {
             width: 90%;
 
             h1 {
-                font-size: 1.1em;
+                font-size: 1em;
             }
     
             p {
@@ -190,14 +190,13 @@ footer {
             }
 
             #subscribeMessageLabel, .subscribeRadioButtons:checked ~ #subscribeLabel {
-                font-size: 1em;
+                font-size: 0.9em;
             }
         }
 
         #socialLinksAndCopyright {
             row-gap: 20px;
             font-size: 0.8em;
-            padding: 0%;
 
             #socialMedia {
                 width: 50%;

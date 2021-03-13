@@ -517,7 +517,7 @@ footer #mobileFooterSpacer {
     width: 90%;
   }
   footer #subscriptionForm h1 {
-    font-size: 1.1em;
+    font-size: 1em;
   }
   footer #subscriptionForm p {
     font-size: 0.9em;
@@ -544,12 +544,11 @@ footer #mobileFooterSpacer {
     background: white;
   }
   footer #subscriptionForm #subscribeMessageLabel, footer #subscriptionForm .subscribeRadioButtons:checked ~ #subscribeLabel {
-    font-size: 1em;
+    font-size: 0.9em;
   }
   footer #socialLinksAndCopyright {
     row-gap: 20px;
     font-size: 0.8em;
-    padding: 0%;
   }
   footer #socialLinksAndCopyright #socialMedia {
     width: 50%;
