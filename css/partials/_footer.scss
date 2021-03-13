@@ -34,7 +34,11 @@ footer {
             }
         }
 
-        #subscribeButton {
+        .subscribeRadioButtons {
+            display: none;
+        }
+
+        #subscribeLabel {
             color: $neutralColorTwo;
             background: $neutralColorOne;
             border-radius: 3px;
@@ -42,6 +46,15 @@ footer {
             text-align: center;
             width: 80px;
             padding: 3%;
+        }
+
+        #messageLabel, .subscribeRadioButtons:checked ~ #subscribeLabel {
+            display: none;
+            font-size: 0.75em;
+        }
+
+        .subscribeRadioButtons:checked ~ #messageLabel {
+            display: block;
         }
     }
 

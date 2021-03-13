@@ -398,7 +398,11 @@ footer #subscriptionForm #subscriptionInputs .inputSubscriptionForm {
   border: 0.5px solid #393e46;
 }
 
-footer #subscriptionForm #subscribeButton {
+footer #subscriptionForm .subscribeRadioButtons {
+  display: none;
+}
+
+footer #subscriptionForm #subscribeLabel {
   color: white;
   background: #393e46;
   border-radius: 3px;
@@ -406,6 +410,15 @@ footer #subscriptionForm #subscribeButton {
   text-align: center;
   width: 80px;
   padding: 3%;
+}
+
+footer #subscriptionForm #messageLabel, footer #subscriptionForm .subscribeRadioButtons:checked ~ #subscribeLabel {
+  display: none;
+  font-size: 0.75em;
+}
+
+footer #subscriptionForm .subscribeRadioButtons:checked ~ #messageLabel {
+  display: block;
 }
 
 footer #socialLinksAndCopyright {
