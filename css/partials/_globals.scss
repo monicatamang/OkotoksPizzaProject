@@ -29,6 +29,12 @@ $bodyFont: "Montserrat", sans-serif;
     font-size: $fontSize;
 }
 
+@mixin buttonHoverEffect() {
+    color: $neutralColorOne;
+    border: 1px solid $neutralColorOne;
+    background: $neutralColorTwo;
+}
+
 // ALIGNMENT & OTHER SETTINGS
 * {
     margin: 0;

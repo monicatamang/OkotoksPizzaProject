@@ -952,7 +952,7 @@ footer #mobileFooterSpacer {
   #menuPage .menuContainer .itemCard .menuItemHover {
     display: block;
   }
-  #menuPage .menuContainer .itemCard .menuItemHover #backgroundCover {
+  #menuPage .menuContainer .itemCard .menuItemHover .backgroundCover {
     position: absolute;
     top: 0;
     left: 0;
@@ -974,9 +974,8 @@ footer #mobileFooterSpacer {
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
   }
-  #menuPage .menuContainer .itemCard .menuItemHover:hover #backgroundCover {
+  #menuPage .menuContainer .itemCard .menuItemHover:hover .backgroundCover {
     opacity: 1;
-    top: 5%;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
   }

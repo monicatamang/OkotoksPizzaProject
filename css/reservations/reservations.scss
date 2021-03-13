@@ -136,9 +136,7 @@ section {
             cursor: pointer;
 
             &:hover {
-                color: $neutralColorOne;
-                border: 1px solid $neutralColorOne;
-                background: $neutralColorTwo;
+                @include buttonHoverEffect();
             }
         }
 

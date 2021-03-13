@@ -51,7 +51,7 @@ main {
     
             .buttons {
                 @include linksStyle($neutralColorTwo, 0.7em);
-                padding: 3% 6%;
+                padding: 3.5% 6%;
                 background: $neutralColorOne;
                 border-radius: 3px;
             }
@@ -142,9 +142,7 @@ main {
                     padding: 5% 10%;
 
                     &:hover {
-                        color: $neutralColorOne;
-                        border: 1px solid $neutralColorOne;
-                        background: $neutralColorTwo;
+                        @include buttonHoverEffect();
                     }
                 }
             }

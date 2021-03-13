@@ -375,7 +375,7 @@
                 .menuItemHover {
                     display: block;
 
-                    #backgroundCover {
+                    .backgroundCover {
                         position: absolute;
                         top: 0;
                         left: 0;
@@ -397,9 +397,8 @@
                         transition: all 0.4s ease-in-out;
                     }
 
-                    &:hover #backgroundCover {
+                    &:hover .backgroundCover {
                         opacity: 1;
-                        top: 5%;
                         transition: all 0.4s ease-in-out;
                     }
 
